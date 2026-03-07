@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ALORNIX - Creative Portfolio & Personal Website">
+    <title>ALORNIX - Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        @keyframes reveal {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .animate-reveal {
+            animation: reveal 1s ease-out;
+        }
+        
+        .animate-slideFromLeft {
+            animation: slideFromLeft 1s ease-out;
+        }
+        
+        .animate-slideFromRight {
+            animation: slideFromRight 1s ease-out;
+        }
+        
+        .text-outline {
+            -webkit-text-stroke: 2px currentColor;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .masonry {
+            column-count: 3;
+            column-gap: 2rem;
+        }
+        
+        @media (max-width: 1024px) {
+            .masonry {
+                column-count: 2;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .masonry {
+                column-count: 1;
+            }
+        }
+        
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 2rem;
+        }
+        
+        .hover-img {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .hover-img:hover {
+            transform: scale(0.95);
+        }
+        
+        .cursor-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #000;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transition: transform 0.15s ease;
+        }
+        
+        .cursor-outline {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9998;
+            transition: all 0.15s ease;
+        }
+        
+        .parallax {
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    
+    <!-- Minimal Navigation -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-40 border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold serif">ALORNIX</a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#work" class="text-sm font-medium hover:text-gray-600 transition">Work</a>
+                    <a href="#about" class="text-sm font-medium hover:text-gray-600 transition">About</a>
+                    <a href="#services" class="text-sm font-medium hover:text-gray-600 transition">Services</a>
+                    <a href="#contact" class="text-sm font-medium hover:text-gray-600 transition">Contact</a>
+                </div>
+                
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center relative pt-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-slideFromLeft">
+                    <h1 class="text-6xl lg:text-8xl font-bold serif mb-6">
+                        Creative
+                        <span class="block text-outline">Designer</span>
+                        <span class="block gradient-text">& Developer</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 max-w-lg">
+                        I craft beautiful digital experiences that blend aesthetics with functionality. Based in New York, available worldwide.
+                    </p>
+                    <div class="flex items-center space-x-6">
+                        <a href="#work" class="px-8 py-3 bg-black text-white hover:bg-gray-800 transition">
+                            View Portfolio
+                        </a>
+                        <a href="#contact" class="text-gray-600 hover:text-black transition font-medium">
+                            Get in Touch →
+                        </a>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-8 mt-16">
+                        <div>
+                            <div class="text-3xl font-bold">120+</div>
+                            <div class="text-sm text-gray-600">Projects Done</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold">50+</div>
+                            <div class="text-sm text-gray-600">Happy Clients</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold">8+</div>
+                            <div class="text-sm text-gray-600">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative animate-slideFromRight">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600" 
+                             alt="Profile" 
+                             class="rounded-2xl shadow-2xl hover-img">
+                        <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
+                            <p class="text-sm text-gray-600 mb-2">Currently working on</p>
+                            <p class="font-bold">Mobile App for TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Selected Work -->
+    <section id="work" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-5xl font-bold serif mb-4">Selected Work</h2>
+                <p class="text-xl text-gray-600">A collection of my recent projects</p>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div class="masonry">
+                <!-- Project 1 -->
+                <div class="masonry-item group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600" 
+                             alt="Project" 
+                             class="w-full hover-img">
+                        <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-2xl font-bold mb-2">Brand Identity</h3>
+                                <p class="text-sm">Visual Design / 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="masonry-item group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=800&fit=crop" 
+                             alt="Project" 
+                             class="w-full hover-img">
+                        <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-2xl font-bold mb-2">Social Media Campaign</h3>
+                                <p class="text-sm">Digital Marketing / 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="masonry-item group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=400&fit=crop" 
+                             alt="Project" 
+                             class="w-full hover-img">
+                        <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-2xl font-bold mb-2">3D Artwork</h3>
+                                <p class="text-sm">3D Design / 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="masonry-item group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600" 
+                             alt="Project" 
+                             class="w-full hover-img">
+                        <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-2xl font-bold mb-2">Tech Startup Website</h3>
+                                <p class="text-sm">Web Development / 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="masonry-item group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=900&fit=crop" 
+                             alt="Project" 
+                             class="w-full hover-img">
+                        <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-2xl font-bold mb-2">Mobile App Design</h3>
+                                <p class="text-sm">UI/UX Design / 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="masonry-item group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg">
+                        <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600" 
+                             alt="Project" 
+                             class="w-full hover-img">
+                        <div class="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div class="text-white">
+                                <h3 class="text-2xl font-bold mb-2">Editorial Design</h3>
+                                <p class="text-sm">Print Design / 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block px-8 py-3 border-2 border-black text-black hover:bg-black hover:text-white transition">
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-5xl font-bold serif mb-6">About Me</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        I'm a multidisciplinary designer and developer with a passion for creating beautiful, functional digital experiences. With over 8 years of experience, I've worked with startups and established brands to bring their visions to life.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        My approach combines strategic thinking with creative execution, ensuring every project not only looks great but also achieves its business objectives.
+                    </p>
+                    
+                    <!-- Skills -->
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">UI/UX Design</span>
+                                <span class="text-gray-600">95%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-black rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Web Development</span>
+                                <span class="text-gray-600">90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-black rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Brand Design</span>
+                                <span class="text-gray-600">85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-full bg-black rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400" 
+                         alt="Working" 
+                         class="rounded-lg">
+                    <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=400" 
+                         alt="Design" 
+                         class="rounded-lg mt-8">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold serif mb-4">What I Do</h2>
+                <p class="text-xl text-gray-600">Services I offer to my clients</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-lg hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">🎨</div>
+                    <h3 class="text-2xl font-bold mb-3">UI/UX Design</h3>
+                    <p class="text-gray-600">Creating intuitive and beautiful user interfaces that delight users and achieve business goals.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-lg hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">💻</div>
+                    <h3 class="text-2xl font-bold mb-3">Web Development</h3>
+                    <p class="text-gray-600">Building responsive, performant websites using modern technologies and best practices.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-lg hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">🚀</div>
+                    <h3 class="text-2xl font-bold mb-3">Brand Strategy</h3>
+                    <p class="text-gray-600">Developing comprehensive brand identities that resonate with your target audience.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-lg hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h3 class="text-2xl font-bold mb-3">Mobile Design</h3>
+                    <p class="text-gray-600">Designing mobile experiences that are both beautiful and functional across all devices.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-lg hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-2xl font-bold mb-3">Digital Marketing</h3>
+                    <p class="text-gray-600">Creating and executing digital marketing strategies that drive growth and engagement.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-lg hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">📸</div>
+                    <h3 class="text-2xl font-bold mb-3">Photography</h3>
+                    <p class="text-gray-600">Professional photography services for products, events, and brand campaigns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold serif mb-4">Kind Words</h2>
+                <p class="text-xl text-gray-600">What clients say about working with me</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <p class="text-lg mb-6 italic">
+                        "Working with ALORNIX was an absolute pleasure. They understood our vision perfectly and delivered beyond expectations."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/60?img=3" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold">David Chen</p>
+                            <p class="text-sm text-gray-600">CEO, StartupHub</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <p class="text-lg mb-6 italic">
+                        "Exceptional creativity and technical skills. They transformed our brand and helped us stand out in the market."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/60?img=8" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold">Maria Garcia</p>
+                            <p class="text-sm text-gray-600">Creative Director, DesignCo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-black text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-5xl lg:text-7xl font-bold serif mb-6">Let's Work Together</h2>
+                <p class="text-xl text-gray-400 mb-12">
+                    Have a project in mind? I'd love to hear about it. Let's create something amazing together.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+                    <a href="mailto:hello@alornix.com" class="text-2xl hover:text-gray-400 transition">
+                        hello@alornix.com
+                    </a>
+                    <span class="hidden sm:block text-gray-600">•</span>
+                    <a href="tel:+15551234567" class="text-2xl hover:text-gray-400 transition">
+                        +1 555 123 4567
+                    </a>
+                </div>
+                
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Dribbble</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Behance</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">LinkedIn</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Instagram</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400">&copy; 2024 ALORNIX. All rights reserved.</p>
+                <p class="text-gray-400 mt-4 md:mt-0">Designed & Developed with ❤️</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Custom cursor
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+        
+        document.addEventListener('mousemove', (e) => {
+            cursorDot.style.left = e.clientX - 4 + 'px';
+            cursorDot.style.top = e.clientY - 4 + 'px';
+            
+            cursorOutline.style.left = e.clientX - 15 + 'px';
+            cursorOutline.style.top = e.clientY - 15 + 'px';
+        });
+        
+        // Cursor hover effects
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursorDot.style.transform = 'scale(2)';
+                cursorOutline.style.transform = 'scale(1.5)';
+            });
+            
+            el.addEventListener('mouseleave', () => {
+                cursorDot.style.transform = 'scale(1)';
+                cursorOutline.style.transform = 'scale(1)';
+            });
+        });
+        
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        
+        // Reveal animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-reveal');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

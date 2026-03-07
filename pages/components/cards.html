@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Components - ALORNIX Template System</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+        }
+        
+        .flip-card {
+            perspective: 1000px;
+        }
+        
+        .flip-card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .flip-card-front, .flip-card-back {
+            backface-visibility: hidden;
+        }
+        
+        .flip-card-back {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="text-2xl font-bold text-purple-600">Card Components</h1>
+                    <p class="text-gray-600">Versatile card designs for various content types</p>
+                </div>
+                <a href="../all-components.html" class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
+                    ← Back to Components
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Basic Cards -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6">Basic Cards</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Simple Card -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-2">Simple Card</h3>
+                    <p class="text-gray-600">This is a simple card with basic styling. Perfect for displaying content in a clean, organized way.</p>
+                </div>
+                
+                <!-- Card with Border -->
+                <div class="bg-white rounded-lg border-2 border-gray-200 p-6">
+                    <h3 class="text-xl font-bold mb-2">Bordered Card</h3>
+                    <p class="text-gray-600">A card with a subtle border instead of shadow. Great for lighter designs.</p>
+                </div>
+                
+                <!-- Colored Card -->
+                <div class="bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg shadow-md p-6 text-white">
+                    <h3 class="text-xl font-bold mb-2">Gradient Card</h3>
+                    <p>A vibrant card with gradient background. Perfect for highlighting important content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Image Cards -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6">Image Cards</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Card with Top Image -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400" alt="Card Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Top Image Card</h3>
+                        <p class="text-gray-600 mb-4">Card with image at the top. Perfect for blog posts or product showcases.</p>
+                        <button class="text-purple-600 font-semibold hover:text-purple-700">Learn More →</button>
+                    </div>
+                </div>
+                
+                <!-- Horizontal Card -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden md:col-span-2">
+                    <div class="flex flex-col md:flex-row">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400" alt="Card Image" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
+                        <div class="p-6 flex-1">
+                            <h3 class="text-xl font-bold mb-2">Horizontal Card</h3>
+                            <p class="text-gray-600 mb-4">A card with side-by-side image and content layout. Great for feature highlights or testimonials.</p>
+                            <div class="flex gap-4">
+                                <button class="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition">Action</button>
+                                <button class="px-4 py-2 border border-purple-600 text-purple-600 rounded hover:bg-purple-50 transition">Secondary</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card with Overlay -->
+                <div class="relative bg-white rounded-lg shadow-lg overflow-hidden group cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400" alt="Card Image" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                        <div class="text-white">
+                            <h3 class="text-xl font-bold mb-2">Overlay Card</h3>
+                            <p>Content overlaid on image with gradient.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card with Badge -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden relative">
+                    <span class="absolute top-4 right-4 px-3 py-1 bg-red-500 text-white text-sm font-semibold rounded-full">New</span>
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400" alt="Card Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Card with Badge</h3>
+                        <p class="text-gray-600">Features a badge for highlighting status or categories.</p>
+                    </div>
+                </div>
+                
+                <!-- Card with Background Image -->
+                <div class="relative rounded-lg shadow-lg overflow-hidden h-64" style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400'); background-size: cover; background-position: center;">
+                    <div class="absolute inset-0 bg-black/50 p-6 flex flex-col justify-end">
+                        <h3 class="text-2xl font-bold text-white mb-2">Background Image</h3>
+                        <p class="text-gray-200">Full background image with overlay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Interactive Cards -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6">Interactive Cards</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Hover Effect Card -->
+                <div class="bg-white rounded-lg shadow-md p-6 card-hover hover:shadow-xl">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Hover Lift Card</h3>
+                    <p class="text-gray-600">This card lifts up when you hover over it, creating a nice interactive effect.</p>
+                </div>
+                
+                <!-- Flip Card -->
+                <div class="flip-card h-64">
+                    <div class="flip-card-inner relative w-full h-full">
+                        <div class="flip-card-front absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg shadow-lg p-6 text-white flex flex-col justify-center items-center">
+                            <svg class="w-12 h-12 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                            </svg>
+                            <h3 class="text-xl font-bold">Flip Card</h3>
+                            <p class="text-center mt-2">Hover to flip</p>
+                        </div>
+                        <div class="flip-card-back absolute inset-0 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-lg shadow-lg p-6 text-white flex flex-col justify-center">
+                            <h3 class="text-xl font-bold mb-2">Back Side</h3>
+                            <p>This is the back of the card with additional information or content.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Expandable Card -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Expandable Card</h3>
+                        <p class="text-gray-600 mb-4">Click to expand and see more content.</p>
+                        <details class="cursor-pointer">
+                            <summary class="text-purple-600 font-semibold">Show More</summary>
+                            <p class="mt-4 text-gray-600">Additional content that appears when expanded. You can add any content here including images, links, or other elements.</p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Special Purpose Cards -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6">Special Purpose Cards</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Pricing Card -->
+                <div class="bg-white rounded-lg shadow-xl p-6 relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-4 py-1 rounded-full text-sm font-semibold">Popular</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">Pro Plan</h3>
+                        <div class="text-4xl font-bold text-purple-600">$29<span class="text-lg text-gray-500">/mo</span></div>
+                    </div>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Unlimited projects
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Priority support
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            Advanced features
+                        </li>
+                    </ul>
+                    <button class="w-full px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
+                        Get Started
+                    </button>
+                </div>
+                
+                <!-- Profile Card -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="bg-gradient-to-r from-purple-500 to-indigo-500 h-32"></div>
+                    <div class="relative px-6 pb-6">
+                        <div class="absolute -top-12">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150" alt="Profile" class="w-24 h-24 rounded-full border-4 border-white">
+                        </div>
+                        <div class="pt-16">
+                            <h3 class="text-xl font-bold mb-1">John Doe</h3>
+                            <p class="text-gray-600 mb-4">Senior Developer</p>
+                            <div class="flex gap-2">
+                                <button class="px-4 py-2 bg-purple-600 text-white rounded text-sm hover:bg-purple-700 transition">Follow</button>
+                                <button class="px-4 py-2 border border-gray-300 rounded text-sm hover:bg-gray-50 transition">Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Stats Card -->
+                <div class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg shadow-lg p-6 text-white">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <p class="text-blue-100 mb-1">Total Revenue</p>
+                            <h3 class="text-3xl font-bold">$48,574</h3>
+                        </div>
+                        <div class="bg-blue-400/30 p-2 rounded-lg">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                        <span>+12.5% from last month</span>
+                    </div>
+                </div>
+                
+                <!-- Testimonial Card -->
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex mb-4">
+                        <svg class="w-8 h-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-8 h-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-8 h-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-8 h-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-8 h-8 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"Amazing service! The team went above and beyond to deliver exactly what we needed."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50" alt="Customer" class="w-10 h-10 rounded-full mr-3">
+                        <div>
+                            <p class="font-semibold">Sarah Johnson</p>
+                            <p class="text-sm text-gray-500">CEO, TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature Card -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Smart Features</h3>
+                    <p class="text-gray-600 mb-4">Intelligent automation that learns and adapts to your workflow.</p>
+                    <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 inline-flex items-center">
+                        Learn more
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                
+                <!-- Product Card -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden group">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400" alt="Product" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-4 left-4 px-2 py-1 bg-red-500 text-white text-xs font-semibold rounded">-25%</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold mb-2">Premium Headphones</h3>
+                        <div class="flex items-center mb-2">
+                            <span class="text-2xl font-bold text-purple-600">$149</span>
+                            <span class="text-gray-400 line-through ml-2">$199</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-400">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg class="w-4 h-4 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-sm text-gray-500 ml-2">(48)</span>
+                        </div>
+                        <button class="w-full px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Code Example -->
+    <section class="py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6">Usage Example</h2>
+            <div class="bg-gray-900 text-gray-100 rounded-xl p-6 overflow-x-auto">
+                <pre><code>&lt;!-- Basic Card --&gt;
+&lt;div class="bg-white rounded-lg shadow-md p-6"&gt;
+    &lt;h3 class="text-xl font-bold mb-2"&gt;Card Title&lt;/h3&gt;
+    &lt;p class="text-gray-600"&gt;Card content goes here.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;!-- Image Card --&gt;
+&lt;div class="bg-white rounded-lg shadow-lg overflow-hidden"&gt;
+    &lt;img src="image.jpg" alt="Card Image" class="w-full h-48 object-cover"&gt;
+    &lt;div class="p-6"&gt;
+        &lt;h3 class="text-xl font-bold mb-2"&gt;Card with Image&lt;/h3&gt;
+        &lt;p class="text-gray-600"&gt;Description text.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Interactive Card --&gt;
+&lt;div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition"&gt;
+    &lt;h3 class="text-xl font-bold mb-2"&gt;Hover Effect Card&lt;/h3&gt;
+    &lt;p class="text-gray-600"&gt;Hover for shadow effect.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 ALORNIX Template System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

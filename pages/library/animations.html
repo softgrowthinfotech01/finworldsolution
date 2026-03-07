@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALORNIX - Animations Library</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Fade Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* Slide Animations */
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        
+        /* Zoom Animations */
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes zoomOut {
+            from {
+                opacity: 1;
+                transform: scale(1);
+            }
+            to {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        
+        /* Rotate Animations */
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes rotateIn {
+            from {
+                transform: rotate(-200deg);
+                opacity: 0;
+            }
+            to {
+                transform: rotate(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes swing {
+            20% {
+                transform: rotate(15deg);
+            }
+            40% {
+                transform: rotate(-10deg);
+            }
+            60% {
+                transform: rotate(5deg);
+            }
+            80% {
+                transform: rotate(-5deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+        
+        /* Bounce Animations */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+        
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.05);
+            }
+            70% {
+                transform: scale(0.9);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes rubberBand {
+            0% {
+                transform: scale(1);
+            }
+            30% {
+                transform: scaleX(1.25) scaleY(0.75);
+            }
+            40% {
+                transform: scaleX(0.75) scaleY(1.25);
+            }
+            60% {
+                transform: scaleX(1.15) scaleY(0.85);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        /* Shake Animations */
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            10%, 30%, 50%, 70%, 90% {
+                transform: translateX(-10px);
+            }
+            20%, 40%, 60%, 80% {
+                transform: translateX(10px);
+            }
+        }
+        
+        @keyframes jello {
+            0%, 100% {
+                transform: skewX(0deg) skewY(0deg);
+            }
+            30% {
+                transform: skewX(25deg) skewY(25deg);
+            }
+            40% {
+                transform: skewX(-15deg) skewY(-15deg);
+            }
+            50% {
+                transform: skewX(10deg) skewY(10deg);
+            }
+            65% {
+                transform: skewX(-5deg) skewY(-5deg);
+            }
+            75% {
+                transform: skewX(2deg) skewY(2deg);
+            }
+        }
+        
+        /* Float Animations */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        
+        @keyframes floatRotate {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+            }
+        }
+        
+        /* Flip Animations */
+        @keyframes flipX {
+            from {
+                transform: perspective(400px) rotateX(90deg);
+                opacity: 0;
+            }
+            40% {
+                transform: perspective(400px) rotateX(-10deg);
+            }
+            70% {
+                transform: perspective(400px) rotateX(10deg);
+            }
+            100% {
+                transform: perspective(400px) rotateX(0deg);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes flipY {
+            from {
+                transform: perspective(400px) rotateY(90deg);
+                opacity: 0;
+            }
+            40% {
+                transform: perspective(400px) rotateY(-10deg);
+            }
+            70% {
+                transform: perspective(400px) rotateY(10deg);
+            }
+            100% {
+                transform: perspective(400px) rotateY(0deg);
+                opacity: 1;
+            }
+        }
+        
+        /* Glow Animation */
+        @keyframes glow {
+            0%, 100% {
+                box-shadow: 0 0 5px rgba(147, 51, 234, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 20px rgba(147, 51, 234, 0.8), 0 0 40px rgba(147, 51, 234, 0.4);
+            }
+        }
+        
+        /* Gradient Animation */
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        /* Text Animations */
+        @keyframes typewriter {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        
+        @keyframes blink {
+            0%, 50%, 100% {
+                opacity: 1;
+            }
+            25%, 75% {
+                opacity: 0;
+            }
+        }
+        
+        /* Background Animations */
+        @keyframes bgPan {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+        
+        /* Animation Classes */
+        .animate-fadeIn { animation: fadeIn 1s ease-out; }
+        .animate-fadeInUp { animation: fadeInUp 1s ease-out; }
+        .animate-fadeInDown { animation: fadeInDown 1s ease-out; }
+        .animate-fadeInLeft { animation: fadeInLeft 1s ease-out; }
+        .animate-fadeInRight { animation: fadeInRight 1s ease-out; }
+        
+        .animate-slideInLeft { animation: slideInLeft 0.5s ease-out; }
+        .animate-slideInRight { animation: slideInRight 0.5s ease-out; }
+        .animate-slideInUp { animation: slideInUp 0.5s ease-out; }
+        .animate-slideInDown { animation: slideInDown 0.5s ease-out; }
+        
+        .animate-zoomIn { animation: zoomIn 0.5s ease-out; }
+        .animate-zoomOut { animation: zoomOut 0.5s ease-out; }
+        .animate-pulse { animation: pulse 2s ease-in-out infinite; }
+        
+        .animate-rotate { animation: rotate 2s linear infinite; }
+        .animate-rotateIn { animation: rotateIn 0.6s ease-out; }
+        .animate-swing { animation: swing 1s ease-out; }
+        
+        .animate-bounce { animation: bounce 1s ease-in-out infinite; }
+        .animate-bounceIn { animation: bounceIn 0.75s ease-out; }
+        .animate-rubberBand { animation: rubberBand 1s ease-out; }
+        
+        .animate-shake { animation: shake 0.5s ease-in-out; }
+        .animate-jello { animation: jello 1s ease-in-out; }
+        
+        .animate-float { animation: float 3s ease-in-out infinite; }
+        .animate-floatRotate { animation: floatRotate 4s ease-in-out infinite; }
+        
+        .animate-flipX { animation: flipX 1s ease-out; }
+        .animate-flipY { animation: flipY 1s ease-out; }
+        
+        .animate-glow { animation: glow 2s ease-in-out infinite; }
+        
+        .animate-gradient {
+            background: linear-gradient(270deg, #667eea, #764ba2, #f093fb);
+            background-size: 400% 400%;
+            animation: gradientShift 5s ease infinite;
+        }
+        
+        .animate-typewriter {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typewriter 3s steps(40) 1s 1 normal both;
+        }
+        
+        .animate-blink {
+            animation: blink 1s step-end infinite;
+        }
+        
+        .animate-bgPan {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            background-size: 200% 200%;
+            animation: bgPan 10s ease infinite;
+        }
+        
+        /* Hover Animations */
+        .hover-grow:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-shrink:hover {
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-rotate:hover {
+            transform: rotate(360deg);
+            transition: transform 0.5s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .hover-shadow:hover {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            transition: box-shadow 0.3s ease;
+        }
+        
+        /* Loading Animations */
+        .spinner {
+            border: 4px solid rgba(147, 51, 234, 0.1);
+            border-left-color: #9333ea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: rotate 1s linear infinite;
+        }
+        
+        .dots-loading span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #9333ea;
+            margin: 0 3px;
+            animation: bounce 1.4s ease-in-out infinite both;
+        }
+        
+        .dots-loading span:nth-child(1) { animation-delay: -0.32s; }
+        .dots-loading span:nth-child(2) { animation-delay: -0.16s; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white shadow-sm z-40">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                    ALORNIX Animations
+                </h1>
+                <a href="/index.html" class="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mx-auto px-4 py-8">
+        
+        <!-- Fade Animations -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Fade Animations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div class="bg-white rounded-lg p-6 text-center animate-fadeIn">
+                    <div class="w-20 h-20 bg-purple-500 rounded mx-auto mb-3"></div>
+                    <p class="font-semibold">Fade In</p>
+                    <code class="text-xs text-gray-500">.animate-fadeIn</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center animate-fadeInUp">
+                    <div class="w-20 h-20 bg-blue-500 rounded mx-auto mb-3"></div>
+                    <p class="font-semibold">Fade In Up</p>
+                    <code class="text-xs text-gray-500">.animate-fadeInUp</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center animate-fadeInDown">
+                    <div class="w-20 h-20 bg-green-500 rounded mx-auto mb-3"></div>
+                    <p class="font-semibold">Fade In Down</p>
+                    <code class="text-xs text-gray-500">.animate-fadeInDown</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center animate-fadeInLeft">
+                    <div class="w-20 h-20 bg-red-500 rounded mx-auto mb-3"></div>
+                    <p class="font-semibold">Fade In Left</p>
+                    <code class="text-xs text-gray-500">.animate-fadeInLeft</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center animate-fadeInRight">
+                    <div class="w-20 h-20 bg-yellow-500 rounded mx-auto mb-3"></div>
+                    <p class="font-semibold">Fade In Right</p>
+                    <code class="text-xs text-gray-500">.animate-fadeInRight</code>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Slide Animations -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Slide Animations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg p-6 text-center animate-slideInLeft">
+                    <div class="w-20 h-20 bg-indigo-500 rounded mx-auto mb-3"></div>
+                    <p class="font-semibold">Slide In Left</p>
+                    <code class="text-xs text-gray-500">.animate-slideInLeft</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center animate-slideInRight">
+                    <div class="w-20 h-20 bg-pink-500 rounded mx-auto mb-3"></div>
+                    <p class="font-semibold">Slide In Right</p>
+                    <code class="text-xs text-gray-500">.animate-slideInRight</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center animate-slideInUp">
+                    <div class="w-20 h-20 bg-teal-500 rounded mx-auto mb-3"></div>
+                    <p class="font-semibold">Slide In Up</p>
+                    <code class="text-xs text-gray-500">.animate-slideInUp</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center animate-slideInDown">
+                    <div class="w-20 h-20 bg-orange-500 rounded mx-auto mb-3"></div>
+                    <p class="font-semibold">Slide In Down</p>
+                    <code class="text-xs text-gray-500">.animate-slideInDown</code>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Zoom & Scale Animations -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Zoom & Scale Animations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 bg-purple-500 rounded mx-auto mb-3 animate-zoomIn"></div>
+                    <p class="font-semibold">Zoom In</p>
+                    <code class="text-xs text-gray-500">.animate-zoomIn</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 bg-blue-500 rounded mx-auto mb-3 animate-pulse"></div>
+                    <p class="font-semibold">Pulse</p>
+                    <code class="text-xs text-gray-500">.animate-pulse</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 bg-green-500 rounded mx-auto mb-3 animate-rubberBand"></div>
+                    <p class="font-semibold">Rubber Band</p>
+                    <code class="text-xs text-gray-500">.animate-rubberBand</code>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Rotate Animations -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Rotate Animations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 bg-red-500 rounded mx-auto mb-3 animate-rotate"></div>
+                    <p class="font-semibold">Rotate</p>
+                    <code class="text-xs text-gray-500">.animate-rotate</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 bg-yellow-500 rounded mx-auto mb-3 animate-rotateIn"></div>
+                    <p class="font-semibold">Rotate In</p>
+                    <code class="text-xs text-gray-500">.animate-rotateIn</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 bg-indigo-500 rounded mx-auto mb-3 animate-swing"></div>
+                    <p class="font-semibold">Swing</p>
+                    <code class="text-xs text-gray-500">.animate-swing</code>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Bounce Animations -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Bounce Animations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 bg-pink-500 rounded mx-auto mb-3 animate-bounce"></div>
+                    <p class="font-semibold">Bounce</p>
+                    <code class="text-xs text-gray-500">.animate-bounce</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 bg-teal-500 rounded mx-auto mb-3 animate-bounceIn"></div>
+                    <p class="font-semibold">Bounce In</p>
+                    <code class="text-xs text-gray-500">.animate-bounceIn</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 bg-orange-500 rounded mx-auto mb-3 animate-float"></div>
+                    <p class="font-semibold">Float</p>
+                    <code class="text-xs text-gray-500">.animate-float</code>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Shake & Wobble Animations -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Shake & Wobble Animations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 bg-purple-500 rounded mx-auto mb-3 animate-shake"></div>
+                    <p class="font-semibold">Shake</p>
+                    <code class="text-xs text-gray-500">.animate-shake</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 bg-blue-500 rounded mx-auto mb-3 animate-jello"></div>
+                    <p class="font-semibold">Jello</p>
+                    <code class="text-xs text-gray-500">.animate-jello</code>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Flip Animations -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Flip Animations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 bg-green-500 rounded mx-auto mb-3 animate-flipX"></div>
+                    <p class="font-semibold">Flip X</p>
+                    <code class="text-xs text-gray-500">.animate-flipX</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 bg-red-500 rounded mx-auto mb-3 animate-flipY"></div>
+                    <p class="font-semibold">Flip Y</p>
+                    <code class="text-xs text-gray-500">.animate-flipY</code>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Special Effects -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Special Effects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 bg-purple-500 rounded mx-auto mb-3 animate-glow"></div>
+                    <p class="font-semibold">Glow Effect</p>
+                    <code class="text-xs text-gray-500">.animate-glow</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 animate-gradient rounded mx-auto mb-3"></div>
+                    <p class="font-semibold">Gradient Shift</p>
+                    <code class="text-xs text-gray-500">.animate-gradient</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center">
+                    <div class="w-20 h-20 bg-indigo-500 rounded mx-auto mb-3 animate-floatRotate"></div>
+                    <p class="font-semibold">Float & Rotate</p>
+                    <code class="text-xs text-gray-500">.animate-floatRotate</code>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Text Animations -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Text Animations</h2>
+            <div class="bg-white rounded-lg p-8 space-y-6">
+                <div>
+                    <p class="text-2xl font-bold animate-typewriter">This text appears like a typewriter!</p>
+                    <code class="text-sm text-gray-500">.animate-typewriter</code>
+                </div>
+                <div>
+                    <p class="text-2xl font-bold">
+                        Cursor blink<span class="animate-blink">|</span>
+                    </p>
+                    <code class="text-sm text-gray-500">.animate-blink</code>
+                </div>
+                <div>
+                    <p class="text-2xl font-bold animate-gradient bg-clip-text text-transparent">
+                        Animated Gradient Text
+                    </p>
+                    <code class="text-sm text-gray-500">.animate-gradient</code>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Hover Animations -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Hover Effects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div class="bg-white rounded-lg p-6 text-center hover-grow cursor-pointer">
+                    <div class="w-20 h-20 bg-purple-500 rounded mx-auto mb-3"></div>
+                    <p class="font-semibold">Hover Grow</p>
+                    <code class="text-xs text-gray-500">.hover-grow</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center hover-shrink cursor-pointer">
+                    <div class="w-20 h-20 bg-blue-500 rounded mx-auto mb-3"></div>
+                    <p class="font-semibold">Hover Shrink</p>
+                    <code class="text-xs text-gray-500">.hover-shrink</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center hover-rotate cursor-pointer">
+                    <div class="w-20 h-20 bg-green-500 rounded mx-auto mb-3"></div>
+                    <p class="font-semibold">Hover Rotate</p>
+                    <code class="text-xs text-gray-500">.hover-rotate</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center hover-lift cursor-pointer">
+                    <div class="w-20 h-20 bg-red-500 rounded mx-auto mb-3"></div>
+                    <p class="font-semibold">Hover Lift</p>
+                    <code class="text-xs text-gray-500">.hover-lift</code>
+                </div>
+                <div class="bg-white rounded-lg p-6 text-center hover-shadow cursor-pointer">
+                    <div class="w-20 h-20 bg-yellow-500 rounded mx-auto mb-3"></div>
+                    <p class="font-semibold">Hover Shadow</p>
+                    <code class="text-xs text-gray-500">.hover-shadow</code>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Loading Animations -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Loading Animations</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-8 text-center">
+                    <div class="spinner mx-auto mb-4"></div>
+                    <p class="font-semibold">Spinner</p>
+                    <code class="text-xs text-gray-500">.spinner</code>
+                </div>
+                <div class="bg-white rounded-lg p-8 text-center">
+                    <div class="dots-loading mx-auto mb-4">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <p class="font-semibold">Dots Loading</p>
+                    <code class="text-xs text-gray-500">.dots-loading</code>
+                </div>
+                <div class="bg-white rounded-lg p-8 text-center">
+                    <div class="mx-auto mb-4">
+                        <svg class="animate-rotate w-10 h-10 mx-auto" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none" class="text-gray-200"></circle>
+                            <path d="M12 2 A10 10 0 0 1 22 12" stroke="currentColor" stroke-width="4" fill="none" class="text-purple-600"></path>
+                        </svg>
+                    </div>
+                    <p class="font-semibold">Circle Loading</p>
+                    <code class="text-xs text-gray-500">.animate-rotate</code>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Animation Timing Examples -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">Animation Timing & Delays</h2>
+            <div class="bg-white rounded-lg p-8">
+                <p class="mb-6 text-gray-600">Staggered animations with different delays:</p>
+                <div class="flex space-x-4">
+                    <div class="w-16 h-16 bg-purple-500 rounded animate-bounceIn" style="animation-delay: 0s;"></div>
+                    <div class="w-16 h-16 bg-blue-500 rounded animate-bounceIn" style="animation-delay: 0.1s;"></div>
+                    <div class="w-16 h-16 bg-green-500 rounded animate-bounceIn" style="animation-delay: 0.2s;"></div>
+                    <div class="w-16 h-16 bg-red-500 rounded animate-bounceIn" style="animation-delay: 0.3s;"></div>
+                    <div class="w-16 h-16 bg-yellow-500 rounded animate-bounceIn" style="animation-delay: 0.4s;"></div>
+                </div>
+                <p class="mt-6 text-sm text-gray-500">
+                    Add <code>style="animation-delay: 0.2s;"</code> to create staggered effects
+                </p>
+            </div>
+        </section>
+        
+        <!-- Usage Instructions -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8">How to Use</h2>
+            <div class="bg-white rounded-lg p-8">
+                <div class="prose max-w-none">
+                    <h3 class="text-xl font-semibold mb-4">1. Copy the CSS</h3>
+                    <p class="text-gray-600 mb-4">
+                        Copy the animation keyframes and classes from the style tag in this page's source code.
+                    </p>
+                    
+                    <h3 class="text-xl font-semibold mb-4">2. Add to Your Element</h3>
+                    <p class="text-gray-600 mb-4">
+                        Add the animation class to any element:
+                    </p>
+                    <pre class="bg-gray-100 p-4 rounded overflow-x-auto">
+<code>&lt;div class="animate-fadeInUp"&gt;
+    Your content here
+&lt;/div&gt;</code>
+                    </pre>
+                    
+                    <h3 class="text-xl font-semibold mb-4 mt-6">3. Customize Duration & Delay</h3>
+                    <p class="text-gray-600 mb-4">
+                        Modify animation timing with inline styles:
+                    </p>
+                    <pre class="bg-gray-100 p-4 rounded overflow-x-auto">
+<code>&lt;div class="animate-fadeInUp" style="animation-duration: 2s; animation-delay: 0.5s;"&gt;
+    Custom timing
+&lt;/div&gt;</code>
+                    </pre>
+                    
+                    <h3 class="text-xl font-semibold mb-4 mt-6">4. Trigger on Scroll (Optional)</h3>
+                    <p class="text-gray-600 mb-4">
+                        Use Intersection Observer to trigger animations when elements come into view:
+                    </p>
+                    <pre class="bg-gray-100 p-4 rounded overflow-x-auto">
+<code>const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fadeInUp');
+        }
+    });
+});
+
+document.querySelectorAll('.animate-on-scroll').forEach(el => {
+    observer.observe(el);
+});</code>
+                    </pre>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+    
+    <script>
+        // Restart animations on click for demonstration
+        document.querySelectorAll('[class*="animate-"]').forEach(element => {
+            element.addEventListener('click', function() {
+                const classes = Array.from(this.classList).filter(c => c.startsWith('animate-'));
+                classes.forEach(cls => {
+                    this.classList.remove(cls);
+                    void this.offsetWidth; // Trigger reflow
+                    this.classList.add(cls);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
