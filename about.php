@@ -55,26 +55,7 @@
 <body class="bg-white">
     
     <!-- Navigation -->
-    <nav class="sticky top-0 bg-white/95 backdrop-blur-md shadow-sm z-50">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center h-20">
-                <a href="index.html" class="text-2xl font-bold gradient-text">ALORNIX</a>
-                
-                <div class="hidden lg:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-600 hover:text-purple-600 transition">Home</a>
-                    <a href="about.html" class="text-purple-600 font-medium">About</a>
-                    <a href="services.html" class="text-gray-600 hover:text-purple-600 transition">Services</a>
-                    <a href="portfolio.html" class="text-gray-600 hover:text-purple-600 transition">Portfolio</a>
-                    <a href="blog.html" class="text-gray-600 hover:text-purple-600 transition">Blog</a>
-                    <a href="contact.html" class="text-gray-600 hover:text-purple-600 transition">Contact</a>
-                </div>
-                
-                <button class="px-6 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg hover:shadow-lg transition">
-                    Get Started
-                </button>
-            </div>
-        </div>
-    </nav>
+  <?php  include_once "header.php"; ?>
     
     <!-- Hero Section -->
     <section class="py-20 bg-gradient-to-br from-purple-50 to-indigo-50">
@@ -420,52 +401,7 @@
     </section>
     
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 gradient-text">ALORNIX</h3>
-                    <p class="text-gray-400">
-                        Transforming ideas into digital reality.
-                    </p>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
-                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
-                        <li><a href="portfolio.html" class="hover:text-white transition">Portfolio</a></li>
-                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Services</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition">Web Development</a></li>
-                        <li><a href="#" class="hover:text-white transition">Mobile Apps</a></li>
-                        <li><a href="#" class="hover:text-white transition">UI/UX Design</a></li>
-                        <li><a href="#" class="hover:text-white transition">Digital Marketing</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Contact</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>123 Business Ave, Suite 100</li>
-                        <li>New York, NY 10001</li>
-                        <li>Phone: (555) 123-4567</li>
-                        <li>Email: info@alornix.com</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 ALORNIX. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+  <?php  include_once "footer.php"; ?>
     
     <script>
         // Smooth scroll

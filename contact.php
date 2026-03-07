@@ -511,53 +511,7 @@
     </section>
     
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 gradient-text">ALORNIX</h3>
-                    <p class="text-gray-400">
-                        Transforming ideas into digital reality.
-                    </p>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
-                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
-                        <li><a href="portfolio.html" class="hover:text-white transition">Portfolio</a></li>
-                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Services</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition">Web Development</a></li>
-                        <li><a href="#" class="hover:text-white transition">Mobile Apps</a></li>
-                        <li><a href="#" class="hover:text-white transition">UI/UX Design</a></li>
-                        <li><a href="#" class="hover:text-white transition">Digital Marketing</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="font-semibold mb-4">Newsletter</h4>
-                    <p class="text-gray-400 mb-4">Subscribe for updates and insights</p>
-                    <form class="flex">
-                        <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 bg-gray-800 rounded-l-lg focus:outline-none">
-                        <button class="px-4 py-2 bg-purple-600 rounded-r-lg hover:bg-purple-700 transition">
-                            Subscribe
-                        </button>
-                    </form>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 ALORNIX. All rights reserved. | Privacy Policy | Terms of Service</p>
-            </div>
-        </div>
-    </footer>
+   <?php  include_once "footer.php"; ?>
     
     <script>
         // Form submission
