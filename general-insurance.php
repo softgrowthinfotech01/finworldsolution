@@ -25,6 +25,6 @@ travel, and other assets.
 </ul>
 
 </section>
-
+ <?php  include_once "footer.php"; ?>
 </body>
 </html>

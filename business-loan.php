@@ -34,6 +34,6 @@ equipment, managing working capital, or launching new products.
 </ul>
 
 </section>
-
+ <?php  include_once "footer.php"; ?>
 </body>
 </html>

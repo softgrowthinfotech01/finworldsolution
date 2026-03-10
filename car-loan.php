@@ -24,6 +24,6 @@ Car loans help you purchase a new or used car with flexible EMI options.
 </ul>
 
 </section>
-
+ <?php  include_once "footer.php"; ?>
 </body>
 </html>

@@ -104,6 +104,7 @@ w-56 mt-2 rounded shadow-lg">
 
 <a href="personal-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">PERSONAL LOAN</a>
 <a href="business-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">BUSINESS LOAN</a>
+<a href="loan-against-property.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">LOAN AGAINST PROPERTY</a>
 <a href="home-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">HOME LOAN</a>
 <a href="car-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">CAR LOAN</a>
 <a href="commercial-vehicle-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">COMMERCIAL VEHICAL LOAN</a>

@@ -25,6 +25,6 @@ in case of unexpected events.
 </ul>
 
 </section>
-
+ <?php  include_once "footer.php"; ?>
 </body>
 </html>

@@ -25,6 +25,6 @@ or other commercial vehicles.
 </ul>
 
 </section>
-
+ <?php  include_once "footer.php"; ?>
 </body>
 </html>

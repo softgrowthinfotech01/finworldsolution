@@ -1,435 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About ALORNIX - Learn about our story, mission, team, and values">
-    <title>About Us - ALORNIX</title>
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <style>
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes countUp {
-            from {
-                opacity: 0;
-                transform: scale(0.5);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-        
-        .animate-fadeInUp {
-            animation: fadeInUp 0.8s ease-out;
-        }
-        
-        .animate-countUp {
-            animation: countUp 0.5s ease-out;
-        }
-        
-        .gradient-text {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .timeline-line {
-            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Us - Money Trust</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body class="bg-white">
-    
-    <!-- Navigation -->
-  <?php  include_once "header.php"; ?>
-    
-    <!-- Hero Section -->
-    <section class="py-20 bg-gradient-to-br from-purple-50 to-indigo-50">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto text-center animate-fadeInUp">
-                <h1 class="text-5xl lg:text-6xl font-bold mb-6">
-                    We Are <span class="gradient-text">ALORNIX</span>
-                </h1>
-                <p class="text-xl text-gray-600 mb-8">
-                    A passionate team of innovators dedicated to transforming businesses through cutting-edge digital solutions and creative excellence.
-                </p>
-                <div class="flex justify-center space-x-4">
-                    <button class="px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg hover:shadow-lg transition">
-                        Join Our Team
-                    </button>
-                    <button class="px-8 py-3 border-2 border-purple-600 text-purple-600 rounded-lg hover:bg-purple-50 transition">
-                        Our Story
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Our Story Section -->
-    <section class="py-20">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="animate-fadeInUp">
-                    <h2 class="text-4xl font-bold mb-6">Our Story</h2>
-                    <p class="text-gray-600 mb-4">
-                        Founded in 2016, ALORNIX began as a small team of passionate developers and designers with a shared vision: to create digital experiences that make a difference.
-                    </p>
-                    <p class="text-gray-600 mb-4">
-                        What started as a humble startup in a garage has grown into a leading digital agency, serving clients across the globe. Our journey has been fueled by curiosity, creativity, and an unwavering commitment to excellence.
-                    </p>
-                    <p class="text-gray-600 mb-6">
-                        Today, we're proud to be at the forefront of digital innovation, helping businesses of all sizes navigate the digital landscape and achieve their goals.
-                    </p>
-                    
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="bg-purple-50 p-6 rounded-lg">
-                            <h3 class="text-3xl font-bold text-purple-600 mb-2">500+</h3>
-                            <p class="text-gray-600">Projects Completed</p>
-                        </div>
-                        <div class="bg-indigo-50 p-6 rounded-lg">
-                            <h3 class="text-3xl font-bold text-indigo-600 mb-2">8+</h3>
-                            <p class="text-gray-600">Years of Excellence</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600" 
-                         alt="Team collaboration" 
-                         class="rounded-2xl shadow-xl">
-                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-lg max-w-xs">
-                        <p class="text-2xl font-bold gradient-text mb-2">Our Mission</p>
-                        <p class="text-gray-600">To empower businesses with innovative digital solutions that drive growth and success.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Values Section -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Our Core Values</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    These principles guide everything we do and shape our approach to every project
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Innovation</h3>
-                    <p class="text-gray-600">Pushing boundaries and embracing new technologies to deliver cutting-edge solutions.</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-teal-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Integrity</h3>
-                    <p class="text-gray-600">Building trust through transparency, honesty, and ethical business practices.</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-gradient-to-br from-pink-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Passion</h3>
-                    <p class="text-gray-600">Bringing enthusiasm and dedication to every project we undertake.</p>
-                </div>
-                
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2">Collaboration</h3>
-                    <p class="text-gray-600">Working together as a team and with our clients to achieve exceptional results.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Team Section -->
-    <section class="py-20">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Meet Our Team</h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    The talented individuals behind ALORNIX's success
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Team Member 1 -->
-                <div class="text-center group">
-                    <div class="relative mb-4 overflow-hidden rounded-xl">
-                        <img src="https://i.pravatar.cc/300?img=1" 
-                             alt="Team member" 
-                             class="w-full group-hover:scale-110 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                            <div class="flex space-x-3">
-                                <a href="#" class="w-10 h-10 bg-white/20 backdrop-blur rounded-full flex items-center justify-center text-white hover:bg-white/30 transition">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                                    </svg>
-                                </a>
-                                <a href="#" class="w-10 h-10 bg-white/20 backdrop-blur rounded-full flex items-center justify-center text-white hover:bg-white/30 transition">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold mb-1">John Anderson</h3>
-                    <p class="text-purple-600 mb-2">CEO & Founder</p>
-                    <p class="text-gray-600 text-sm">Visionary leader with 15+ years of experience in digital innovation.</p>
-                </div>
-                
-                <!-- Team Member 2 -->
-                <div class="text-center group">
-                    <div class="relative mb-4 overflow-hidden rounded-xl">
-                        <img src="https://i.pravatar.cc/300?img=5" 
-                             alt="Team member" 
-                             class="w-full group-hover:scale-110 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                            <div class="flex space-x-3">
-                                <a href="#" class="w-10 h-10 bg-white/20 backdrop-blur rounded-full flex items-center justify-center text-white hover:bg-white/30 transition">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                                    </svg>
-                                </a>
-                                <a href="#" class="w-10 h-10 bg-white/20 backdrop-blur rounded-full flex items-center justify-center text-white hover:bg-white/30 transition">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold mb-1">Sarah Mitchell</h3>
-                    <p class="text-purple-600 mb-2">Creative Director</p>
-                    <p class="text-gray-600 text-sm">Award-winning designer passionate about creating memorable experiences.</p>
-                </div>
-                
-                <!-- Team Member 3 -->
-                <div class="text-center group">
-                    <div class="relative mb-4 overflow-hidden rounded-xl">
-                        <img src="https://i.pravatar.cc/300?img=3" 
-                             alt="Team member" 
-                             class="w-full group-hover:scale-110 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                            <div class="flex space-x-3">
-                                <a href="#" class="w-10 h-10 bg-white/20 backdrop-blur rounded-full flex items-center justify-center text-white hover:bg-white/30 transition">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                                    </svg>
-                                </a>
-                                <a href="#" class="w-10 h-10 bg-white/20 backdrop-blur rounded-full flex items-center justify-center text-white hover:bg-white/30 transition">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold mb-1">Michael Chen</h3>
-                    <p class="text-purple-600 mb-2">Lead Developer</p>
-                    <p class="text-gray-600 text-sm">Full-stack developer specializing in scalable web applications.</p>
-                </div>
-                
-                <!-- Team Member 4 -->
-                <div class="text-center group">
-                    <div class="relative mb-4 overflow-hidden rounded-xl">
-                        <img src="https://i.pravatar.cc/300?img=8" 
-                             alt="Team member" 
-                             class="w-full group-hover:scale-110 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                            <div class="flex space-x-3">
-                                <a href="#" class="w-10 h-10 bg-white/20 backdrop-blur rounded-full flex items-center justify-center text-white hover:bg-white/30 transition">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                                    </svg>
-                                </a>
-                                <a href="#" class="w-10 h-10 bg-white/20 backdrop-blur rounded-full flex items-center justify-center text-white hover:bg-white/30 transition">
-                                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-bold mb-1">Emily Rodriguez</h3>
-                    <p class="text-purple-600 mb-2">Marketing Manager</p>
-                    <p class="text-gray-600 text-sm">Strategic marketer driving growth through data-driven campaigns.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Timeline Section -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Our Journey</h2>
-                <p class="text-xl text-gray-600">Key milestones in our evolution</p>
-            </div>
-            
-            <div class="max-w-4xl mx-auto">
-                <div class="relative">
-                    <!-- Timeline Line -->
-                    <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full timeline-line"></div>
-                    
-                    <!-- Timeline Items -->
-                    <div class="space-y-12">
-                        <!-- Item 1 -->
-                        <div class="flex items-center">
-                            <div class="w-1/2 text-right pr-8">
-                                <h3 class="text-xl font-bold mb-2">Company Founded</h3>
-                                <p class="text-gray-600">Started with a vision to transform digital experiences</p>
-                            </div>
-                            <div class="relative">
-                                <div class="w-12 h-12 bg-white border-4 border-purple-600 rounded-full flex items-center justify-center">
-                                    <span class="text-sm font-bold">2016</span>
-                                </div>
-                            </div>
-                            <div class="w-1/2 pl-8"></div>
-                        </div>
-                        
-                        <!-- Item 2 -->
-                        <div class="flex items-center">
-                            <div class="w-1/2"></div>
-                            <div class="relative">
-                                <div class="w-12 h-12 bg-white border-4 border-indigo-600 rounded-full flex items-center justify-center">
-                                    <span class="text-sm font-bold">2018</span>
-                                </div>
-                            </div>
-                            <div class="w-1/2 pl-8">
-                                <h3 class="text-xl font-bold mb-2">100th Project</h3>
-                                <p class="text-gray-600">Reached our first major milestone</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Item 3 -->
-                        <div class="flex items-center">
-                            <div class="w-1/2 text-right pr-8">
-                                <h3 class="text-xl font-bold mb-2">Global Expansion</h3>
-                                <p class="text-gray-600">Opened offices in 3 continents</p>
-                            </div>
-                            <div class="relative">
-                                <div class="w-12 h-12 bg-white border-4 border-purple-600 rounded-full flex items-center justify-center">
-                                    <span class="text-sm font-bold">2020</span>
-                                </div>
-                            </div>
-                            <div class="w-1/2 pl-8"></div>
-                        </div>
-                        
-                        <!-- Item 4 -->
-                        <div class="flex items-center">
-                            <div class="w-1/2"></div>
-                            <div class="relative">
-                                <div class="w-12 h-12 bg-white border-4 border-indigo-600 rounded-full flex items-center justify-center">
-                                    <span class="text-sm font-bold">2022</span>
-                                </div>
-                            </div>
-                            <div class="w-1/2 pl-8">
-                                <h3 class="text-xl font-bold mb-2">Award Recognition</h3>
-                                <p class="text-gray-600">Named Top Digital Agency by Industry Leaders</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Item 5 -->
-                        <div class="flex items-center">
-                            <div class="w-1/2 text-right pr-8">
-                                <h3 class="text-xl font-bold mb-2">Future Forward</h3>
-                                <p class="text-gray-600">Continuing to innovate and grow</p>
-                            </div>
-                            <div class="relative">
-                                <div class="w-12 h-12 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-full flex items-center justify-center">
-                                    <span class="text-sm font-bold text-white">2024</span>
-                                </div>
-                            </div>
-                            <div class="w-1/2 pl-8"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-r from-purple-600 to-indigo-600">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold text-white mb-6">Ready to Join Our Journey?</h2>
-            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-                Whether you're looking to join our team or partner with us, we'd love to hear from you
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button class="px-8 py-3 bg-white text-purple-600 rounded-lg font-semibold hover:bg-gray-100 transition">
-                    View Open Positions
-                </button>
-                <button class="px-8 py-3 border-2 border-white text-white rounded-lg font-semibold hover:bg-white/10 transition">
-                    Become a Partner
-                </button>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-  <?php  include_once "footer.php"; ?>
-    
-    <script>
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-        
-        // Counter animation
-        const counters = document.querySelectorAll('.text-3xl');
-        const observerOptions = {
-            threshold: 0.5
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-countUp');
-                }
-            });
-        }, observerOptions);
-        
-        counters.forEach(counter => observer.observe(counter));
-    </script>
+
+<body class="bg-gray-50">
+         <?php  include_once "header.php"; ?>
+
+<!-- HERO SECTION -->
+
+<section class="bg-blue-900 text-white py-20">
+
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+
+<div>
+
+<h1 class="text-4xl font-bold mb-4">About Money Trust Financial Services</h1>
+
+<p class="text-lg text-gray-200">
+Providing reliable financial guidance and solutions to help individuals
+and businesses achieve their financial goals.
+</p>
+
+</div>
+
+<div>
+
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d"
+class="rounded-xl shadow-lg">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT CONTENT -->
+
+<section class="py-16">
+
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+<img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d"
+class="rounded-xl shadow-lg">
+
+<div>
+
+<h2 class="text-3xl font-bold mb-4">Who We Are</h2>
+
+<p class="text-gray-600 mb-4">
+Money Trust Financial Services offers a wide range of financial solutions
+supported by professional expertise and a strong commitment to client success.
+Our team focuses on delivering well-researched and client-centric financial
+guidance that helps individuals and businesses achieve their financial goals.
+</p>
+
+<p class="text-gray-600 mb-4">
+Established in 2021, our organization was built with the aim of providing
+clear, unbiased, and practical financial advice to our clients. We carefully
+analyze each client's financial profile including risk appetite, current
+liabilities, and future financial requirements before suggesting solutions.
+</p>
+
+<p class="text-gray-600">
+We proudly serve clients across India as well as NRI clients,
+providing a one-stop destination for loans, insurance, and financial services.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY CHOOSE US -->
+
+<section class="bg-white py-16">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="p-8 bg-gray-50 rounded-xl shadow text-center">
+
+<h3 class="text-xl font-semibold mb-3">Trusted Financial Experts</h3>
+
+<p class="text-gray-600">
+Our clients trust us because we work with honesty, ethics,
+and a strong commitment to providing the best financial solutions.
+</p>
+
+</div>
+
+
+<div class="p-8 bg-gray-50 rounded-xl shadow text-center">
+
+<h3 class="text-xl font-semibold mb-3">Client-Centric Approach</h3>
+
+<p class="text-gray-600">
+We understand each client's needs and provide personalized
+financial solutions based on their goals and financial profile.
+</p>
+
+</div>
+
+
+<div class="p-8 bg-gray-50 rounded-xl shadow text-center">
+
+<h3 class="text-xl font-semibold mb-3">Complete Financial Solutions</h3>
+
+<p class="text-gray-600">
+From loans and insurance to financial planning,
+we offer a wide range of services to meet all financial needs.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- VISION & MISSION -->
+
+<section class="py-16">
+
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+
+<div class="bg-blue-50 p-10 rounded-xl shadow">
+
+<h3 class="text-2xl font-bold mb-3">Our Vision</h3>
+
+<p class="text-gray-600">
+Our vision is to guide clients towards achieving their financial goals
+through well-researched, unbiased, and client-focused financial solutions.
+</p>
+
+</div>
+
+
+<div class="bg-green-50 p-10 rounded-xl shadow">
+
+<h3 class="text-2xl font-bold mb-3">Our Mission</h3>
+
+<p class="text-gray-600">
+Our mission is to understand each client deeply and keep their interests
+at the center of every decision. We strive to deliver reliable financial
+solutions that support long-term financial success.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CORE PRINCIPLES -->
+
+<section class="bg-white py-16">
+
+<div class="max-w-7xl mx-auto px-6 text-center">
+
+<h2 class="text-3xl font-bold mb-10">Our Core Principles</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="p-6">
+
+<h4 class="font-semibold text-lg mb-2">Building Trust</h4>
+
+<p class="text-gray-600">
+We build strong relationships with clients through transparency,
+honesty, and reliable financial advice.
+</p>
+
+</div>
+
+
+<div class="p-6">
+
+<h4 class="font-semibold text-lg mb-2">Maintaining Integrity</h4>
+
+<p class="text-gray-600">
+Our team works with strong ethical values and professionalism
+in every financial service we provide.
+</p>
+
+</div>
+
+
+<div class="p-6">
+
+<h4 class="font-semibold text-lg mb-2">Growing Together</h4>
+
+<p class="text-gray-600">
+We aim to grow alongside our clients by helping them achieve
+their financial dreams and long-term wealth goals.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CLIENT TRUST SECTION -->
+
+<section class="bg-blue-900 text-white py-16 text-center">
+
+<div class="max-w-4xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold mb-4">Trusted by Our Clients</h2>
+
+<p class="text-gray-200">
+Our clients consider us a trusted financial partner. We act as a
+financial navigator by providing realistic roadmaps and reliable
+solutions that help turn financial dreams into reality.
+</p>
+
+</div>
+
+</section>
+       <?php  include_once "footer.php"; ?>
+
+
 </body>
 </html>

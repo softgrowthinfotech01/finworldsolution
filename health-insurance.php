@@ -25,6 +25,6 @@ by covering hospitalization and treatment costs.
 </ul>
 
 </section>
-
+ <?php  include_once "footer.php"; ?>
 </body>
 </html>

@@ -24,6 +24,6 @@ Credit cards allow you to make purchases now and pay later while earning rewards
 </ul>
 
 </section>
-
+ <?php  include_once "footer.php"; ?>
 </body>
 </html>

@@ -26,6 +26,6 @@ with affordable EMI options.
 </ul>
 
 </section>
-
+ <?php  include_once "footer.php"; ?>
 </body>
 </html>

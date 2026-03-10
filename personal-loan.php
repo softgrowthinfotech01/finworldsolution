@@ -47,6 +47,7 @@ weddings, travel, education, or other personal needs without providing collatera
 </ul>
 
 </section>
-
+      
+ <?php  include_once "footer.php"; ?>
 </body>
 </html>

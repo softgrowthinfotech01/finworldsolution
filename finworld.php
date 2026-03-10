@@ -124,41 +124,30 @@
 
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <!-- Background Image with Animation -->
-        <div class="absolute inset-0 z-0">
-            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/90 to-indigo-900/90 z-10"></div>
-            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920" alt="Hero Background"
-                class="w-full h-full object-cover animate-zoomIn">
-        </div>
+    <section class="relative bg-blue-900 text-white">
 
-        <!-- Hero Content -->
-        <div class="relative z-20 container mx-auto px-4 lg:px-8 text-center">
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fadeInDown">
-                Welcome to <span
-                    class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-400">ALORNIX</span>
-            </h1>
+<div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 items-center gap-10">
 
-            <p class="text-xl md:text-2xl text-gray-200 mb-4 animate-fadeInUp" style="animation-delay: 0.2s">
-                Transforming Ideas into Digital Reality
-            </p>
+<div>
+<h1 class="text-4xl md:text-5xl font-bold mb-6">
+Get the Best Loan for Your Needs
+</h1>
 
-            <p class="text-md md:text-lg text-gray-300 mb-8 max-w-2xl mx-auto animate-fadeInUp"
-                style="animation-delay: 0.4s">
-                We craft exceptional digital experiences that drive growth and innovation for modern businesses
-            </p>
+<p class="text-lg text-gray-200 mb-6">
+Personal Loans, Home Loans, Business Loans and Insurance solutions with fast approval and low interest rates.
+</p>
 
-            <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fadeInUp" style="animation-delay: 0.6s">
-                <button
-                    class="px-8 py-4 bg-gradient-to-r from-yellow-400 to-pink-400 text-gray-900 font-semibold rounded-full hover:shadow-2xl transform hover:scale-105 transition">
-                    Start Your Project
-                </button>
-                <button
-                    class="px-8 py-4 bg-white/10 backdrop-blur text-white font-semibold rounded-full border border-white/30 hover:bg-white/20 transition">
-                    View Our Work
-                </button>
-            </div>
-        </div>
+<div class="flex gap-4">
+<a href="#" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold">Apply Loan</a>
+<a href="#" class="border border-white px-6 py-3 rounded-lg">Contact Us</a>
+</div>
+</div>
+
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" class="rounded-xl shadow-lg">
+
+</div>
+
+</section>
 
         <!-- Animated Scroll Indicator -->
         <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
@@ -179,21 +168,22 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Service Card 1 -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                        </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+  <circle cx="12" cy="7" r="4"/>
+  <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/>
+  <circle cx="19" cy="5" r="3"/>
+  <path d="M19 4v2M18 5h2"/>
+</svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Web Development</h3>
+                    <h3 class="text-2xl font-bold mb-4">Personal Loan</h3>
                     <p class="text-gray-600 mb-6">
-                        Custom websites and web applications built with cutting-edge technologies for optimal
-                        performance
-                    </p>
+                        A personal loan is an unsecured loan that provides quick
+                        funds for personal expenses with flexible repayment options.
                     <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
                         Learn More →
                     </a>
@@ -203,14 +193,16 @@
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-pink-500 to-red-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+  <rect x="3" y="7" width="18" height="13" rx="3"/>
+  <path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/>
+  <path d="M3 13h18"/>
+</svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Mobile Apps</h3>
+                    <h3 class="text-2xl font-bold mb-4">Business Loan</h3>
                     <p class="text-gray-600 mb-6">
-                        Native and cross-platform mobile applications that deliver exceptional user experiences
+                        A business loan provides financial support to help businesses
+                         manage operations, expand, or invest in growth opportunities.
                     </p>
                     <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
                         Learn More →
@@ -221,15 +213,36 @@
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
-                            </path>
-                        </svg>
+                       <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+  <path d="M3 11L12 3l9 8"/>
+  <path d="M5 10v10h14V10"/>
+  <rect x="9" y="14" width="6" height="6"/>
+</svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">UI/UX Design</h3>
+                    <h3 class="text-2xl font-bold mb-4">Home Loan</h3>
                     <p class="text-gray-600 mb-6">
-                        Beautiful, intuitive designs that captivate users and drive engagement across all platforms
+                        A home loan helps individuals finance the purchase, construction, or
+                         renovation of a house with flexible repayment options.
+                    </p>
+                    <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
+                        Learn More →
+                    </a>
+                </div>
+                 <!-- Service Card 4 -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+  <path d="M3 13l2-5h14l2 5"/>
+  <rect x="4" y="13" width="16" height="6" rx="2"/>
+  <circle cx="7" cy="19" r="1.5"/>
+  <circle cx="17" cy="19" r="1.5"/>
+</svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Car Loan</h3>
+                    <p class="text-gray-600 mb-6">
+                        A car loan helps individuals purchase a new or used 
+                        vehicle by paying in easy monthly installments (EMIs).
                     </p>
                     <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
                         Learn More →
@@ -239,8 +252,9 @@
         </div>
     </section>
 
+    
     <!-- Stats Section -->
-    <section class="py-20 hero-gradient">
+    <!-- <section class="py-20 hero-gradient">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div>
@@ -261,7 +275,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+    
 
     <!-- Portfolio Section -->
     <section class="py-20 bg-white">
@@ -409,6 +424,70 @@
         </div>
     </section>
 
+    <section class="py-16 bg-gray-100">
+
+<div class="max-w-4xl mx-auto bg-white p-10 rounded-xl shadow">
+
+<h2 class="text-3xl font-bold text-center mb-8">Loan EMI Calculator</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<input id="amount" type="number" placeholder="Loan Amount"
+class="border p-3 rounded">
+
+<input id="rate" type="number" placeholder="Interest Rate %"
+class="border p-3 rounded">
+
+<input id="years" type="number" placeholder="Years"
+class="border p-3 rounded">
+
+</div>
+
+<button onclick="calculateEMI()"
+class="mt-6 bg-blue-600 text-white px-6 py-3 rounded">
+Calculate EMI
+</button>
+
+<p class="mt-4 text-xl font-semibold" id="emiResult"></p>
+
+</div>
+
+</section>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919876543210"
+target="_blank"
+class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600
+text-white p-4 rounded-full shadow-lg transition duration-300
+z-50">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 24 24"
+fill="currentColor"
+class="w-6 h-6">
+
+<path d="M20.52 3.48A11.86 11.86 0 0012.03 0C5.4 0 .02 5.38.02 12c0 2.12.55 4.2 1.6 6.04L0 24l6.15-1.6A11.96 11.96 0 0012.03 24c6.63 0 12-5.38 12-12 0-3.2-1.25-6.22-3.51-8.52zm-8.49 18.1c-1.82 0-3.6-.49-5.16-1.41l-.37-.22-3.65.95.97-3.55-.24-.37A9.96 9.96 0 012.03 12c0-5.5 4.48-9.98 10-9.98 2.67 0 5.18 1.04 7.07 2.93A9.93 9.93 0 0122.03 12c0 5.5-4.48 9.98-10 9.98zm5.47-7.48c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.28-.47-2.44-1.5-.9-.8-1.51-1.8-1.69-2.1-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.48-.5-.67-.5-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.1 4.48.71.31 1.27.49 1.7.63.71.22 1.35.19 1.86.11.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+
+</svg>
+
+</a>
+
+<script>
+
+function calculateEMI(){
+
+let P = document.getElementById("amount").value
+let R = document.getElementById("rate").value / 12 / 100
+let N = document.getElementById("years").value * 12
+
+let EMI = P * R * Math.pow(1+R,N) / (Math.pow(1+R,N)-1)
+
+document.getElementById("emiResult").innerHTML =
+"Monthly EMI: ₹ " + Math.round(EMI)
+
+}
+
+</script>
+
     <!-- Footer -->
    
        <?php  include_once "footer.php"; ?>
@@ -449,6 +528,7 @@
             observer.observe(card);
         });
     </script>
+    
 </body>
 
 </html>

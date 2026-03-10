@@ -9,6 +9,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+         <?php  include_once "header.php"; ?>
 
 <body class="bg-gray-100">
 
@@ -146,6 +147,7 @@ content.classList.toggle("hidden")
 })
 
 </script>
+       <?php  include_once "footer.php"; ?>
 
 </body>
 </html>

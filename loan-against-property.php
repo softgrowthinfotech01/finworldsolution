@@ -26,5 +26,6 @@ or commercial property.
 </ul>
 
 </section>
+ <?php  include_once "footer.php"; ?>
 </body>
 </html>
