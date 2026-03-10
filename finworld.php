@@ -158,6 +158,69 @@ Personal Loans, Home Loans, Business Loans and Insurance solutions with fast app
         </div>
     </section>
 
+    <section class="py-20 bg-gray-50">
+
+<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+
+<!-- Image -->
+
+<div class="relative">
+
+<img 
+src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1"
+class="rounded-2xl shadow-xl w-full">
+
+<div class="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-xl shadow-lg">
+<p class="text-2xl font-bold">18+</p>
+<p class="text-sm">Years Experience</p>
+</div>
+
+</div>
+
+
+<!-- Content -->
+
+<div>
+
+<h2 class="text-4xl font-bold text-gray-800 mb-6">
+Trusted Financial Guidance for Your Future
+</h2>
+
+<p class="text-gray-600 mb-5 leading-relaxed">
+Money Trust Financial Services provides a wide range of financial 
+solutions including personal loans, business loans, home loans, 
+insurance, and investment advisory services. Our goal is to help 
+individuals and businesses achieve their financial objectives 
+through expert guidance and reliable financial products.
+</p>
+
+<p class="text-gray-600 mb-6 leading-relaxed">
+We carefully understand each client’s financial needs, risk profile, 
+and long-term goals to provide customized financial solutions that 
+ensure stability, growth, and financial confidence.
+</p>
+
+
+<div class="flex gap-4">
+
+<a href="about.php"
+class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+Learn More
+</a>
+
+<a href="contact.php"
+class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition">
+Contact Us
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
     <!-- Services Section -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 lg:px-8">
@@ -168,17 +231,17 @@ Personal Loans, Home Loans, Business Loans and Insurance solutions with fast app
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                 <!-- Service Card 1 -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
                       <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
-  <circle cx="12" cy="7" r="4"/>
-  <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/>
-  <circle cx="19" cy="5" r="3"/>
-  <path d="M19 4v2M18 5h2"/>
-</svg>
+                        <circle cx="12" cy="7" r="4"/>
+                        <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/>
+                        <circle cx="19" cy="5" r="3"/>
+                        <path d="M19 4v2M18 5h2"/>
+                        </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Personal Loan</h3>
                     <p class="text-gray-600 mb-6">
@@ -194,10 +257,10 @@ Personal Loans, Home Loans, Business Loans and Insurance solutions with fast app
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-pink-500 to-red-500 rounded-2xl flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
-  <rect x="3" y="7" width="18" height="13" rx="3"/>
-  <path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/>
-  <path d="M3 13h18"/>
-</svg>
+                        <rect x="3" y="7" width="18" height="13" rx="3"/>
+                        <path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/>
+                        <path d="M3 13h18"/>
+                        </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Business Loan</h3>
                     <p class="text-gray-600 mb-6">
@@ -209,15 +272,35 @@ Personal Loans, Home Loans, Business Loans and Insurance solutions with fast app
                     </a>
                 </div>
 
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 10l9-7 9 7M5 10v10h14V10M9 21v-6h6v6"/>
+
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Loan against Property</h3>
+                    <p class="text-gray-600 mb-6">
+                        Unlock the value of your property to get high-value
+                         loans at competitive interest rates.
+                    </p>
+                    <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
+                        Learn More →
+                    </a>
+                </div>
+
                 <!-- Service Card 3 -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6">
                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
-  <path d="M3 11L12 3l9 8"/>
-  <path d="M5 10v10h14V10"/>
-  <rect x="9" y="14" width="6" height="6"/>
-</svg>
+                        <path d="M3 11L12 3l9 8"/>
+                        <path d="M5 10v10h14V10"/>
+                        <rect x="9" y="14" width="6" height="6"/>
+                        </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Home Loan</h3>
                     <p class="text-gray-600 mb-6">
@@ -233,16 +316,109 @@ Personal Loans, Home Loans, Business Loans and Insurance solutions with fast app
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
-  <path d="M3 13l2-5h14l2 5"/>
-  <rect x="4" y="13" width="16" height="6" rx="2"/>
-  <circle cx="7" cy="19" r="1.5"/>
-  <circle cx="17" cy="19" r="1.5"/>
-</svg>
+                        <path d="M3 13l2-5h14l2 5"/>
+                        <rect x="4" y="13" width="16" height="6" rx="2"/>
+                        <circle cx="7" cy="19" r="1.5"/>
+                        <circle cx="17" cy="19" r="1.5"/>
+                        </svg>
                     </div>
                     <h3 class="text-2xl font-bold mb-4">Car Loan</h3>
                     <p class="text-gray-600 mb-6">
                         A car loan helps individuals purchase a new or used 
                         vehicle by paying in easy monthly installments (EMIs).
+                    </p>
+                    <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
+                        Learn More →
+                    </a>
+                </div>
+                
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 13h13l3 3v3h-2a2 2 0 11-4 0H9a2 2 0 11-4 0H3v-6z"/>
+
+                            </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Commercial Vehical Loan</h3>
+                    <p class="text-gray-600 mb-6">
+                       Finance commercial vehicles easily to expand and grow your business operations.
+                    </p>
+                    <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
+                        Learn More →
+                    </a>
+                </div>
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                        <rect x="2" y="6" width="20" height="12" rx="2" stroke-width="2"/>
+
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M2 10h20"/>
+
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Credit Card</h3>
+                    <p class="text-gray-600 mb-6">
+                        Enjoy flexible spending, rewards, and convenient cashless payments with credit cards.
+                    </p>
+                    <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
+                        Learn More →
+                    </a>
+                </div>
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 21s-6-4.35-9-7.5A5.5 5.5 0 0112 5a5.5 5.5 0 019 8.5C18 16.65 12 21 12 21z"/>
+
+                            </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Health Insurance</h3>
+                    <p class="text-gray-600 mb-6">
+                        Protect yourself and your family from medical expenses with comprehensive health coverage.
+                    </p>
+                    <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
+                        Learn More →
+                    </a>
+                </div>
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 3l8 4v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/>
+
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Life Insurance</h3>
+                    <p class="text-gray-600 mb-6">
+                      Secure your family's financial future with reliable life insurance protection.
+                    </p>
+                    <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
+                        Learn More →
+                    </a>
+                </div>
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">General Insurance</h3>
+                    <p class="text-gray-600 mb-6">
+                       Comprehensive insurance solutions to protect your assets, travel, and valuables.
                     </p>
                     <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
                         Learn More →
