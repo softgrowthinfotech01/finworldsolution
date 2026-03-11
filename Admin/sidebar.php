@@ -26,145 +26,41 @@ fixed md:relative transform md:translate-x-0 -translate-x-full z-40 overflow-hid
                     class="flex items-center justify-between px-4 py-4 hover:bg-gray-300">
                     <span class="flex items-center gap-3 text-base font-semibold">
                         <i class="fa-solid fa-users"></i>
-                        Leaders
+                    Add Case
                     </span>
                     <i class="fas fa-angle-right transition-transform"></i>
                 </a>
 
                 <ul id="categoryMenu" class="hidden bg-gray-100">
                     <li class="border-t">
-                        <a href="add_leader"
+                        <a href="add_case"
                             class="block px-10 py-3 bg-gray-500 text-white text-sm font-semibold">
                             <i class="fas fa-angle-right transition-transform mx-2"></i>
-                            Add Leader
+                            Add Case
                         </a>
                     </li>
                     <li class="border-t">
-                        <a href="view_leader"
+                        <a href="view_case"
                             class="block px-10 py-3 bg-gray-500 text-white text-sm font-semibold">
                             <i class="fas fa-angle-right transition-transform mx-2"></i>
-                            View Leaders
+                            View Case
                         </a>
                     </li>
                 </ul>
             </li>
 
-            <li class="border-t">
-                <a href="javascript:void(0)"
-                    onclick="toggleMenu('location', this)"
-                    class="flex items-center justify-between px-4 py-4 hover:bg-gray-300">
-                    <span class="flex items-center gap-3 text-base font-semibold">
-                        <i class="fa-solid fa-location-dot"></i>
-                        Location
-                    </span>
-                    <i class="fas fa-angle-right transition-transform"></i>
-                </a>
+       
 
-                <ul id="location" class="hidden bg-gray-100">
-                    <li class="border-t">
-                        <a href="add_location"
-                            class="block px-10 py-3 bg-gray-500 text-white text-sm font-semibold">
-                            <i class="fas fa-angle-right transition-transform mx-2"></i>
-                            Add Location
-                        </a>
-                    </li>
-                    <li class="border-t">
-                        <a href="view_location"
-                            class="block px-10 py-3 bg-gray-500 text-white text-sm font-semibold">
-                            <i class="fas fa-angle-right transition-transform mx-2"></i>
-                            View Locations
-                        </a>
-                    </li>
-                </ul>
-            </li>
+       
 
-            <li class="border-t">
-                <a href="javascript:void(0)"
-                    onclick="toggleMenu('commission', this)"
-                    class="flex items-center justify-between px-4 py-4 hover:bg-gray-300">
-                    <span class="flex items-center gap-3 text-base font-semibold">
-                        <i class="fa-solid fa-users"></i>
-                        Set Commission
-                    </span>
-                    <i class="fas fa-angle-right transition-transform"></i>
-                </a>
-
-                <ul id="commission" class="hidden bg-gray-100">
-                    <li class="border-t">
-                        <a href="add_commission"
-                            class="block px-10 py-3 bg-gray-500 text-white text-sm font-semibold">
-                            <i class="fas fa-angle-right transition-transform mx-2"></i>
-                            Add Commission
-                        </a>
-                    </li>
-                    <li class="border-t">
-                        <a href="view_commission"
-                            class="block px-10 py-3 bg-gray-500 text-white  text-sm font-semibold">
-                            <i class="fas fa-angle-right transition-transform mx-2"></i>
-                            View Commission
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-
-            <li class="border-t">
-                <a href="javascript:void(0)"
-                    onclick="toggleMenu('reportMenu', this)"
-                    class="flex items-center justify-between px-4 py-4 hover:bg-gray-300">
-                    <span class="flex items-center gap-3 text-base font-semibold">
-                        <i class="fa fa-file"></i>
-                        Reports
-                    </span>
-                    <i class="fas fa-angle-right transition-transform"></i>
-                </a>
-
-                <ul id="reportMenu" class="hidden bg-gray-100">
-                    <li class="border-t">
-                        <a href="product_add"
-                            class="block px-10 py-3 bg-gray-500 text-white text-sm font-semibold">
-                            <i class="fas fa-angle-right transition-transform mx-1"></i>
-                            Total Sales Report
-                        </a>
-                    </li>
-                    <li class="border-t">
-                        <a href="product_view"
-                            class="block px-10 py-3 bg-gray-500 text-white text-sm font-semibold">
-                            <i class="fas fa-angle-right transition-transform mx-1"></i>
-                            Total Commission Report
-                        </a>
-                    </li>
-                    <li class="border-t">
-                        <a href="product_add"
-                            class="block px-10 py-3 bg-gray-500 text-white text-sm font-semibold">
-                            <i class="fas fa-angle-right transition-transform mx-1"></i>
-                            Leader-wise Business Report
-                        </a>
-                    </li>
-                    <li class="border-t">
-                        <a href="product_add"
-                            class="block px-10 py-3 bg-gray-500 text-white text-sm font-semibold">
-                            <i class="fas fa-angle-right transition-transform mx-1"></i>
-                            Advisor-wise Business Report
-                        </a>
-                    </li>
-                    <li class="border-t">
-                        <a href="product_add"
-                            class="block px-10 py-3 bg-gray-500 text-white  text-sm font-semibold">
-                            <i class="fas fa-angle-right transition-transform mx-1"></i>
-                            Project-wise Sales Report
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
+      
             <li class="border-t">
                 <a href="javascript:void(0)"
                     onclick="toggleMenu('commissionReport', this)"
                     class="flex items-center justify-between px-4 py-4 hover:bg-gray-300">
                     <span class="flex items-center gap-3 text-base font-semibold">
                         <i class="fas fa-receipt"></i>
-                        Commission Records
+                      Records
                     </span>
                     <i class="fas fa-angle-right transition-transform"></i>
                 </a>
@@ -186,67 +82,9 @@ fixed md:relative transform md:translate-x-0 -translate-x-full z-40 overflow-hid
                 </ul>
             </li>
 
-            <li class="border-t">
-                <a href="javascript:void(0)"
-                    onclick="toggleMenu('payment', this)"
-                    class="flex items-center justify-between px-4 py-4 hover:bg-gray-300">
+         
 
-                    <span class="flex items-center gap-3 text-base font-semibold">
-                        <i class="fas fa-money-bill-wave"></i>
-                        Payment
-                    </span>
-
-                    <i class="fas fa-angle-right transition-transform"></i>
-                </a>
-
-                <ul id="payment" class="hidden bg-gray-100">
-
-                    <li class="border-t">
-                        <a href="payment"
-                            class="block px-10 py-3 bg-gray-500 text-white">
-                            Add Payment
-                        </a>
-                    </li>
-
-                    <li class="border-t">
-                        <a href="view_payment"
-                            class="block px-10 py-3 bg-gray-500 text-white">
-                            Payment Reocrds
-                        </a>
-                    </li>
-
-                </ul>
-            </li>
-
-
-            <!-- <li class="border-t">
-                <a href="javascript:void(0)"
-                    onclick="toggleMenu('pReports', this)"
-                    class="flex items-center justify-between px-4 py-4 hover:bg-gray-300">
-                    <span class="flex items-center gap-3 text-base font-semibold">
-                       <i class="fa-solid fa-building-circle-arrow-right"></i>
-                        Projects and Properties
-                    </span>
-                    <i class="fas fa-angle-right transition-transform"></i>
-                </a>
-
-                <ul id="pReports" class="hidden bg-gray-100">
-                    <li class="border-t">
-                        <a href="add_leader"
-                            class="block px-10 py-3 bg-gray-500 text-white">
-                            
-                        </a>
-                    </li>
-                    <li class="border-t">
-                        <a href="view_leader"
-                            class="block px-10 py-3 bg-gray-500 text-white">
-                            
-                        </a>
-                    </li>
-                    
-                </ul>
-            </li> -->
-
+      
         </ul>
     </nav>
 </aside>
