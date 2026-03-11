@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leader Data</title>
+    <title>Case Date</title>
     <link rel="stylesheet" href="../style.css">
 
 </head>
@@ -63,10 +63,10 @@
                 <tr>
                     <th class="px-4 py-3">#</th>
                     <th class="px-4 py-3">Name</th>
-                    <th class="px-4 py-3">Email</th>
-                    <th class="px-4 py-3">Age</th>
-                    <th class="px-4 py-3">Contact</th>
-                    <th class="px-4 py-3">Created At</th>
+                    <th class="px-4 py-3">Phone Number</th>
+                    <th class="px-4 py-3">Address</th>
+                    <th class="px-4 py-3">Date</th>
+                   
                     <th class="px-4 py-3">Actions</th>
                 </tr>
             </thead>
