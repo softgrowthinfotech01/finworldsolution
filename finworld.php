@@ -163,11 +163,15 @@ animation: gradientMove 10s ease infinite;
 
 <section class="relative overflow-visible text-white">
 
-  <!-- Animated Gradient Background -->
-  <div class="absolute inset-0 bg-gradient-to-r from-blue-950 via-indigo-900 to-blue-900 animate-gradient"></div>
 
+<!-- Background Image -->
+<div class="absolute inset-0">
+  <img src="images/bg_slider_img.jpg"
+       class="w-full h-full object-cover opacity-100">
+
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-950/90 via-indigo-900/80 to-blue-900/90"></div>
+</div>
   <div class="relative max-w-7xl mx-auto px-6 py-24">
-
     <div class="relative rounded-3xl overflow-hidden">
 
       <!-- SLIDER -->
@@ -339,15 +343,15 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                 <!-- Service Card 1 -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-purple-500">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                        class="relative w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex ml-[165px] justify-center mb-6">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2  translate-x-1/2 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <circle cx="12" cy="7" r="4"/>
                         <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/>
                         <circle cx="19" cy="5" r="3"/>
                         <path d="M19 4v2M18 5h2"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Personal Loan</h3>
+                    <h3 class="text-2xl font-bold text-center mb-4">Personal Loan</h3>
                     <p class="text-gray-600 mb-6">
                         A personal loan is an unsecured loan that provides quick
                         funds for personal expenses with flexible repayment options.
@@ -359,14 +363,14 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                 <!-- Service Card 2 -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-indigo-500">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-pink-500 to-red-500 rounded-2xl flex items-center justify-center mb-6">
+                        class="w-16 h-16 bg-gradient-to-br from-pink-500 to-red-500 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-indigo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <rect x="3" y="7" width="18" height="13" rx="3"/>
                         <path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/>
                         <path d="M3 13h18"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Business Loan</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-center">Business Loan</h3>
                     <p class="text-gray-600 mb-6">
                         A business loan provides financial support to help businesses
                          manage operations, expand, or invest in growth opportunities.
@@ -378,7 +382,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
 
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-pink-600">
                     <div
-                        class="w-16 h-16 bg-gradient-to-l from-pink-200 via-purple-400 to-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                        class="w-16 h-16 bg-gradient-to-l from-pink-200 via-purple-400 to-indigo-600 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -386,7 +390,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
 
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Loan against Property</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-center">Loan against Property</h3>
                     <p class="text-gray-600 mb-6">
                         Unlock the value of your property to get high-value
                          loans at competitive interest rates.
@@ -399,14 +403,14 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                 <!-- Service Card 3 -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-yellow-500">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6">
+                        class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex ml-[165px] items-center justify-center mb-6">
                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-yellow-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <path d="M3 11L12 3l9 8"/>
                         <path d="M5 10v10h14V10"/>
                         <rect x="9" y="14" width="6" height="6"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Home Loan</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-center">Home Loan</h3>
                     <p class="text-gray-600 mb-6">
                         A home loan helps individuals finance the purchase, construction, or
                          renovation of a house with flexible repayment options.
@@ -418,7 +422,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                  <!-- Service Card 4 -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-red-400">
                     <div
-                        class="w-16 h-16 bg-gradient-to-bl from-red-900 via-pink-600 to-rose-500 rounded-2xl flex items-center justify-center mb-6">
+                        class="w-16 h-16 bg-gradient-to-bl from-red-900 via-pink-600 to-rose-500 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2  text-red-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <path d="M3 13l2-5h14l2 5"/>
                         <rect x="4" y="13" width="16" height="6" rx="2"/>
@@ -426,7 +430,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                         <circle cx="17" cy="19" r="1.5"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Car Loan</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-center">Car Loan</h3>
                     <p class="text-gray-600 mb-6">
                         A car loan helps individuals purchase a new or used 
                         vehicle by paying in easy monthly installments (EMIs).
@@ -438,7 +442,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                 
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-green-500">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-gray-400 via-pink-500 to-rose-400 rounded-2xl flex items-center justify-center mb-6">
+                        class="w-16 h-16 bg-gradient-to-r from-gray-400 via-pink-500 to-rose-400 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -446,7 +450,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
 
                             </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Commercial Vehical Loan</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-center">Commercial Vehical Loan</h3>
                     <p class="text-gray-600 mb-6">
                        Finance commercial vehicles easily to expand and grow your business operations.
                     </p>
@@ -476,7 +480,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                 </div> -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-teal-500">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-gray-300 via-gray-500 to-gray-700 rounded-2xl flex items-center justify-center mb-6">
+                        class="w-16 h-16 bg-gradient-to-br from-gray-300 via-gray-500 to-gray-700 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -484,7 +488,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
 
                             </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Health Insurance</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-center">Health Insurance</h3>
                     <p class="text-gray-600 mb-6">
                         Protect yourself and your family from medical expenses with comprehensive health coverage.
                     </p>
@@ -494,7 +498,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                 </div>
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-cyan-500">
                     <div
-                        class="w-16 h-16 bg-gradient-to-bl from-yellow-500 via-lime-500 to-green-500 rounded-2xl flex items-center justify-center mb-6">
+                        class="w-16 h-16 bg-gradient-to-bl from-yellow-500 via-lime-500 to-green-500 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-cyan-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -502,7 +506,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
 
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Life Insurance</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-center">Life Insurance</h3>
                     <p class="text-gray-600 mb-6">
                       Secure your family's financial future with reliable life insurance protection.
                     </p>
@@ -512,7 +516,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                 </div>
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-orange-600">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6">
+                        class="w-16 h-16 bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -520,7 +524,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
 
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">General Insurance</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-center">General Insurance</h3>
                     <p class="text-gray-600 mb-6">
                        Comprehensive insurance solutions to protect your assets, travel, and valuables.
                     </p>
