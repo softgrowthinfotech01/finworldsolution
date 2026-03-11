@@ -451,10 +451,10 @@ Contact Us
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service Card 1 -->
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-purple-500">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <circle cx="12" cy="7" r="4"/>
                         <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/>
                         <circle cx="19" cy="5" r="3"/>
@@ -471,10 +471,10 @@ Contact Us
                 </div>
 
                 <!-- Service Card 2 -->
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-indigo-500">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-pink-500 to-red-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-indigo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <rect x="3" y="7" width="18" height="13" rx="3"/>
                         <path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/>
                         <path d="M3 13h18"/>
@@ -490,10 +490,10 @@ Contact Us
                     </a>
                 </div>
 
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-pink-600">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                       <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        class="w-16 h-16 bg-gradient-to-l from-pink-200 via-purple-400 to-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 10l9-7 9 7M5 10v10h14V10M9 21v-6h6v6"/>
@@ -511,10 +511,10 @@ Contact Us
                 </div>
 
                 <!-- Service Card 3 -->
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-yellow-500">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6">
-                       <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-yellow-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <path d="M3 11L12 3l9 8"/>
                         <path d="M5 10v10h14V10"/>
                         <rect x="9" y="14" width="6" height="6"/>
@@ -530,10 +530,10 @@ Contact Us
                     </a>
                 </div>
                  <!-- Service Card 4 -->
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-red-400">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2  text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                        class="w-16 h-16 bg-gradient-to-bl from-red-900 via-pink-600 to-rose-500 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2  text-red-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <path d="M3 13l2-5h14l2 5"/>
                         <rect x="4" y="13" width="16" height="6" rx="2"/>
                         <circle cx="7" cy="19" r="1.5"/>
@@ -550,10 +550,10 @@ Contact Us
                     </a>
                 </div>
                 
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-green-500">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ww-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        class="w-16 h-16 bg-gradient-to-r from-gray-400 via-pink-500 to-rose-400 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 13h13l3 3v3h-2a2 2 0 11-4 0H9a2 2 0 11-4 0H3v-6z"/>
@@ -588,10 +588,10 @@ Contact Us
                         Learn More →
                     </a>
                 </div> -->
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-teal-500">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        class="w-16 h-16 bg-gradient-to-br from-gray-300 via-gray-500 to-gray-700 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M12 21s-6-4.35-9-7.5A5.5 5.5 0 0112 5a5.5 5.5 0 019 8.5C18 16.65 12 21 12 21z"/>
@@ -606,10 +606,10 @@ Contact Us
                         Learn More →
                     </a>
                 </div>
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-cyan-500">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                       <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        class="w-16 h-16 bg-gradient-to-bl from-yellow-500 via-lime-500 to-green-500 rounded-2xl flex items-center justify-center mb-6">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-cyan-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M12 3l8 4v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/>
@@ -624,10 +624,10 @@ Contact Us
                         Learn More →
                     </a>
                 </div>
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-orange-600">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        class="w-16 h-16 bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -709,64 +709,7 @@ Our Banking Partners
     
 
     <!-- Portfolio Section -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-4 gradient-text">Recent Projects</h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Showcasing our latest work and creative solutions
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Portfolio Item 1 -->
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500" alt="Project 1"
-                        class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
-                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                            <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
-                            <p class="text-sm">Modern online shopping experience</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 2 -->
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500" alt="Project 2"
-                        class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
-                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                            <h3 class="text-xl font-bold mb-2">Analytics Dashboard</h3>
-                            <p class="text-sm">Real-time data visualization</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Portfolio Item 3 -->
-                <div class="group relative overflow-hidden rounded-2xl shadow-lg card-hover">
-                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=500" alt="Project 3"
-                        class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
-                    <div
-                        class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
-                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                            <h3 class="text-xl font-bold mb-2">Corporate Website</h3>
-                            <p class="text-sm">Professional business presence</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-12">
-                <a href="/portfolio.html"
-                    class="inline-block px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold rounded-full hover:shadow-lg transition">
-                    View All Projects
-                </a>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Testimonials Section with Slider -->
     <section class="py-20 bg-gray-50">
