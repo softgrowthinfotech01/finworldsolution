@@ -32,33 +32,13 @@
   animation: marquee 25s linear infinite;
 }
 
-/* Parallax effect on scroll (optional subtle float) */
-section[data-aos] img {
-  transition: transform 0.5s ease-out;
-}
-
-section[data-aos] img[data-aos="fade-up"] {
-  transform: translateY(-10px);
-}
 
 
 
 
-        .animate-fadeInUp {
-            animation: fadeInUp 1s ease-out;
-        }
 
-        .animate-fadeInDown {
-            animation: fadeInDown 1s ease-out;
-        }
 
-        .animate-zoomIn {
-            animation: zoomIn 15s ease-out infinite alternate;
-        }
-
-        .animate-float {
-            animation: float 3s ease-in-out infinite;
-        }
+        
 
         .gradient-text {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -67,9 +47,6 @@ section[data-aos] img[data-aos="fade-up"] {
             background-clip: text;
         }
 
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-        }
 
         .card-hover {
             transition: all 0.3s ease;
@@ -118,20 +95,49 @@ animation: gradientMove 10s ease infinite;
 }
 
 
+ 
+/* Premium Floating Blob Animation */
+
+@keyframes blob {
+  0% {
+    transform: translate(0px,0px) scale(1);
+  }
+  33% {
+    transform: translate(30px,-50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px,20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px,0px) scale(1);
+  }
+}
+
+.animate-blob{
+  animation: blob 12s infinite ease-in-out;
+}
+
+.animation-delay-2000{
+  animation-delay:2s;
+}
+
+.animation-delay-4000{
+  animation-delay:4s;
+}
 
 
-    @keyframes spin-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-    @keyframes spin-slow-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-    .animate-spin-slow { animation: spin-slow 40s linear infinite; }
-    .animate-spin-slow-slow { animation: spin-slow-slow 60s linear infinite; }
+.client-slider-track{
+  animation: clientSlide 3s linear infinite;
+}
 
-    /* Fade-in animations */
-    @keyframes fade-in { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-    .animate-fade-in { animation: fade-in 1s ease forwards; }
-    .animate-fade-in-delay { animation: fade-in 1s ease 0.5s forwards; }
-
-
-
+@keyframes clientSlide{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
 
     </style>
 </head>
@@ -643,105 +649,142 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
         </div>
     </section>
 
-    <section class="py-20 relative text-white overflow-hidden">
-  <!-- Background Image -->
-  <div class="absolute inset-0">
-    <img src="images/about_us_img.cms" 
-         class="w-full h-full object-cover opacity-30">
-    <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 opacity-70"></div>
-  </div>
+ <section class="py-20 relative text-white overflow-hidden">
 
-  <h3 class="text-center text-3xl font-bold mb-12 relative z-10" data-aos="fade-up" data-aos-duration="1000">
-    Our Banking Partners
-  </h3>
+<!-- Background -->
+<div class="absolute inset-0">
+  <img src="images/about_us_img.cms" class="w-full h-full object-cover opacity-30">
+  <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 opacity-80"></div>
+</div>
 
-  <!-- Parallax Marquee Wrapper -->
-  <div class="overflow-hidden relative z-10">
-    <div class="flex marquee-track space-x-16 animate-marquee">
-      <!-- LOGOS -->
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/HDFC_Bank_Logo.svg" class="h-20 object-contain">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/ICICI_Bank_Logo.svg" class="h-20 object-contain">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/SBI-logo.svg" class="h-20 object-contain">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Axis_Bank_logo.svg" class="h-20 object-contain">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Kotak_Mahindra_Bank_logo.svg" class="h-20 object-contain">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Yes_Bank_SVG_Logo.svg" class="h-20 object-contain">
+<h3 class="text-center text-3xl font-bold mb-12 relative z-10">
+Our Banking Partners
+</h3>
 
-      <!-- DUPLICATE FOR LOOPING -->
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/HDFC_Bank_Logo.svg" class="h-20 object-contain">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/ICICI_Bank_Logo.svg" class="h-20 object-contain">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/SBI-logo.svg" class="h-20 object-contain">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Axis_Bank_logo.svg" class="h-20 object-contain">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Kotak_Mahindra_Bank_logo.svg" class="h-20 object-contain">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Yes_Bank_SVG_Logo.svg" class="h-20 object-contain">
+<div class="overflow-hidden relative w-full max-w-4xl mx-auto">
+
+  <div class="client-slider-wrapper">
+
+    <div class="client-slider-track flex items-center gap-[80px]">
+
+      <!-- Slide 1 -->
+      <div class="flex-shrink-0 w-40">
+          <img src="images/axis_logo.jpg"
+               class="w-[280px] h-[70px] rounded-lg">
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="flex-shrink-0 w-40">
+          <img src="images/hdfc_logo.png"
+               class="w-[280px] h-[70px] rounded-lg">
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="flex-shrink-0 w-40">
+          <img src="images/icic_logo.png"
+               class="w-[280px] h-[70px] rounded-lg">
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="flex-shrink-0 w-40">
+          <img src="images/kotak_logo.jpg"
+               class="w-[280px] h-[70px] rounded-lg">
+      </div>
+
+      <div class="flex-shrink-0 w-40">
+          <img src="images/panjab_logo.jpg"
+               class="w-[280px] h-[70px] rounded-lg">
+      </div>
+
+      <div class="flex-shrink-0 w-40">
+          <img src="images/sbi_logo.jpg"
+               class="w-[280px] h-[70px] rounded-lg ">
+      </div>
+
+  
+
     </div>
+
   </div>
+
+</div>
+
 </section>
 
-<section id="contact" class="relative bg-black to-slate-900 py-20 overflow-hidden">
-  <!-- Floating animated shapes -->
-  <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
-    <div class="absolute w-96 h-96 bg-blue-500/30 rounded-full animate-spin-slow -top-32 -left-32 mix-blend-overlay"></div>
-    <div class="absolute w-72 h-72 bg-indigo-500/20 rounded-full animate-spin-slow-slow -bottom-32 -right-24 mix-blend-overlay"></div>
-    <div class="absolute w-80 h-80 bg-purple-500/25 rounded-full animate-spin-slow bottom-10 left-10 mix-blend-overlay"></div>
-    <!-- Infinite floating icons -->
-   
-  </div>
+<section id="contact" class="relative bg-black py-20 overflow-hidden">
 
-  <div class="relative max-w-7xl mx-auto px-6">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="relative max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
 
-      <!-- Contact Form -->
-      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-10 shadow-lg animate-fade-in">
-        <h2 class="text-3xl text-white font-bold mb-6">Get in Touch</h2>
-        <p class="text-gray-300 mb-6">
-          Have questions or want to discuss your financial goals? Fill out the form and our experts will reach out to you.
-        </p>
+<!-- Contact Form -->
+<div 
+data-aos="fade-right"
+data-aos-duration="1000"
+data-aos-offset="200"
+class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-10 shadow-2xl">
 
-        <form class="space-y-4">
-          <div>
-            <input type="text" placeholder="Full Name"
-              class="w-full px-4 py-3 rounded-lg border border-gray-400/50 bg-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
-          </div>
-          <div>
-            <input type="email" placeholder="Email Address"
-              class="w-full px-4 py-3 rounded-lg border border-gray-400/50 bg-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
-          </div>
-          <div>
-            <textarea placeholder="Your Message" rows="5"
-              class="w-full px-4 py-3 rounded-lg border border-gray-400/50 bg-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"></textarea>
-          </div>
-          <button type="submit"
-            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg w-full transition-all">
-            Send Message
-          </button>
-        </form>
-      </div>
+<h2 class="text-3xl text-white font-bold mb-6">Get in Touch</h2>
 
-      <!-- Contact Info -->
-      <div class="text-white space-y-6 animate-fade-in-delay">
-        <h3 class="text-3xl font-bold">Contact Information</h3>
-        <p class="text-gray-300">
-          📞 Phone: +91 8080435343 <br>
-          📧 Email: info@moneytrust.in <br>
-          📍 Address: 123 Finance Street, Pune, India
-        </p>
+<p class="text-gray-300 mb-6">
+Have questions or want to discuss your financial goals? Fill out the form and our experts will reach out to you.
+</p>
 
-        <div class="flex space-x-4 mt-6">
-          <!-- Social Icons -->
-          <a href="#" class="p-3 bg-white/20 backdrop-blur-md rounded-full hover:bg-blue-600 transition">
-            <img src="icons/facebook.svg" alt="Facebook" class="w-5 h-5">
-          </a>
-          <a href="#" class="p-3 bg-white/20 backdrop-blur-md rounded-full hover:bg-indigo-500 transition">
-            <img src="icons/twitter.svg" alt="Twitter" class="w-5 h-5">
-          </a>
-          <a href="#" class="p-3 bg-white/20 backdrop-blur-md rounded-full hover:bg-purple-500 transition">
-            <img src="icons/linkedin.svg" alt="LinkedIn" class="w-5 h-5">
-          </a>
-        </div>
-      </div>
+<form class="space-y-4">
 
-    </div>
-  </div>
+<input type="text" placeholder="Full Name"
+class="w-full px-4 py-3 rounded-lg border border-gray-400/40 bg-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+
+<input type="email" placeholder="Email Address"
+class="w-full px-4 py-3 rounded-lg border border-gray-400/40 bg-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+
+<textarea placeholder="Your Message" rows="5"
+class="w-full px-4 py-3 rounded-lg border border-gray-400/40 bg-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"></textarea>
+
+<button
+class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg w-full transition-all duration-300 hover:scale-105">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+
+<!-- Contact Info -->
+<div 
+data-aos="fade-left"
+data-aos-duration="1000"
+data-aos-offset="200"
+class="text-white space-y-6">
+
+<h3 class="text-3xl font-bold">Contact Information</h3>
+
+<p class="text-gray-300 leading-relaxed">
+📞 Phone: +91 8080435343 <br>
+📧 Email: info@moneytrust.in <br>
+📍 Address: 123 Finance Street, Pune, India
+</p>
+
+<div class="flex space-x-4 mt-6">
+
+<a href="#" class="p-3 bg-white/10 backdrop-blur-md rounded-full hover:bg-blue-600 transition hover:scale-110">
+<img src="icons/facebook.svg" class="w-5 h-5">
+</a>
+
+<a href="#" class="p-3 bg-white/10 backdrop-blur-md rounded-full hover:bg-indigo-500 transition hover:scale-110">
+<img src="icons/twitter.svg" class="w-5 h-5">
+</a>
+
+<a href="#" class="p-3 bg-white/10 backdrop-blur-md rounded-full hover:bg-purple-500 transition hover:scale-110">
+<img src="icons/linkedin.svg" class="w-5 h-5">
+</a>
+
+</div>
+
+</div>
+
+</div>
+</div>
 
 </section>
     
@@ -763,28 +806,14 @@ class="w-6 h-6">
 
 </a>
 
-<script>
 
-function calculateEMI(){
-
-let P = document.getElementById("amount").value
-let R = document.getElementById("rate").value / 12 / 100
-let N = document.getElementById("years").value * 12
-
-let EMI = P * R * Math.pow(1+R,N) / (Math.pow(1+R,N)-1)
-
-document.getElementById("emiResult").innerHTML =
-"Monthly EMI: ₹ " + Math.round(EMI)
-
-}
-
-</script>
 
     <!-- Footer -->
    
        <?php  include_once "footer.php"; ?>
     <!-- JavaScript -->
     <script>
+        
         // Mobile Menu Toggle
         document.getElementById('mobile-menu-btn').addEventListener('click', function () {
             document.getElementById('mobile-menu').classList.toggle('hidden');
@@ -801,27 +830,11 @@ document.getElementById("emiResult").innerHTML =
             });
         });
 
-        // Intersection Observer for Animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver(function (entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-fadeInUp');
-                }
-            });
-        }, observerOptions);
-
-        // Observe all cards
-        document.querySelectorAll('.card-hover').forEach(card => {
-            observer.observe(card);
-        });
+       
     </script>
     
     <script>
+// slider
 
 let slider = document.getElementById("slider");
 let index = 0;
@@ -848,33 +861,27 @@ showSlide();
 
 
 
-const counters = document.querySelectorAll('.counter');
 
-counters.forEach(counter => {
-counter.innerText = '0';
+// animation about us and loan process
+AOS.init({
+  once: false,   // allow animation every time you scroll
+  offset: 100,   // trigger animation when 100px in view
+  duration: 100, // animation duration (optional)
+  easing: 'ease-in-out', // smooth animation
+});
 
-const updateCounter = () => {
-const target = +counter.getAttribute('data-target');
-const c = +counter.innerText;
-
-const increment = target / 100;
-
-if(c < target){
-counter.innerText = `${Math.ceil(c + increment)}`;
-setTimeout(updateCounter,20);
-}else{
-counter.innerText = target;
-}
-};
-
-updateCounter();
+// animation for contact form
+AOS.init({
+  once: false,   // animation runs every time when scrolling
+  offset: 150,
+  duration: 100,
+  easing: "ease-in-out"
 });
 
 
-  AOS.init({
-    once: true, // animation only once
-    offset: 100, // when to trigger
-  });
+
+
+
 </script>
 </body>
 
