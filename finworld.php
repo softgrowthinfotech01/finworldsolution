@@ -57,7 +57,40 @@
             50% {
                 transform: translateY(-20px);
             }
+    
         }
+        @keyframes float{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-20px)}
+}
+
+
+.marquee{
+width:100%;
+overflow:hidden;
+}
+
+.marquee-track{
+display:flex;
+align-items:center;
+gap:80px;
+width:max-content;
+animation:marquee 25s linear infinite;
+}
+
+.marquee-track img{
+height:40px;
+flex-shrink:0;
+}
+
+@keyframes marquee{
+0%{
+transform:translateX(0);
+}
+100%{
+transform:translateX(-50%);
+}
+}
 
         .animate-fadeInUp {
             animation: fadeInUp 1s ease-out;
@@ -113,50 +146,235 @@
                 transform: translateX(-50%);
             }
         }
+        /* Glassmorphism */
+.glass{
+background: rgba(255,255,255,0.1);
+backdrop-filter: blur(10px);
+border:1px solid rgba(255,255,255,0.2);
+}
+
+/* Gradient animation */
+.animate-gradient{
+background-size: 300% 300%;
+animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
     </style>
 </head>
 
 <body class="bg-gray-50">
-
+<div class="bg-gray-900 text-white py-2">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center text-sm">
+                <div class="flex items-center space-x-4">
+                    <span>📧 info@alornix.com</span>
+                    <span>📱 +1 (555) 123-4567</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="hover:text-gray-300">Support</a>
+                    <a href="#" class="hover:text-gray-300">Client Portal</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Navigation -->
    
          <?php  include_once "header.php"; ?>
 
+<section class="relative overflow-hidden text-white">
 
-    <!-- Hero Section -->
-    <section class="relative bg-blue-900 text-white">
+<!-- Animated Gradient Background -->
+<div class="absolute inset-0 bg-gradient-to-r from-blue-950 via-indigo-900 to-blue-900 animate-gradient"></div>
 
-<div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 items-center gap-10">
+<div class="relative max-w-7xl mx-auto px-6 py-24">
+
+<div class="relative overflow-hidden rounded-3xl">
+
+
+
+<!-- SLIDER -->
+<div id="slider" class="flex transition-transform duration-700 ease-in-out">
+
+<!-- SLIDE 1 -->
+<div class="min-w-full grid md:grid-cols-2 items-center gap-10">
 
 <div>
-<h1 class="text-4xl md:text-5xl font-bold mb-6">
-Get the Best Loan for Your Needs
+<h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+Instant Personal Loans <br>
+<span class="text-yellow-400">Up To ₹25 Lakhs</span>
 </h1>
 
-<p class="text-lg text-gray-200 mb-6">
-Personal Loans, Home Loans, Business Loans and Insurance solutions with fast approval and low interest rates.
+<p class="text-gray-200 mb-8 text-lg">
+Get quick approval with minimal documents and flexible EMI options designed for your financial needs.
 </p>
 
 <div class="flex gap-4">
-<a href="#" class="bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold">Apply Loan</a>
-<a href="#" class="border border-white px-6 py-3 rounded-lg">Contact Us</a>
+<a href="#" class="px-7 py-3 bg-yellow-400 text-black rounded-lg font-semibold hover:scale-105 transition">
+Apply Now
+</a>
+
+<a href="#" class="px-7 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">
+Check Eligibility
+</a>
 </div>
 </div>
 
-<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" class="rounded-xl shadow-lg">
+<div class="relative">
+
+<div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl">
+<img src="https://images.unsplash.com/photo-1620266757065-5814239881fd?q=80&w=2400"
+class="rounded-2xl w-full object-cover animate-zoomIn">
+</div>
+
+</div>
+
+</div>
+
+
+<!-- SLIDE 2 -->
+<div class="min-w-full grid md:grid-cols-2 items-center gap-10">
+
+<div>
+<h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+Affordable Home Loans <br>
+<span class="text-yellow-400">Lowest Interest Rates</span>
+</h1>
+
+<p class="text-gray-200 mb-8 text-lg">
+Turn your dream home into reality with easy EMI options and fast loan approvals.
+</p>
+
+<div class="flex gap-4">
+<a href="#" class="px-7 py-3 bg-yellow-400 text-black rounded-lg font-semibold hover:scale-105 transition">
+Apply Now
+</a>
+
+<a href="#" class="px-7 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">
+View Plans
+</a>
+</div>
+</div>
+
+<div class="relative">
+
+<div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2400"
+class="rounded-2xl w-full object-cover animate-zoomIn">
+</div>
+
+</div>
+
+</div>
+
+
+<!-- SLIDE 3 -->
+<div class="min-w-full grid md:grid-cols-2 items-center gap-10">
+
+<div>
+<h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+Business Expansion Loans
+<span class="text-yellow-400">Fast Funding</span>
+</h1>
+
+<p class="text-gray-200 mb-8 text-lg">
+Fuel your business growth with instant capital and flexible repayment solutions.
+</p>
+
+<div class="flex gap-4">
+<a href="#" class="px-7 py-3 bg-yellow-400 text-black rounded-lg font-semibold hover:scale-105 transition">
+Apply Today
+</a>
+
+<a href="#" class="px-7 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">
+Learn More
+</a>
+</div>
+</div>
+
+<div class="relative">
+
+<div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl">
+<img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=2400"
+class="rounded-2xl w-full object-cover animate-zoomIn">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ARROWS -->
+<button id="prev"
+class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-md p-3 rounded-full hover:bg-white/40 transition">
+❮
+</button>
+
+<button id="next"
+class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-md p-3 rounded-full hover:bg-white/40 transition">
+❯
+</button>
+
+</div>
+
+</div>
+
+<!-- Floating Icons -->
+<div class="absolute inset-0 pointer-events-none">
+
+<div class="absolute top-20 left-10 animate-float opacity-40">
+💰
+</div>
+
+<div class="absolute top-40 right-20 animate-float opacity-40 text-2xl">
+🏦
+</div>
+
+<div class="absolute bottom-32 left-1/4 animate-float opacity-40 text-2xl">
+📈
+</div>
+
+<div class="absolute bottom-20 right-1/3 animate-float opacity-40 text-2xl">
+💳
+</div>
+
+</div>
+
+
+<section class="py-16 bg-white">
+
+<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+<div>
+<h3 class="text-4xl font-bold text-blue-600 counter" data-target="2500">0</h3>
+<p class="text-gray-600">Loans Approved</p>
+</div>
+
+<div>
+<h3 class="text-4xl font-bold text-blue-600 counter" data-target="1200">0</h3>
+<p class="text-gray-600">Happy Clients</p>
+</div>
+
+<div>
+<h3 class="text-4xl font-bold text-blue-600 counter" data-target="18">0</h3>
+<p class="text-gray-600">Years Experience</p>
+</div>
+
+<div>
+<h3 class="text-4xl font-bold text-blue-600 counter" data-target="35">0</h3>
+<p class="text-gray-600">Bank Partners</p>
+</div>
 
 </div>
 
 </section>
-
-        <!-- Animated Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
-            <svg class="w-6 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
-                </path>
-            </svg>
-        </div>
-    </section>
+</section>
 
     <section class="py-20 bg-gray-50">
 
@@ -231,12 +449,12 @@ Contact Us
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service Card 1 -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <circle cx="12" cy="7" r="4"/>
                         <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/>
                         <circle cx="19" cy="5" r="3"/>
@@ -256,7 +474,7 @@ Contact Us
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-pink-500 to-red-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <rect x="3" y="7" width="18" height="13" rx="3"/>
                         <path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/>
                         <path d="M3 13h18"/>
@@ -275,7 +493,7 @@ Contact Us
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                       <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 10l9-7 9 7M5 10v10h14V10M9 21v-6h6v6"/>
@@ -296,7 +514,7 @@ Contact Us
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6">
-                       <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <path d="M3 11L12 3l9 8"/>
                         <path d="M5 10v10h14V10"/>
                         <rect x="9" y="14" width="6" height="6"/>
@@ -315,7 +533,7 @@ Contact Us
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2  text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <path d="M3 13l2-5h14l2 5"/>
                         <rect x="4" y="13" width="16" height="6" rx="2"/>
                         <circle cx="7" cy="19" r="1.5"/>
@@ -335,7 +553,7 @@ Contact Us
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ww-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 13h13l3 3v3h-2a2 2 0 11-4 0H9a2 2 0 11-4 0H3v-6z"/>
@@ -350,7 +568,7 @@ Contact Us
                         Learn More →
                     </a>
                 </div>
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                <!-- <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -369,11 +587,11 @@ Contact Us
                     <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
                         Learn More →
                     </a>
-                </div>
+                </div> -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M12 21s-6-4.35-9-7.5A5.5 5.5 0 0112 5a5.5 5.5 0 019 8.5C18 16.65 12 21 12 21z"/>
@@ -391,7 +609,7 @@ Contact Us
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                       <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M12 3l8 4v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/>
@@ -409,7 +627,7 @@ Contact Us
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -428,7 +646,43 @@ Contact Us
         </div>
     </section>
 
-    
+    <section class="py-14 bg-gray-50">
+
+
+
+</section>
+
+<section class="py-20 bg-gray-900 text-white overflow-hidden">
+
+<h3 class="text-center text-2xl font-semibold mb-12">
+Our Banking Partners
+</h3>
+
+<div class="marquee">
+
+<div class="marquee-track">
+
+<!-- LOGOS -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/HDFC_Bank_Logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/ICICI_Bank_Logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/SBI-logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Axis_Bank_logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Kotak_Mahindra_Bank_logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Yes_Bank_SVG_Logo.svg">
+
+<!-- DUPLICATE -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/HDFC_Bank_Logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/ICICI_Bank_Logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/SBI-logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Axis_Bank_logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Kotak_Mahindra_Bank_logo.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Yes_Bank_SVG_Logo.svg">
+
+</div>
+
+</div>
+
+</section>
     <!-- Stats Section -->
     <!-- <section class="py-20 hero-gradient">
         <div class="container mx-auto px-4 lg:px-8">
@@ -705,6 +959,55 @@ document.getElementById("emiResult").innerHTML =
         });
     </script>
     
+    <script>
+
+let slider = document.getElementById("slider");
+let index = 0;
+let totalSlides = 3;
+
+function showSlide(){
+slider.style.transform = `translateX(-${index*100}%)`;
+}
+
+document.getElementById("next").onclick = function(){
+index = (index + 1) % totalSlides;
+showSlide();
+}
+
+document.getElementById("prev").onclick = function(){
+index = (index - 1 + totalSlides) % totalSlides;
+showSlide();
+}
+
+setInterval(()=>{
+index = (index + 1) % totalSlides;
+showSlide();
+},4000);
+
+
+
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+counter.innerText = '0';
+
+const updateCounter = () => {
+const target = +counter.getAttribute('data-target');
+const c = +counter.innerText;
+
+const increment = target / 100;
+
+if(c < target){
+counter.innerText = `${Math.ceil(c + increment)}`;
+setTimeout(updateCounter,20);
+}else{
+counter.innerText = target;
+}
+};
+
+updateCounter();
+});
+</script>
 </body>
 
 </html>
