@@ -330,7 +330,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
 </section>
 
     <!-- Services Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gradient-to-b from-gray-100 via-blue-200 to-gray-300">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-4 gradient-text">Our Services</h2>
@@ -537,7 +537,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
     </section>
 
     <!-- Loan Process Section -->
-<section class="py-24 bg-gray-50 overflow-hidden">
+<section class="py-24 bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 overflow-hidden">
   <div class="max-w-7xl mx-auto px-6 text-center">
     <!-- Section Title -->
     <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6" data-aos="fade-up" data-aos-duration="1000">
@@ -590,7 +590,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
     
 
     <!-- Testimonials Section with Slider -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gradient-to-b from-white via-gray-50 to-gray-100">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-4 gradient-text">Client Testimonials</h2>
@@ -653,7 +653,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
         </div>
     </section>
 
- <section class="py-20 relative text-white overflow-hidden">
+ <section class="py-20 bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900  relative text-white overflow-hidden">
 
 <!-- Background -->
 <div class="absolute inset-0">
@@ -715,7 +715,7 @@ Our Banking Partners
 
 </section>
 
-<section id="contact" class="relative bg-black py-20 overflow-hidden">
+<section id="contact" class="relative bg-gradient-to-r from-gray-900 via-blue-900 to-indigo-900 py-20 overflow-hidden">
 
 <div class="relative max-w-7xl mx-auto px-6">
 <div class="grid lg:grid-cols-2 gap-12 items-center">
