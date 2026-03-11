@@ -21,8 +21,6 @@ transition:all .3s ease;
             background-clip: text;
         }
 
-        
-
 header.shrink{
 padding-top:8px;
 padding-bottom:8px;
@@ -57,19 +55,27 @@ pointer-events:auto;
 <body class="bg-gray-100">
 
 <!-- HEADER -->
-<header class="w-full bg-white shadow">
+<header id="header" class="bg-white sticky top-0 z-50 py-4">
 
-<div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between px-4">
 
 <!-- Logo -->
-<div class="flex items-center">
+                <div class="flex items-center">
                     <h1 class="text-3xl font-bold text-gradient">ALORNIX</h1>
                 </div>
+<!-- Mobile Button -->
+<button id="menuBtn" class="lg:hidden text-3xl">
+☰
+</button>
 
-<!-- NAV CENTER -->
+<!-- Navigation -->
 <nav id="menu"
-class="hidden lg:flex items-center space-x-8
-font-semibold text-gray-700 mx-auto">
+class="hidden lg:flex flex-col lg:flex-row lg:items-center
+space-y-4 lg:space-y-0 lg:space-x-8
+font-semibold text-gray-700
+absolute lg:static top-20 left-0
+w-full lg:w-auto bg-white lg:bg-transparent
+p-6 lg:p-0 shadow lg:shadow-none">
 
 <a href="finworld.php" class="hover:text-blue-700">HOME</a>
 
@@ -100,7 +106,9 @@ d="M19 9l-7 7-7-7"/>
 </button>
 
 <div id="serviceMenu"
-class="absolute bg-[#2c3553] text-white w-56 mt-2 rounded shadow-lg hidden">
+class="dropdown absolute
+bg-[#2c3553] text-white
+w-56 mt-2 rounded shadow-lg">
 
 <a href="personal-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">PERSONAL LOAN</a>
 <a href="business-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">BUSINESS LOAN</a>
@@ -111,7 +119,7 @@ class="absolute bg-[#2c3553] text-white w-56 mt-2 rounded shadow-lg hidden">
 <a href="credit-card.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">CREDIT CARD</a>
 <a href="health-insurance.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">HEALTH INSURANCE</a>
 <a href="life-insurance.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">LIFE INSURANCE</a>
-<a href="general-insurance.php" class="block px-5 py-3 hover:bg-blue-600">GENERAL INSURANCE</a>
+<a href="general-insurance.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">GENERAL INSURANCE</a>
 
 </div>
 
@@ -123,14 +131,10 @@ class="absolute bg-[#2c3553] text-white w-56 mt-2 rounded shadow-lg hidden">
 
 </nav>
 
-<!-- Right Button -->
-<a href="#" class=" text-gray-100 bg-gradient-to-r from-blue-600 to-red-500 font-bold px-4 py-2 rounded-lg ">
-Apply Now
-</a>
-
 </div>
 
 </header>
+
 
 
 
