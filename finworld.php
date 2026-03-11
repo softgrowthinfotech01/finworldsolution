@@ -9,104 +9,36 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
+       
+/* Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+.marquee-track {
+  display: flex;
+  width: calc(2 * 100%);
+  gap: 4rem;
+}
 
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes zoomIn {
-            from {
-                transform: scale(1.1);
-            }
-
-            to {
-                transform: scale(1);
-            }
-        }
-
-        @keyframes float {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-20px);
-            }
-    
-        }
-        @keyframes float{
-0%,100%{transform:translateY(0)}
-50%{transform:translateY(-20px)}
+.animate-marquee {
+  animation: marquee 25s linear infinite;
 }
 
 
-.marquee{
-width:100%;
-overflow:hidden;
-}
 
-.marquee-track{
-display:flex;
-align-items:center;
-gap:80px;
-width:max-content;
-animation:marquee 25s linear infinite;
-}
 
-.marquee-track img{
-height:40px;
-flex-shrink:0;
-}
 
-@keyframes marquee{
-0%{
-transform:translateX(0);
-}
-100%{
-transform:translateX(-50%);
-}
-}
 
-        .animate-fadeInUp {
-            animation: fadeInUp 1s ease-out;
-        }
 
-        .animate-fadeInDown {
-            animation: fadeInDown 1s ease-out;
-        }
-
-        .animate-zoomIn {
-            animation: zoomIn 15s ease-out infinite alternate;
-        }
-
-        .animate-float {
-            animation: float 3s ease-in-out infinite;
-        }
+        
 
         .gradient-text {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -115,9 +47,6 @@ transform:translateX(-50%);
             background-clip: text;
         }
 
-        .hero-gradient {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-        }
 
         .card-hover {
             transition: all 0.3s ease;
@@ -165,6 +94,51 @@ animation: gradientMove 10s ease infinite;
 100%{background-position:0% 50%}
 }
 
+
+ 
+/* Premium Floating Blob Animation */
+
+@keyframes blob {
+  0% {
+    transform: translate(0px,0px) scale(1);
+  }
+  33% {
+    transform: translate(30px,-50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px,20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px,0px) scale(1);
+  }
+}
+
+.animate-blob{
+  animation: blob 12s infinite ease-in-out;
+}
+
+.animation-delay-2000{
+  animation-delay:2s;
+}
+
+.animation-delay-4000{
+  animation-delay:4s;
+}
+
+
+.client-slider-track{
+  animation: clientSlide 3s linear infinite;
+}
+
+@keyframes clientSlide{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
+
     </style>
 </head>
 
@@ -187,255 +161,171 @@ animation: gradientMove 10s ease infinite;
    
          <?php  include_once "header.php"; ?>
 
-<section class="relative overflow-hidden text-white">
-
-<!-- Animated Gradient Background -->
-<div class="absolute inset-0 bg-gradient-to-r from-blue-950 via-indigo-900 to-blue-900 animate-gradient"></div>
-
-<div class="relative max-w-7xl mx-auto px-6 py-24">
-
-<div class="relative overflow-hidden rounded-3xl">
+<section class="relative overflow-visible text-white">
 
 
+<!-- Background Image -->
+<div class="absolute inset-0">
+  <img src="images/bg_slider_img.jpg"
+       class="w-full h-full object-cover opacity-100">
 
-<!-- SLIDER -->
-<div id="slider" class="flex transition-transform duration-700 ease-in-out">
-
-<!-- SLIDE 1 -->
-<div class="min-w-full grid md:grid-cols-2 items-center gap-10">
-
-<div>
-<h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-Instant Personal Loans <br>
-<span class="text-yellow-400">Up To ₹25 Lakhs</span>
-</h1>
-
-<p class="text-gray-200 mb-8 text-lg">
-Get quick approval with minimal documents and flexible EMI options designed for your financial needs.
-</p>
-
-<div class="flex gap-4">
-<a href="#" class="px-7 py-3 bg-yellow-400 text-black rounded-lg font-semibold hover:scale-105 transition">
-Apply Now
-</a>
-
-<a href="#" class="px-7 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">
-Check Eligibility
-</a>
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-950/90 via-indigo-900/80 to-blue-900/90"></div>
 </div>
-</div>
+  <div class="relative max-w-7xl mx-auto px-6 py-24">
+    <div class="relative rounded-3xl overflow-hidden">
 
-<div class="relative">
+      <!-- SLIDER -->
+      <div id="slider" class="flex transition-transform duration-700 ease-in-out">
 
-<div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl">
-<img src="https://images.unsplash.com/photo-1620266757065-5814239881fd?q=80&w=2400"
-class="rounded-2xl w-full object-cover animate-zoomIn">
-</div>
+        <!-- SLIDE 1 -->
+        <div class="min-w-full grid md:grid-cols-2 items-center gap-10">
+          <div>
+            <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+              Instant Personal Loans <br>
+              <span class="text-yellow-400">Up To ₹25 Lakhs</span>
+            </h1>
+            <p class="text-gray-200 mb-8 text-lg">
+              Get quick approval with minimal documents and flexible EMI options designed for your financial needs.
+            </p>
+            <div class="flex gap-4">
+              <a href="#" class="px-7 py-3 bg-yellow-400 text-black rounded-lg font-semibold hover:scale-105 transition">Apply Now</a>
+              <a href="#" class="px-7 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">Check Eligibility</a>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl">
+              <img src="https://images.unsplash.com/photo-1620266757065-5814239881fd?q=80&w=2400" class="rounded-2xl w-full object-cover animate-zoomIn">
+            </div>
+          </div>
+        </div>
 
-</div>
+        <!-- SLIDE 2 -->
+        <div class="min-w-full grid md:grid-cols-2 items-center gap-10">
+          <div>
+            <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+              Affordable Home Loans <br>
+              <span class="text-yellow-400">Lowest Interest Rates</span>
+            </h1>
+            <p class="text-gray-200 mb-8 text-lg">
+              Turn your dream home into reality with easy EMI options and fast loan approvals.
+            </p>
+            <div class="flex gap-4">
+              <a href="#" class="px-7 py-3 bg-yellow-400 text-black rounded-lg font-semibold hover:scale-105 transition">Apply Now</a>
+              <a href="#" class="px-7 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">View Plans</a>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2400" class="rounded-2xl w-full object-cover animate-zoomIn">
+            </div>
+          </div>
+        </div>
 
-</div>
+        <!-- SLIDE 3 -->
+        <div class="min-w-full grid md:grid-cols-2 items-center gap-10">
+          <div>
+            <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+              Business Expansion Loans <br>
+              <span class="text-yellow-400">Fast Funding</span>
+            </h1>
+            <p class="text-gray-200 mb-8 text-lg">
+              Fuel your business growth with instant capital and flexible repayment solutions.
+            </p>
+            <div class="flex gap-4">
+              <a href="#" class="px-7 py-3 bg-yellow-400 text-black rounded-lg font-semibold hover:scale-105 transition">Apply Today</a>
+              <a href="#" class="px-7 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">Learn More</a>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl">
+              <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=2400" class="rounded-2xl w-full object-cover animate-zoomIn">
+            </div>
+          </div>
+        </div>
 
+      </div>
 
-<!-- SLIDE 2 -->
-<div class="min-w-full grid md:grid-cols-2 items-center gap-10">
+      <!-- ARROWS -->
+      
 
-<div>
-<h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-Affordable Home Loans <br>
-<span class="text-yellow-400">Lowest Interest Rates</span>
-</h1>
-
-<p class="text-gray-200 mb-8 text-lg">
-Turn your dream home into reality with easy EMI options and fast loan approvals.
-</p>
-
-<div class="flex gap-4">
-<a href="#" class="px-7 py-3 bg-yellow-400 text-black rounded-lg font-semibold hover:scale-105 transition">
-Apply Now
-</a>
-
-<a href="#" class="px-7 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">
-View Plans
-</a>
-</div>
-</div>
-
-<div class="relative">
-
-<div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl">
-<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2400"
-class="rounded-2xl w-full object-cover animate-zoomIn">
-</div>
-
-</div>
-
-</div>
-
-
-<!-- SLIDE 3 -->
-<div class="min-w-full grid md:grid-cols-2 items-center gap-10">
-
-<div>
-<h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-Business Expansion Loans
-<span class="text-yellow-400">Fast Funding</span>
-</h1>
-
-<p class="text-gray-200 mb-8 text-lg">
-Fuel your business growth with instant capital and flexible repayment solutions.
-</p>
-
-<div class="flex gap-4">
-<a href="#" class="px-7 py-3 bg-yellow-400 text-black rounded-lg font-semibold hover:scale-105 transition">
-Apply Today
-</a>
-
-<a href="#" class="px-7 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">
-Learn More
-</a>
-</div>
-</div>
-
-<div class="relative">
-
-<div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl">
-<img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=2400"
-class="rounded-2xl w-full object-cover animate-zoomIn">
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- ARROWS -->
-<button id="prev"
-class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-md p-3 rounded-full hover:bg-white/40 transition">
+    </div>
+  <!-- Slider Arrows - Premium Design -->
+<button id="prev" 
+class="absolute left-[-75px] top-1/2 -translate-y-1/2 
+flex items-center justify-center w-14 h-14
+bg-white/10 backdrop-blur-xl border border-white/20
+rounded-full shadow-2xl text-white font-bold text-3xl 
+hover:bg-gradient-to-r hover:from-yellow-400 hover:to-yellow-300 
+hover:text-black hover:scale-110 transition-all duration-300 z-20">
 ❮
 </button>
 
-<button id="next"
-class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-md p-3 rounded-full hover:bg-white/40 transition">
+<button id="next" 
+class="absolute right-[-75px] top-1/2 -translate-y-1/2
+flex items-center justify-center w-14 h-14
+bg-white/10 backdrop-blur-xl border border-white/20
+rounded-full shadow-2xl text-white font-bold text-3xl
+hover:bg-gradient-to-l hover:from-yellow-400 hover:to-yellow-300 
+hover:text-black hover:scale-110 transition-all duration-300 z-20">
 ❯
 </button>
 
-</div>
+  </div>
 
-</div>
-
-<!-- Floating Icons -->
-<div class="absolute inset-0 pointer-events-none">
-
-<div class="absolute top-20 left-10 animate-float opacity-40">
-💰
-</div>
-
-<div class="absolute top-40 right-20 animate-float opacity-40 text-2xl">
-🏦
-</div>
-
-<div class="absolute bottom-32 left-1/4 animate-float opacity-40 text-2xl">
-📈
-</div>
-
-<div class="absolute bottom-20 right-1/3 animate-float opacity-40 text-2xl">
-💳
-</div>
-
-</div>
-
-
-<section class="py-16 bg-white">
-
-<div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-
-<div>
-<h3 class="text-4xl font-bold text-blue-600 counter" data-target="2500">0</h3>
-<p class="text-gray-600">Loans Approved</p>
-</div>
-
-<div>
-<h3 class="text-4xl font-bold text-blue-600 counter" data-target="1200">0</h3>
-<p class="text-gray-600">Happy Clients</p>
-</div>
-
-<div>
-<h3 class="text-4xl font-bold text-blue-600 counter" data-target="18">0</h3>
-<p class="text-gray-600">Years Experience</p>
-</div>
-
-<div>
-<h3 class="text-4xl font-bold text-blue-600 counter" data-target="35">0</h3>
-<p class="text-gray-600">Bank Partners</p>
-</div>
-
-</div>
+  <!-- Floating Icons -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-20 left-10 animate-float opacity-40">💰</div>
+    <div class="absolute top-40 right-20 animate-float opacity-40 text-2xl">🏦</div>
+    <div class="absolute bottom-32 left-1/4 animate-float opacity-40 text-2xl">📈</div>
+    <div class="absolute bottom-20 right-1/3 animate-float opacity-40 text-2xl">💳</div>
+  </div>
 
 </section>
-</section>
-
-    <section class="py-20 bg-gray-50">
-
-<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-
-<!-- Image -->
-
-<div class="relative">
-
-<img 
-src="https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1"
-class="rounded-2xl shadow-xl w-full">
-
-<div class="absolute -bottom-6 -right-6 bg-blue-600 text-white p-6 rounded-xl shadow-lg">
-<p class="text-2xl font-bold">18+</p>
-<p class="text-sm">Years Experience</p>
-</div>
-
-</div>
 
 
-<!-- Content -->
+    <section class="relative py-24 bg-gradient-to-b from-gray-50 via-gray-100 to-gray-50 overflow-hidden">
 
-<div>
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
 
-<h2 class="text-4xl font-bold text-gray-800 mb-6">
-Trusted Financial Guidance for Your Future
-</h2>
+    <!-- Image -->
+    <div class="relative" data-aos="fade-right" data-aos-duration="1200">
+      <img 
+        src="images/about_us_img.cms" 
+        alt="Financial Guidance" 
+        class="rounded-3xl shadow-2xl w-full object-cover h-[500px] lg:h-[600px]">
 
-<p class="text-gray-600 mb-5 leading-relaxed">
-Money Trust Financial Services provides a wide range of financial 
-solutions including personal loans, business loans, home loans, 
-insurance, and investment advisory services. Our goal is to help 
-individuals and businesses achieve their financial objectives 
-through expert guidance and reliable financial products.
-</p>
+      <!-- Glass Card Overlay -->
+    
+    </div>
 
-<p class="text-gray-600 mb-6 leading-relaxed">
-We carefully understand each client’s financial needs, risk profile, 
-and long-term goals to provide customized financial solutions that 
-ensure stability, growth, and financial confidence.
-</p>
+    <!-- Content -->
+    <div data-aos="fade-left" data-aos-duration="1200">
+      <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
+        Trusted Financial Guidance for Your Future
+      </h2>
 
+      <p class="text-gray-700 mb-5 leading-relaxed text-lg">
+        Money Trust Financial Services provides a wide range of financial solutions including personal loans, business loans, home loans, insurance, and investment advisory services. Our goal is to help individuals and businesses achieve their financial objectives through expert guidance and reliable financial products.
+      </p>
 
-<div class="flex gap-4">
+      <p class="text-gray-700 mb-8 leading-relaxed text-lg">
+        We carefully understand each client’s financial needs, risk profile, and long-term goals to provide customized financial solutions that ensure stability, growth, and financial confidence.
+      </p>
 
-<a href="about.php"
-class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-Learn More
-</a>
+      <div class="flex gap-5 flex-wrap">
+        <a href="about.php" 
+          class="px-8 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold shadow-lg hover:scale-105 transition-transform duration-300">
+          Learn More
+        </a>
 
-<a href="contact.php"
-class="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition">
-Contact Us
-</a>
+        <a href="contact.php" 
+          class="px-8 py-3 rounded-lg border-2 border-blue-600 text-blue-600 font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300">
+          Contact Us
+        </a>
+      </div>
+    </div>
 
-</div>
-
-</div>
-
-</div>
+  </div>
 
 </section>
 
@@ -453,15 +343,15 @@ Contact Us
                 <!-- Service Card 1 -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-purple-500">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                        class="relative w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex ml-[165px] justify-center mb-6">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2  translate-x-1/2 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <circle cx="12" cy="7" r="4"/>
                         <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/>
                         <circle cx="19" cy="5" r="3"/>
                         <path d="M19 4v2M18 5h2"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Personal Loan</h3>
+                    <h3 class="text-2xl font-bold text-center mb-4">Personal Loan</h3>
                     <p class="text-gray-600 mb-6">
                         A personal loan is an unsecured loan that provides quick
                         funds for personal expenses with flexible repayment options.
@@ -473,14 +363,14 @@ Contact Us
                 <!-- Service Card 2 -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-indigo-500">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-pink-500 to-red-500 rounded-2xl flex items-center justify-center mb-6">
+                        class="w-16 h-16 bg-gradient-to-br from-pink-500 to-red-500 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-indigo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <rect x="3" y="7" width="18" height="13" rx="3"/>
                         <path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/>
                         <path d="M3 13h18"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Business Loan</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-center">Business Loan</h3>
                     <p class="text-gray-600 mb-6">
                         A business loan provides financial support to help businesses
                          manage operations, expand, or invest in growth opportunities.
@@ -492,7 +382,7 @@ Contact Us
 
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-pink-600">
                     <div
-                        class="w-16 h-16 bg-gradient-to-l from-pink-200 via-purple-400 to-indigo-600 rounded-2xl flex items-center justify-center mb-6">
+                        class="w-16 h-16 bg-gradient-to-l from-pink-200 via-purple-400 to-indigo-600 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -500,7 +390,7 @@ Contact Us
 
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Loan against Property</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-center">Loan against Property</h3>
                     <p class="text-gray-600 mb-6">
                         Unlock the value of your property to get high-value
                          loans at competitive interest rates.
@@ -513,14 +403,14 @@ Contact Us
                 <!-- Service Card 3 -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-yellow-500">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6">
+                        class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex ml-[165px] items-center justify-center mb-6">
                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-yellow-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <path d="M3 11L12 3l9 8"/>
                         <path d="M5 10v10h14V10"/>
                         <rect x="9" y="14" width="6" height="6"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Home Loan</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-center">Home Loan</h3>
                     <p class="text-gray-600 mb-6">
                         A home loan helps individuals finance the purchase, construction, or
                          renovation of a house with flexible repayment options.
@@ -532,7 +422,7 @@ Contact Us
                  <!-- Service Card 4 -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-red-400">
                     <div
-                        class="w-16 h-16 bg-gradient-to-bl from-red-900 via-pink-600 to-rose-500 rounded-2xl flex items-center justify-center mb-6">
+                        class="w-16 h-16 bg-gradient-to-bl from-red-900 via-pink-600 to-rose-500 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2  text-red-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <path d="M3 13l2-5h14l2 5"/>
                         <rect x="4" y="13" width="16" height="6" rx="2"/>
@@ -540,7 +430,7 @@ Contact Us
                         <circle cx="17" cy="19" r="1.5"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Car Loan</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-center">Car Loan</h3>
                     <p class="text-gray-600 mb-6">
                         A car loan helps individuals purchase a new or used 
                         vehicle by paying in easy monthly installments (EMIs).
@@ -552,7 +442,7 @@ Contact Us
                 
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-green-500">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-gray-400 via-pink-500 to-rose-400 rounded-2xl flex items-center justify-center mb-6">
+                        class="w-16 h-16 bg-gradient-to-r from-gray-400 via-pink-500 to-rose-400 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -560,7 +450,7 @@ Contact Us
 
                             </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Commercial Vehical Loan</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-center">Commercial Vehical Loan</h3>
                     <p class="text-gray-600 mb-6">
                        Finance commercial vehicles easily to expand and grow your business operations.
                     </p>
@@ -590,7 +480,7 @@ Contact Us
                 </div> -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-teal-500">
                     <div
-                        class="w-16 h-16 bg-gradient-to-br from-gray-300 via-gray-500 to-gray-700 rounded-2xl flex items-center justify-center mb-6">
+                        class="w-16 h-16 bg-gradient-to-br from-gray-300 via-gray-500 to-gray-700 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -598,7 +488,7 @@ Contact Us
 
                             </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Health Insurance</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-center">Health Insurance</h3>
                     <p class="text-gray-600 mb-6">
                         Protect yourself and your family from medical expenses with comprehensive health coverage.
                     </p>
@@ -608,7 +498,7 @@ Contact Us
                 </div>
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-cyan-500">
                     <div
-                        class="w-16 h-16 bg-gradient-to-bl from-yellow-500 via-lime-500 to-green-500 rounded-2xl flex items-center justify-center mb-6">
+                        class="w-16 h-16 bg-gradient-to-bl from-yellow-500 via-lime-500 to-green-500 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-cyan-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -616,7 +506,7 @@ Contact Us
 
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Life Insurance</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-center">Life Insurance</h3>
                     <p class="text-gray-600 mb-6">
                       Secure your family's financial future with reliable life insurance protection.
                     </p>
@@ -626,7 +516,7 @@ Contact Us
                 </div>
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-orange-600">
                     <div
-                        class="w-16 h-16 bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6">
+                        class="w-16 h-16 bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -634,7 +524,7 @@ Contact Us
 
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">General Insurance</h3>
+                    <h3 class="text-2xl font-bold mb-4 text-center">General Insurance</h3>
                     <p class="text-gray-600 mb-6">
                        Comprehensive insurance solutions to protect your assets, travel, and valuables.
                     </p>
@@ -646,69 +536,57 @@ Contact Us
         </div>
     </section>
 
-    <section class="py-14 bg-gray-50">
+    <!-- Loan Process Section -->
+<section class="py-24 bg-gray-50 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <!-- Section Title -->
+    <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6" data-aos="fade-up" data-aos-duration="1000">
+      Our Loan Process
+    </h2>
+    <p class="text-gray-600 text-lg mb-16" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+      Simple, Fast, and Transparent. Get your loan in just a few easy steps.
+    </p>
 
-
-
-</section>
-
-<section class="py-20 bg-gray-900 text-white overflow-hidden">
-
-<h3 class="text-center text-2xl font-semibold mb-12">
-Our Banking Partners
-</h3>
-
-<div class="marquee">
-
-<div class="marquee-track">
-
-<!-- LOGOS -->
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/HDFC_Bank_Logo.svg">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/ICICI_Bank_Logo.svg">
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/SBI-logo.svg">
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Axis_Bank_logo.svg">
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Kotak_Mahindra_Bank_logo.svg">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Yes_Bank_SVG_Logo.svg">
-
-<!-- DUPLICATE -->
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/HDFC_Bank_Logo.svg">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/ICICI_Bank_Logo.svg">
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/SBI-logo.svg">
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Axis_Bank_logo.svg">
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Kotak_Mahindra_Bank_logo.svg">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Yes_Bank_SVG_Logo.svg">
-
-</div>
-
-</div>
-
-</section>
-    <!-- Stats Section -->
-    <!-- <section class="py-20 hero-gradient">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <div class="text-4xl lg:text-5xl font-bold gradient-text mb-2">500+</div>
-                    <p class="text-gray-600">Projects Completed</p>
-                </div>
-                <div>
-                    <div class="text-4xl lg:text-5xl font-bold gradient-text mb-2">200+</div>
-                    <p class="text-gray-600">Happy Clients</p>
-                </div>
-                <div>
-                    <div class="text-4xl lg:text-5xl font-bold gradient-text mb-2">50+</div>
-                    <p class="text-gray-600">Team Members</p>
-                </div>
-                <div>
-                    <div class="text-4xl lg:text-5xl font-bold gradient-text mb-2">10+</div>
-                    <p class="text-gray-600">Years Experience</p>
-                </div>
-            </div>
+    <!-- Process Cards -->
+    <div class="grid md:grid-cols-4 gap-8">
+      <!-- Step 1 -->
+      <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <div class="bg-gradient-to-r from-blue-500 to-indigo-600 p-5 rounded-full text-white mb-4 shadow-lg">
+          📝
         </div>
-    </section> -->
-    
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Apply Online</h3>
+        <p class="text-gray-600 text-center">Fill out a simple application form with your basic details.</p>
+      </div>
 
-    <!-- Portfolio Section -->
+      <!-- Step 2 -->
+      <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <div class="bg-gradient-to-r from-green-500 to-teal-600 p-5 rounded-full text-white mb-4 shadow-lg">
+          📄
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Document Verification</h3>
+        <p class="text-gray-600 text-center">Submit your documents and we verify them quickly and securely.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+        <div class="bg-gradient-to-r from-yellow-400 to-orange-500 p-5 rounded-full text-white mb-4 shadow-lg">
+          ✅
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Approval</h3>
+        <p class="text-gray-600 text-center">Get instant approval based on your eligibility and submitted documents.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+        <div class="bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-full text-white mb-4 shadow-lg">
+          💰
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Receive Funds</h3>
+        <p class="text-gray-600 text-center">Funds are transferred directly to your account quickly and safely.</p>
+      </div>
+    </div>
+  </div>
+</section>
     
 
     <!-- Testimonials Section with Slider -->
@@ -775,57 +653,145 @@ Our Banking Partners
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-20 bg-gradient-to-r from-purple-600 to-indigo-600">
-        <div class="container mx-auto px-4 lg:px-8 text-center">
-            <h2 class="text-4xl lg:text-5xl font-bold text-white mb-6">
-                Ready to Start Your Project?
-            </h2>
-            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-                Let's work together to bring your vision to life with innovative digital solutions
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button
-                    class="px-8 py-4 bg-white text-purple-600 font-semibold rounded-full hover:shadow-xl transform hover:scale-105 transition">
-                    Get Free Consultation
-                </button>
-                <button
-                    class="px-8 py-4 bg-transparent text-white font-semibold rounded-full border-2 border-white hover:bg-white hover:text-purple-600 transition">
-                    View Pricing
-                </button>
-            </div>
-        </div>
-    </section>
+ <section class="py-20 relative text-white overflow-hidden">
 
-    <section class="py-16 bg-gray-100">
-
-<div class="max-w-4xl mx-auto bg-white p-10 rounded-xl shadow">
-
-<h2 class="text-3xl font-bold text-center mb-8">Loan EMI Calculator</h2>
-
-<div class="grid md:grid-cols-3 gap-6">
-
-<input id="amount" type="number" placeholder="Loan Amount"
-class="border p-3 rounded">
-
-<input id="rate" type="number" placeholder="Interest Rate %"
-class="border p-3 rounded">
-
-<input id="years" type="number" placeholder="Years"
-class="border p-3 rounded">
-
+<!-- Background -->
+<div class="absolute inset-0">
+  <img src="images/about_us_img.cms" class="w-full h-full object-cover opacity-30">
+  <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 opacity-80"></div>
 </div>
 
-<button onclick="calculateEMI()"
-class="mt-6 bg-blue-600 text-white px-6 py-3 rounded">
-Calculate EMI
-</button>
+<h3 class="text-center text-3xl font-bold mb-12 relative z-10">
+Our Banking Partners
+</h3>
 
-<p class="mt-4 text-xl font-semibold" id="emiResult"></p>
+<div class="overflow-hidden relative w-full max-w-4xl mx-auto">
+
+  <div class="client-slider-wrapper">
+
+    <div class="client-slider-track flex items-center gap-[80px]">
+
+      <!-- Slide 1 -->
+      <div class="flex-shrink-0 w-40">
+          <img src="images/axis_logo.jpg"
+               class="w-[280px] h-[70px] rounded-lg">
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="flex-shrink-0 w-40">
+          <img src="images/hdfc_logo.png"
+               class="w-[280px] h-[70px] rounded-lg">
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="flex-shrink-0 w-40">
+          <img src="images/icic_logo.png"
+               class="w-[280px] h-[70px] rounded-lg">
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="flex-shrink-0 w-40">
+          <img src="images/kotak_logo.jpg"
+               class="w-[280px] h-[70px] rounded-lg">
+      </div>
+
+      <div class="flex-shrink-0 w-40">
+          <img src="images/panjab_logo.jpg"
+               class="w-[280px] h-[70px] rounded-lg">
+      </div>
+
+      <div class="flex-shrink-0 w-40">
+          <img src="images/sbi_logo.jpg"
+               class="w-[280px] h-[70px] rounded-lg ">
+      </div>
+
+  
+
+    </div>
+
+  </div>
 
 </div>
 
 </section>
+
+<section id="contact" class="relative bg-black py-20 overflow-hidden">
+
+<div class="relative max-w-7xl mx-auto px-6">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+
+<!-- Contact Form -->
+<div 
+data-aos="fade-right"
+data-aos-duration="1000"
+data-aos-offset="200"
+class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-10 shadow-2xl">
+
+<h2 class="text-3xl text-white font-bold mb-6">Get in Touch</h2>
+
+<p class="text-gray-300 mb-6">
+Have questions or want to discuss your financial goals? Fill out the form and our experts will reach out to you.
+</p>
+
+<form class="space-y-4">
+
+<input type="text" placeholder="Full Name"
+class="w-full px-4 py-3 rounded-lg border border-gray-400/40 bg-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+
+<input type="email" placeholder="Email Address"
+class="w-full px-4 py-3 rounded-lg border border-gray-400/40 bg-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+
+<textarea placeholder="Your Message" rows="5"
+class="w-full px-4 py-3 rounded-lg border border-gray-400/40 bg-white/20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"></textarea>
+
+<button
+class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg w-full transition-all duration-300 hover:scale-105">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+
+<!-- Contact Info -->
+<div 
+data-aos="fade-left"
+data-aos-duration="1000"
+data-aos-offset="200"
+class="text-white space-y-6">
+
+<h3 class="text-3xl font-bold">Contact Information</h3>
+
+<p class="text-gray-300 leading-relaxed">
+📞 Phone: +91 8080435343 <br>
+📧 Email: info@moneytrust.in <br>
+📍 Address: 123 Finance Street, Pune, India
+</p>
+
+<div class="flex space-x-4 mt-6">
+
+<a href="#" class="p-3 bg-white/10 backdrop-blur-md rounded-full hover:bg-blue-600 transition hover:scale-110">
+<img src="icons/facebook.svg" class="w-5 h-5">
+</a>
+
+<a href="#" class="p-3 bg-white/10 backdrop-blur-md rounded-full hover:bg-indigo-500 transition hover:scale-110">
+<img src="icons/twitter.svg" class="w-5 h-5">
+</a>
+
+<a href="#" class="p-3 bg-white/10 backdrop-blur-md rounded-full hover:bg-purple-500 transition hover:scale-110">
+<img src="icons/linkedin.svg" class="w-5 h-5">
+</a>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</section>
+    
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/919876543210"
 target="_blank"
@@ -844,28 +810,14 @@ class="w-6 h-6">
 
 </a>
 
-<script>
 
-function calculateEMI(){
-
-let P = document.getElementById("amount").value
-let R = document.getElementById("rate").value / 12 / 100
-let N = document.getElementById("years").value * 12
-
-let EMI = P * R * Math.pow(1+R,N) / (Math.pow(1+R,N)-1)
-
-document.getElementById("emiResult").innerHTML =
-"Monthly EMI: ₹ " + Math.round(EMI)
-
-}
-
-</script>
 
     <!-- Footer -->
    
        <?php  include_once "footer.php"; ?>
     <!-- JavaScript -->
     <script>
+        
         // Mobile Menu Toggle
         document.getElementById('mobile-menu-btn').addEventListener('click', function () {
             document.getElementById('mobile-menu').classList.toggle('hidden');
@@ -882,27 +834,11 @@ document.getElementById("emiResult").innerHTML =
             });
         });
 
-        // Intersection Observer for Animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver(function (entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-fadeInUp');
-                }
-            });
-        }, observerOptions);
-
-        // Observe all cards
-        document.querySelectorAll('.card-hover').forEach(card => {
-            observer.observe(card);
-        });
+       
     </script>
     
     <script>
+// slider
 
 let slider = document.getElementById("slider");
 let index = 0;
@@ -929,27 +865,27 @@ showSlide();
 
 
 
-const counters = document.querySelectorAll('.counter');
 
-counters.forEach(counter => {
-counter.innerText = '0';
-
-const updateCounter = () => {
-const target = +counter.getAttribute('data-target');
-const c = +counter.innerText;
-
-const increment = target / 100;
-
-if(c < target){
-counter.innerText = `${Math.ceil(c + increment)}`;
-setTimeout(updateCounter,20);
-}else{
-counter.innerText = target;
-}
-};
-
-updateCounter();
+// animation about us and loan process
+AOS.init({
+  once: false,   // allow animation every time you scroll
+  offset: 100,   // trigger animation when 100px in view
+  duration: 100, // animation duration (optional)
+  easing: 'ease-in-out', // smooth animation
 });
+
+// animation for contact form
+AOS.init({
+  once: false,   // animation runs every time when scrolling
+  offset: 150,
+  duration: 100,
+  easing: "ease-in-out"
+});
+
+
+
+
+
 </script>
 </body>
 
