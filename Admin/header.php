@@ -9,7 +9,7 @@
                 onclick="sidebarToggle()"></i>
 
             <h1 class="text-gray-700 text-sm md:text-lg font-semibold">
-                Granthaa Admin Panel
+          
             </h1>
         </div>
 
@@ -40,17 +40,8 @@
 
                 <ul class="text-sm text-gray-700">
 
-                    <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">
-                            My account
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">
-                            Notifications
-                        </a>
-                    </li>
+                
+                   
 
                     <li>
                         <hr class="my-1 border-gray-200">
