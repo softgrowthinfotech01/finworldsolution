@@ -179,7 +179,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
     <div data-aos="fade-left" data-aos-duration="1200">
       <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
         Trusted Financial Guidance for
-        <span class="bg-main"> Your Future </span>
+        <span class="bg-text"> Your Future </span>
       </h2>
 
       <p class="text-gray-700 mb-5 leading-relaxed text-lg">
@@ -211,7 +211,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
     <section class="py-20 bg-gradient-to-b from-gray-100 via-blue-200 to-gray-300">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-4 ">Our <span class="bg-main">Services</span></h2>
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4 ">Our <span class="bg-text">Services</span></h2>
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto">
                     Comprehensive digital solutions tailored to your business needs
                 </p>
