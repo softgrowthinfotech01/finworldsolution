@@ -3,7 +3,7 @@ session_start();
 require "conn.php";
 if(isset($_SESSION['admin_username']))
 {
-     echo "<script>window.location.href = 'dashboard';</script>";
+     echo "<script>window.location.href = 'home';</script>";
 }
 if(isset($_POST['submit']))
 {
@@ -14,7 +14,7 @@ if(isset($_POST['submit']))
      if($row_login)
      {
            $_SESSION["admin_username"]=$_POST['admin_login'];
-		   echo "<script>window.location.href='dashboard';</script>";
+		   echo "<script>window.location.href='home';</script>";
      }
 	 else
 	 {
@@ -46,11 +46,11 @@ if(isset($_POST['submit']))
       Welcome Back
     </h2>
 
-    <form class="space-y-5">
+    <form class="space-y-5" method="post" action="">
 
       <div>
         <input type="text" name="admin_login" 
-               placeholder="Email Address"
+               placeholder="Username."
                class="w-full px-4 py-3 rounded-lg 
                       bg-white/30 placeholder-white
                       focus:outline-none focus:ring-2 
