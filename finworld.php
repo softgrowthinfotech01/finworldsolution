@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
+  <link href="style.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
@@ -313,12 +313,12 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
       </p>
 
       <div class="flex gap-5 flex-wrap">
-        <a href="about.php" 
-          class="px-8 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold shadow-lg hover:scale-105 transition-transform duration-300">
+        <a href="about" 
+          class="px-8 py-3 rounded-lg bg-main  text-white font-semibold shadow-lg hover:scale-105 transition-transform duration-300">
           Learn More
         </a>
 
-        <a href="contact.php" 
+        <a href="contact" 
           class="px-8 py-3 rounded-lg border-2 border-blue-600 text-blue-600 font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300">
           Contact Us
         </a>
