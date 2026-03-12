@@ -1,205 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Finworld</title>
+    <title>Finworld</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<style>
-
-header{
-transition:all .3s ease;
-}
-
-.text-gradient {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+    <style>
+        header {
+            transition: .3s
         }
 
-header.shrink{
-padding-top:8px;
-padding-bottom:8px;
-box-shadow:0 4px 20px rgba(0,0,0,0.15);
-}
+        .text-gradient {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent
+        }
 
-.logo{
-transition:all .3s ease;
-}
+        .dropdown {
+            display: none;
+        }
 
-header.shrink .logo{
-width:45px;
-}
+        .dropdown.show {
+            display: block;
+        }
 
-.dropdown{
-opacity:0;
-transform:translateY(10px);
-pointer-events:none;
-transition:all .25s ease;
-}
-
-.dropdown.show{
-opacity:1;
-transform:translateY(0);
-pointer-events:auto;
-}
-
-</style>
+        header.shrink {
+            padding: 8px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, .15);
+        }
+    </style>
 
 </head>
 
 <body class="bg-gray-100">
 
 <!-- HEADER -->
-<header id="header" class="bg-white sticky top-0 z-50 py-4">
+<header id="header" class="sticky bg-white top-0 z-50 py-4 ">
 
-<div class="flex items-center  px-4">
+        <div class=" flex justify-between max-w-7xl mx-auto px-4">
 
-<!-- Logo -->
-                <div class="flex items-center">
-                    <h1 class="text-3xl font-bold text-gradient">Finworld Solution</h1>
-                </div>
-<!-- Mobile Button -->
-<button id="menuBtn" class="lg:hidden text-3xl">
-☰
-</button>
-<div class="flex justify-center flex-1">
-<!-- Navigation -->
-<nav id="menu"
-class="hidden lg:flex flex-col lg:flex-row lg:items-center
-space-y-4 lg:space-y-0 lg:space-x-8
+            <div class="flex justify-between items-center">
+
+    <!-- Logo + Name -->
+    <div class="flex items-center gap-2">
+        <img src="images/finworld_logo.png"
+             alt="Finworld Logo"
+             class="w-10 sm:w-12 md:w-14 lg:w-16 h-auto object-contain">
+
+        <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gradient">
+            Finworld Solution
+        </h1>
+    </div>
+
+    <!-- Mobile Toggle -->
+    <button id="menuBtn" class="ml-[150px]  lg:hidden  text-3xl">
+        ☰
+    </button>
+
+</div>
+
+          <nav id="menu"
+class="hidden lg:flex items-center justify-center
+gap-10
 font-semibold text-gray-700
-absolute lg:static top-20 left-0
-w-full lg:w-auto bg-white lg:bg-transparent
-p-6 lg:p-0 shadow lg:shadow-none">
+absolute lg:static
+top-20 left-0
+w-full lg:w-auto
+bg-white lg:bg-transparent
+p-6 lg:p-0
+shadow lg:shadow-none">
 
-<a href="finworld" class="hover:text-blue-700">HOME</a>
+                <a href="#" class="block hover:text-blue-700">HOME</a>
 
-<a href="about" class="hover:text-blue-700">ABOUT US</a>
+                <a href="about.php" class="block hover:text-blue-700">ABOUT US</a>
 
-<!-- Services -->
-<div class="relative">
+                <!-- UNSECURED -->
+                <div class="relative">
 
-<button id="serviceBtn"
-class="flex items-center gap-1 hover:text-blue-700">
+                    <button class="dropdownBtn flex items-center gap-1 hover:text-blue-700">
 
-SERVICES
+                        UNSECURED LOAN
 
-<svg xmlns="http://www.w3.org/2000/svg"
-class="w-4 h-4 transition-transform"
-id="arrow"
-fill="none"
-stroke="currentColor"
-viewBox="0 0 24 24">
+                        <svg class="w-4 h-4 arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 
-<path stroke-linecap="round"
-stroke-linejoin="round"
-stroke-width="2"
-d="M19 9l-7 7-7-7"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
 
-</svg>
+                        </svg>
 
-</button>
+                    </button>
 
-<div id="serviceMenu"
-class="dropdown absolute
-bg-[#2c3553] text-white
-w-56 mt-2 rounded shadow-lg">
+                    <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded shadow">
 
-<a href="personal-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">PERSONAL LOAN</a>
-<a href="business-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">BUSINESS LOAN</a>
-<a href="loan-against-property.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">LOAN AGAINST PROPERTY</a>
-<a href="home-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">HOME LOAN</a>
-<a href="car-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">CAR LOAN</a>
-<a href="commercial-vehicle-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">COMMERCIAL VEHICAL LOAN</a>
-<a href="credit-card.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">CREDIT CARD</a>
-<a href="health-insurance.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">HEALTH INSURANCE</a>
-<a href="life-insurance.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">LIFE INSURANCE</a>
-<a href="general-insurance.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">GENERAL INSURANCE</a>
+                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Personal Loan</a>
 
-</div>
+                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Business Loan</a>
 
-</div>
+                        <a href="#" class="block px-5 py-3 hover:bg-blue-600">Credit Card</a>
 
-<a href="faq" class="hover:text-blue-700">FAQ'S</a>
+                    </div>
 
-<a href="contact" class="hover:text-blue-700">CONTACT US</a>
+                </div>
 
-</nav>
-</div>
-<!-- RIGHT : APPLY BUTTON -->
-<div class="flex-1 flex justify-end">
+                <!-- SECURED -->
+                <div class="relative">
 
-<a href="apply-loan.php"
-class="hidden lg:inline-block px-6 py-2 rounded-lg
-bg-yellow-400 text-black font-semibold
-hover:scale-105 transition">
-Apply Now
-</a>
+                    <button class="dropdownBtn flex items-center gap-1 hover:text-blue-700">
 
-</div>
-</div>
+                        SECURED LOAN
 
-</header>
+                        <svg class="w-4 h-4 arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
 
+                        </svg>
 
+                    </button>
 
+                    <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded shadow">
 
-<script>
+                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Home Loan</a>
 
-const menuBtn = document.getElementById("menuBtn")
-const menu = document.getElementById("menu")
+                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Car Loan</a>
 
-const serviceBtn = document.getElementById("serviceBtn")
-const serviceMenu = document.getElementById("serviceMenu")
-const arrow = document.getElementById("arrow")
+                        <a href="#" class="block px-5 py-3 hover:bg-blue-600">Loan Against Property</a>
 
-const header = document.getElementById("header")
+                    </div>
 
-// MOBILE MENU
-menuBtn.addEventListener("click", function(e){
-    e.stopPropagation()
-    menu.classList.toggle("hidden")
-})
+                </div>
 
-// SERVICES DROPDOWN
-serviceBtn.addEventListener("click", function(e){
-    e.stopPropagation()
-    serviceMenu.classList.toggle("show")
-    arrow.classList.toggle("rotate-180")
-})
+                <!-- UTILITY -->
+                <div class="relative">
 
-// PREVENT CLOSING WHEN CLICKING INSIDE MENU
-menu.addEventListener("click", function(e){
-    e.stopPropagation()
-})
+                    <button class="dropdownBtn flex items-center gap-1 hover:text-blue-700">
 
-serviceMenu.addEventListener("click", function(e){
-    e.stopPropagation()
-})
+                        UTILITY & TOOLS
 
-// CLOSE WHEN CLICKING OUTSIDE
-document.addEventListener("click", function(){
-    serviceMenu.classList.remove("show")
-    menu.classList.add("hidden")
-    arrow.classList.remove("rotate-180")
-})
+                        <svg class="w-4 h-4 arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 
-// SCROLL SHRINK EFFECT
-window.addEventListener("scroll", function(){
-    if(window.scrollY > 50){
-        header.classList.add("shrink")
-    } else {
-        header.classList.remove("shrink")
-    }
-})
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
 
-</script>
+                        </svg>
+
+                    </button>
+
+                    <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded shadow">
+
+                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Terms & Conditions</a>
+
+                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">EMI Calculator</a>
+
+                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Loan Calculator</a>
+
+                        <a href="#" class="block px-5 py-3 hover:bg-blue-600">Privacy Policy</a>
+
+                    </div>
+
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div class="relative">
+
+                    <button class="dropdownBtn flex items-center gap-1 hover:text-blue-700">
+
+                        QUICK LINKS
+
+                        <svg class="w-4 h-4 arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 9l-7 7-7-7" />
+
+                        </svg>
+
+                    </button>
+
+                    <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded shadow">
+
+                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Career</a>
+
+                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Feedback</a>
+
+                        <a href="#" class="block px-5 py-3 hover:bg-blue-600">Contact Us</a>
+
+                    </div>
+
+                </div>
+
+              
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <script>
+        const menuBtn = document.getElementById("menuBtn")
+        const menu = document.getElementById("menu")
+
+        menuBtn.onclick = () => {
+            menu.classList.toggle("hidden")
+        }
+
+        const dropdownBtns = document.querySelectorAll(".dropdownBtn")
+
+        dropdownBtns.forEach(btn => {
+
+            btn.addEventListener("click", function(e) {
+
+                e.stopPropagation()
+
+                const dropdown = this.nextElementSibling
+                const arrow = this.querySelector(".arrow")
+
+                document.querySelectorAll(".dropdown").forEach(d => {
+                    if (d !== dropdown) d.classList.remove("show")
+                })
+
+                document.querySelectorAll(".arrow").forEach(a => {
+                    if (a !== arrow) a.classList.remove("rotate-180")
+                })
+
+                dropdown.classList.toggle("show")
+                arrow.classList.toggle("rotate-180")
+
+            })
+
+        })
+
+        document.addEventListener("click", () => {
+
+            document.querySelectorAll(".dropdown").forEach(d => {
+                d.classList.remove("show")
+            })
+
+            document.querySelectorAll(".arrow").forEach(a => {
+                a.classList.remove("rotate-180")
+            })
+
+        })
+
+        window.addEventListener("scroll", () => {
+
+            if (window.scrollY > 50) {
+                document.getElementById("header").classList.add("shrink")
+            } else {
+                document.getElementById("header").classList.remove("shrink")
+            }
+
+        })
+    </script>
 
 </body>
+
 </html>

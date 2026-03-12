@@ -11,139 +11,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
+  <link href="style.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
-       
-/* Marquee Animation */
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-.marquee-track {
-  display: flex;
-  width: calc(2 * 100%);
-  gap: 4rem;
-}
-
-.animate-marquee {
-  animation: marquee 25s linear infinite;
-}
-
-
-
-
-
-
-
-        
-
-        .gradient-text {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-
-        .card-hover:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .slider-container {
-            overflow: hidden;
-        }
-
-        .slider-track {
-            display: flex;
-            animation: slide 20s linear infinite;
-        }
-
-        @keyframes slide {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-        /* Glassmorphism */
-.glass{
-background: rgba(255,255,255,0.1);
-backdrop-filter: blur(10px);
-border:1px solid rgba(255,255,255,0.2);
-}
-
-/* Gradient animation */
-.animate-gradient{
-background-size: 300% 300%;
-animation: gradientMove 10s ease infinite;
-}
-
-@keyframes gradientMove{
-0%{background-position:0% 50%}
-50%{background-position:100% 50%}
-100%{background-position:0% 50%}
-}
-
-
  
-/* Premium Floating Blob Animation */
-
-@keyframes blob {
-  0% {
-    transform: translate(0px,0px) scale(1);
-  }
-  33% {
-    transform: translate(30px,-50px) scale(1.1);
-  }
-  66% {
-    transform: translate(-20px,20px) scale(0.9);
-  }
-  100% {
-    transform: translate(0px,0px) scale(1);
-  }
-}
-
-.animate-blob{
-  animation: blob 12s infinite ease-in-out;
-}
-
-.animation-delay-2000{
-  animation-delay:2s;
-}
-
-.animation-delay-4000{
-  animation-delay:4s;
-}
-
-
-.client-slider-track{
-  animation: clientSlide 3s linear infinite;
-}
-
-@keyframes clientSlide{
-  0%{
-    transform: translateX(0);
-  }
-  100%{
-    transform: translateX(-50%);
-  }
-}
-
     </style>
 </head>
 
 <body class="bg-gray-50">
-<div class="bg-gray-900 text-white py-2">
+<div class="text-white py-2 bg-[linear-gradient(93.64deg,#f26f21_4.44%,#5c217a_93.74%)]">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center text-sm">
                 <div class="flex items-center space-x-4">
@@ -169,7 +46,7 @@ animation: gradientMove 10s ease infinite;
   <img src="images/bg_slider_img.jpg"
        class="w-full h-full object-cover opacity-100">
 
-  <div class="absolute inset-0 bg-gradient-to-r from-blue-950/90 via-indigo-900/80 to-blue-900/90"></div>
+  <div class="absolute inset-0 bg-[linear-gradient(93.64deg,#f26f21_4.44%,#5c217a_93.74%)]"></div>
 </div>
   <div class="relative max-w-7xl mx-auto px-6 py-24">
     <div class="relative rounded-3xl overflow-hidden">
@@ -301,7 +178,8 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
     <!-- Content -->
     <div data-aos="fade-left" data-aos-duration="1200">
       <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
-        Trusted Financial Guidance for Your Future
+        Trusted Financial Guidance for
+        <span class="color-text"> Your Future </span>
       </h2>
 
       <p class="text-gray-700 mb-5 leading-relaxed text-lg">
@@ -313,12 +191,12 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
       </p>
 
       <div class="flex gap-5 flex-wrap">
-        <a href="about.php" 
-          class="px-8 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-blue-500 text-white font-semibold shadow-lg hover:scale-105 transition-transform duration-300">
+        <a href="about" 
+          class="px-8 py-3 rounded-lg bg-main  text-white font-semibold shadow-lg hover:scale-105 transition-transform duration-300">
           Learn More
         </a>
 
-        <a href="contact.php" 
+        <a href="contact" 
           class="px-8 py-3 rounded-lg border-2 border-blue-600 text-blue-600 font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300">
           Contact Us
         </a>
@@ -333,7 +211,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
     <section class="py-20 bg-gradient-to-b from-gray-100 via-blue-200 to-gray-300">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-4 gradient-text">Our Services</h2>
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4 ">Our <span class="color-text">Services</span></h2>
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto">
                     Comprehensive digital solutions tailored to your business needs
                 </p>
@@ -853,7 +731,7 @@ class="text-white space-y-6">
     <!-- Call Button -->
     <button onclick="playSound()" 
     class="flex items-center gap-2 px-5 py-3 rounded-full 
-    bg-gradient-to-r from-blue-600 to-indigo-600 
+   bg-main 
     text-white font-semibold  shadow-xl
     hover:scale-105 transition-all duration-300">
 
@@ -873,7 +751,7 @@ class="text-white space-y-6">
     <!-- WhatsApp -->
     <button onclick="playSound()" 
     class="flex items-center gap-2 px-5 py-3 rounded-full 
-    bg-green-500 text-white font-semibold shadow-xl
+   bg-main  text-white font-semibold shadow-xl
     hover:scale-105 transition-all duration-300 animate-pulse">
 
       💬 WhatsApp
