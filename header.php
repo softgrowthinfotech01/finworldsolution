@@ -65,14 +65,14 @@
           <nav id="menu"
 class="hidden lg:flex flex-col lg:flex-row
 space-y-3 lg:space-y-0 lg:space-x-8
-font-semibold text-gray-700
+font-semibold text-gray-700 lg:items-center md:ml-[170px]
 absolute lg:static top-20 left-0 w-full
 bg-white lg:bg-transparent
 p-6 lg:p-0 shadow lg:shadow-none">
 
-                <a href="#" class="block w-full hover:text-blue-700">HOME</a>
+                <a href="#" class="block hover:text-blue-700">HOME</a>
 
-<a href="#" class="block w-full hover:text-blue-700">ABOUT US</a>
+                <a href="#" class="block hover:text-blue-700">ABOUT US</a>
 
                 <!-- UNSECURED -->
                 <div class="relative">
