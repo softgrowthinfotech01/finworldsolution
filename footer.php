@@ -9,7 +9,7 @@
                     <h1 class="text-3xl font-bold text-center text-gradient">Finworld Solution</h1>
                 </div>
             <p class="text-sm text-gray-400 leading-relaxed">
-                Money Trust Financial Services provides trusted financial guidance, 
+                Finworld Solution provides trusted financial guidance, 
                 loan solutions, and investment advisory services to help clients 
                 achieve their financial goals with confidence.
             </p>
