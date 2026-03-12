@@ -55,7 +55,7 @@ pointer-events:auto;
 <body class="bg-gray-100">
 
 <!-- HEADER -->
-<header id="header" class="bg-white sticky top-0 z-50 py-4">
+<header id="header" class="sticky top-0 z-50 py-4 bg-gradient-to-br from-linear-gradient(93.64deg, #f26f21 4.44%, #5c217a 93.74%);">
 
 <div class="flex items-center  px-4">
 
