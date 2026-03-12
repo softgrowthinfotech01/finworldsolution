@@ -64,12 +64,15 @@
 </div>
 
           <nav id="menu"
-class="hidden lg:flex flex-col lg:flex-row
-space-y-3 lg:space-y-0 lg:space-x-8
-font-semibold text-gray-700 lg:items-center md:ml-[170px]
-absolute lg:static top-20 left-0 w-full
+class="hidden lg:flex items-center justify-center
+gap-10
+font-semibold text-gray-700
+absolute lg:static
+top-20 left-0
+w-full lg:w-auto
 bg-white lg:bg-transparent
-p-6 lg:p-0 shadow lg:shadow-none">
+p-6 lg:p-0
+shadow lg:shadow-none">
 
                 <a href="#" class="block hover:text-blue-700">HOME</a>
 
