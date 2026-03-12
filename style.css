@@ -132,3 +132,38 @@ animation: gradientMove 10s ease infinite;
     transform: translateX(-50%);
   }
 }
+
+
+/* Card Hover */
+.card-hover{
+    transition: all 0.4s ease;
+}
+
+.card-hover:hover{
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Infinite Floating Animation */
+@keyframes floatCard{
+    0%{ transform: translateY(0px);}
+    50%{ transform: translateY(-8px);}
+    100%{ transform: translateY(0px);}
+}
+
+.card-hover{
+    animation: floatCard 6s ease-in-out infinite;
+}
+
+/* Delay for each card */
+.card-hover:nth-child(1){ animation-delay:0s;}
+.card-hover:nth-child(2){ animation-delay:0.5s;}
+.card-hover:nth-child(3){ animation-delay:1s;}
+.card-hover:nth-child(4){ animation-delay:1.5s;}
+.card-hover:nth-child(5){ animation-delay:2s;}
+.card-hover:nth-child(6){ animation-delay:2.5s;}
+.card-hover:nth-child(7){ animation-delay:3s;}
+.card-hover:nth-child(8){ animation-delay:3.5s;}
+.card-hover:nth-child(9){ animation-delay:4s;}
+
+

@@ -218,7 +218,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service Card 1 -->
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-purple-500">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-purple-500 "data-aos="flip-right">
                     <div
                         class="relative w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex ml-[165px] justify-center mb-6">
                       <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2  translate-x-1/2 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
@@ -238,7 +238,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                 </div>
 
                 <!-- Service Card 2 -->
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-indigo-500">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-indigo-500"data-aos="flip-right">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-pink-500 to-red-500 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-indigo-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
@@ -257,7 +257,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                     </a>
                 </div>
 
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-pink-600">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-pink-600"data-aos="flip-right">
                     <div
                         class="w-16 h-16 bg-gradient-to-l from-pink-200 via-purple-400 to-indigo-600 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-pink-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -278,7 +278,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                 </div>
 
                 <!-- Service Card 3 -->
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-yellow-500">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-yellow-500"data-aos="flip-left">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-green-500 to-teal-500 rounded-2xl flex ml-[165px] items-center justify-center mb-6">
                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-yellow-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
@@ -297,7 +297,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                     </a>
                 </div>
                  <!-- Service Card 4 -->
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-red-400">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-red-400"data-aos="flip-left">
                     <div
                         class="w-16 h-16 bg-gradient-to-bl from-red-900 via-pink-600 to-rose-500 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2  text-red-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
@@ -317,7 +317,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                     </a>
                 </div>
                 
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-green-500">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-green-500"data-aos="flip-left">
                     <div
                         class="w-16 h-16 bg-gradient-to-r from-gray-400 via-pink-500 to-rose-400 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -355,7 +355,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                         Learn More →
                     </a>
                 </div> -->
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-teal-500">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-teal-500"data-aos="flip-right">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-gray-300 via-gray-500 to-gray-700 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -373,7 +373,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                         Learn More →
                     </a>
                 </div>
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-cyan-500">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-cyan-500"data-aos="flip-right">
                     <div
                         class="w-16 h-16 bg-gradient-to-bl from-yellow-500 via-lime-500 to-green-500 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                        <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-cyan-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -391,7 +391,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                         Learn More →
                     </a>
                 </div>
-                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-orange-600">
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-orange-600" data-aos="fade-right">
                     <div
                         class="w-16 h-16 bg-gradient-to-r from-blue-500 via-cyan-500 to-teal-500 rounded-2xl ml-[165px] flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -849,10 +849,13 @@ AOS.init({
 });
 
 
-
-
+AOS.init({
+  duration: 800,
+  once: false
+});
 
 </script>
+
 </body>
 
 </html>
