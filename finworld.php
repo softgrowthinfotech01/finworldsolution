@@ -5,7 +5,7 @@
          <?php  include_once "meta.php"; ?>
 
 
-    <title>ALORNIX - Digital Excellence</title>
+    <title>Finworld Solution</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
