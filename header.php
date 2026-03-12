@@ -60,13 +60,8 @@ pointer-events:auto;
 <div class="flex items-center  px-4">
 
 <!-- Logo -->
-<<<<<<< HEAD
                 <div class="flex items-center">
                     <h1 class="text-3xl font-bold text-gradient">Finworld Solution</h1>
-=======
-                <div class="flex-1 ">
-                    <h1 class="text-3xl font-bold text-gradient">ALORNIX</h1>
->>>>>>> 0361f3055861e710be5acf0dbc906b791d6b279d
                 </div>
 <!-- Mobile Button -->
 <button id="menuBtn" class="lg:hidden text-3xl">
