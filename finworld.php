@@ -25,7 +25,7 @@
             <div class="flex justify-between items-center text-sm">
                 <div class="flex items-center space-x-4">
                     <span>📧 info@finworldsolution.org</span>
-                    <span>📱 +91-9850014153</span>
+                    <span>📱 +91-7588086103</span>
                 </div>
                 <div class="flex items-center space-x-4">
                     <a href="#" class="hover:text-gray-300">Support</a>
@@ -182,7 +182,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
       </h2>
 
       <p class="text-gray-700 mb-5 leading-relaxed text-lg">
-        Money Trust Financial Services provides a wide range of financial solutions including personal loans, business loans, home loans, insurance, and investment advisory services. Our goal is to help individuals and businesses achieve their financial objectives through expert guidance and reliable financial products.
+        Finworld Solution provides a wide range of financial solutions including personal loans, business loans, home loans, insurance, and investment advisory services. Our goal is to help individuals and businesses achieve their financial objectives through expert guidance and reliable financial products.
       </p>
 
       <p class="text-gray-700 mb-8 leading-relaxed text-lg">
