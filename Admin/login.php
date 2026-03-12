@@ -3,7 +3,7 @@ session_start();
 require "conn.php";
 if(isset($_SESSION['admin_username']))
 {
-     echo "<script>window.location.href = 'dashboard';</script>";
+     echo "<script>window.location.href = 'home';</script>";
 }
 if(isset($_POST['submit']))
 {
@@ -14,7 +14,7 @@ if(isset($_POST['submit']))
      if($row_login)
      {
            $_SESSION["admin_username"]=$_POST['admin_login'];
-		   echo "<script>window.location.href='dashboard';</script>";
+		   echo "<script>window.location.href='home';</script>";
      }
 	 else
 	 {

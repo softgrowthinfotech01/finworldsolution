@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once "conn.php";
 require_once "check_login.php";
 
@@ -18,7 +19,7 @@ if(isset($_POST['submit']))
         ':calling_date' => $calling_date
     ]);
 
-    echo "<script>alert('Case added successfully');</script>";
+    echo "<script>alert('Case added successfully');window.location.href = 'view_case';</script>";
 }
 ?>
 <!DOCTYPE html>
@@ -89,9 +90,7 @@ rounded-lg bg-gray-200 p-6 border shadow-xl">
                                     
                                    <div class="mb-5 px-1">
                                     <label for="calling_date" class="block mb-2.5 text-sm font-medium text-heading">Date</label>
-                                    <input name="calling_date" type="date" id="calling_date"
-                                        class="rounded-lg bg-white border border-default-medium text-heading text-sm block w-full px-3 py-2.5 shadow-xs"
-                                        placeholder="select date" required />
+                                    <input name="calling_date" type="date" id="calling_date" class="rounded-lg bg-white border border-default-medium text-heading text-sm block w-full px-3 py-2.5 shadow-xs" required>
                         
                                     </div>
 
@@ -138,7 +137,22 @@ rounded-lg bg-gray-200 p-6 border shadow-xl">
 
     </div>
 
-    
+ <script id="2d4f4t">
+document.addEventListener("DOMContentLoaded", function(){
+
+    let today = new Date();
+    today.setDate(today.getDate() + 1); // tomorrow
+
+    let yyyy = today.getFullYear();
+    let mm = String(today.getMonth() + 1).padStart(2,'0');
+    let dd = String(today.getDate()).padStart(2,'0');
+
+    let minDate = yyyy + "-" + mm + "-" + dd;
+
+    document.getElementById("calling_date").setAttribute("min", minDate);
+
+});
+</script>   
 
 
 </body>
