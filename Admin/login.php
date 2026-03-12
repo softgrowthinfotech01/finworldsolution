@@ -1,3 +1,28 @@
+<?php
+session_start();
+require "conn.php";
+if(isset($_SESSION['admin_username']))
+{
+     echo "<script>window.location.href = 'dashboard';</script>";
+}
+if(isset($_POST['submit']))
+{
+    extract($_POST);
+    $stmt_login = $conn->prepare("SELECT * FROM admin_details WHERE admin_login=:admin_login and admin_password=:admin_password");
+    $stmt_login->execute(array(':admin_login'=>$admin_login,':admin_password'=>$admin_password));
+    $row_login = $stmt_login->fetchAll(PDO::FETCH_ASSOC);
+     if($row_login)
+     {
+           $_SESSION["admin_username"]=$_POST['admin_login'];
+		   echo "<script>window.location.href='dashboard';</script>";
+     }
+	 else
+	 {
+		 echo "<script>alert('Please enter correct Username and Password!!!')</script>" ;
+	 }
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +49,7 @@
     <form class="space-y-5">
 
       <div>
-        <input type="email" 
+        <input type="text" name="admin_login" 
                placeholder="Email Address"
                class="w-full px-4 py-3 rounded-lg 
                       bg-white/30 placeholder-white
@@ -33,7 +58,7 @@
       </div>
 
       <div>
-        <input type="password" 
+        <input type="password" name="admin_password"
                placeholder="Password"
                class="w-full px-4 py-3 rounded-lg 
                       bg-white/30 placeholder-white
@@ -43,7 +68,7 @@
 
       <button class="w-full bg-white text-black 
                      font-semibold py-3 rounded-lg 
-                     hover:bg-gray-200 transition duration-300">
+                     hover:bg-gray-200 transition duration-300" type="submit" name="submit">
         Login
       </button>
 
