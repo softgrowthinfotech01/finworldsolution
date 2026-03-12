@@ -1,3 +1,17 @@
+<?php
+session_start();
+require_once "conn.php";
+require_once "check_login.php";
+if(isset($_GET['delete']))
+{
+    $case_id = $_GET['delete'];
+
+    $stmt = $conn->prepare("DELETE FROM cases WHERE case_id=:case_id");
+    $stmt->execute([':case_id'=>$case_id]);
+
+    echo "<script>alert('Case deleted successfully');window.location.href='view_case';</script>";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,16 +80,75 @@
                     <th class="px-4 py-3">Phone Number</th>
                     <th class="px-4 py-3">Address</th>
                     <th class="px-4 py-3">Date</th>
+                    <th class="px-4 py-3">Status</th>
+
                    
                     <th class="px-4 py-3">Actions</th>
                 </tr>
             </thead>
 
-            <tbody id="locationTableBody">
-                <tr>
-                    <td colspan="3" class="text-center py-4">Loading...</td>
+                <tbody id="locationTableBody">
+
+                <?php
+
+                $stmt = $conn->prepare("SELECT * FROM cases ORDER BY case_id DESC");
+                $stmt->execute();
+                $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+                if($rows)
+                {
+                    $i = 1;
+                    foreach($rows as $row)
+                    {
+                        extract($row);
+                ?>
+
+                <tr class="bg-white border-b hover:bg-gray-50">
+                    <td class="px-4 py-3"><?php echo $i++; ?></td>
+                    <td class="px-4 py-3"><?php echo $full_name; ?></td>
+                    <td class="px-4 py-3"><?php echo $phone_number; ?></td>
+                    <td class="px-4 py-3"><?php echo $address; ?></td>
+                    <td class="px-4 py-3"><?php echo date("d-m-Y", strtotime($calling_date)); ?></td>
+                    <td class="px-4 py-3">
+
+                    <?php
+                    if($status == "open")
+                    {
+                        echo "<span class='text-green-600 font-semibold'>Open</span>";
+                    }
+                    else
+                    {
+                        echo "<span class='text-red-600 font-semibold'>Closed</span>";
+                    }
+                    ?>
+
+                    </td>
+                    <td class="px-4 py-3">
+                        <a href="update_case?id=<?php echo $case_id; ?>" class="text-blue-600 hover:underline">Update</a> |
+                        <a href="?delete=<?php echo $case_id; ?>"
+                            class="text-red-600 hover:underline"
+                            onclick="return confirm('Are you sure you want to delete this case?')">
+                            Delete
+                            </a>
+                    </td>
                 </tr>
-            </tbody>
+
+                <?php
+                    }
+                }
+                else
+                {
+                ?>
+
+                <tr>
+                    <td colspan="6" class="text-center py-4">No cases found</td>
+                </tr>
+
+                <?php
+                }
+                ?>
+
+                </tbody>
 
         </table>
 
@@ -98,7 +171,32 @@
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 
-    
+  <script id="z7x9kp">
+document.getElementById("searchInput").addEventListener("keyup", function(){
+
+    let filter = this.value.toLowerCase();
+    let rows = document.querySelectorAll("#locationTableBody tr");
+
+    rows.forEach(function(row){
+
+        let nameCell = row.cells[1]; // Name column
+        if(!nameCell) return;
+
+        let name = nameCell.textContent.toLowerCase();
+
+        if(name.includes(filter))
+        {
+            row.style.display = "";
+        }
+        else
+        {
+            row.style.display = "none";
+        }
+
+    });
+
+});
+</script>  
 </body>
 
 </html>
