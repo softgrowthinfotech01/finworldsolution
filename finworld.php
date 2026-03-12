@@ -853,7 +853,7 @@ class="text-white space-y-6">
     <!-- Call Button -->
     <button onclick="playSound()" 
     class="flex items-center gap-2 px-5 py-3 rounded-full 
-    bg-gradient-to-r from-blue-600 to-indigo-600 
+   bg-main 
     text-white font-semibold  shadow-xl
     hover:scale-105 transition-all duration-300">
 
@@ -873,7 +873,7 @@ class="text-white space-y-6">
     <!-- WhatsApp -->
     <button onclick="playSound()" 
     class="flex items-center gap-2 px-5 py-3 rounded-full 
-    bg-green-500 text-white font-semibold shadow-xl
+   bg-main  text-white font-semibold shadow-xl
     hover:scale-105 transition-all duration-300 animate-pulse">
 
       💬 WhatsApp
