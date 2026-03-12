@@ -46,7 +46,7 @@ if(isset($_POST['submit']))
       Welcome Back
     </h2>
 
-    <form class="space-y-5">
+    <form class="space-y-5" method="post" action="">
 
       <div>
         <input type="text" name="admin_login" 
