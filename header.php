@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Finworld</title>
-
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
@@ -32,16 +32,47 @@
             padding: 8px 0;
             box-shadow: 0 4px 20px rgba(0, 0, 0, .15);
         }
+
+        .source-serif {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+        /* .axis-top-bar{
+}
+
+.axis-shape{
+position:absolute;
+top:0;
+left:0;
+width:700px;
+height:120px;
+background: linear-gradient(93.64deg, #f26f21 4.44%, #5c217a 93.74%);
+ 
+ --mask:
+    radial-gradient(129px at calc(100% - 129px) 50%,#000 99%,#0000 101%) 0 calc(50% - 258px)/100% 516px,
+    radial-gradient(129px at calc(100% + 0px) 50%,#0000 99%,#000 101%) calc(100% - 129px) 50%/100% 516px repeat-y;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+
+          
+          z-index:1;
+} */
+
     </style>
 
 </head>
 
 <body class="bg-gray-100">
+<div class="axis-top-bar w-full"></div>
+
 
 <!-- HEADER -->
 <header id="header" class="sticky bg-white top-0 z-50 py-4 ">
-
-        <div class=" flex justify-between max-w-7xl mx-auto px-4">
+<div class="axis-shape"></div>
+        <div class=" flex justify-between max-w-7xl mx-auto px-4 z-10">
 
             <div class="flex justify-between items-center">
 
@@ -49,11 +80,10 @@
     <div class="flex items-center gap-2">
         <img src="images/finworld_logo.png"
              alt="Finworld Logo"
-             class="w-10 sm:w-12 md:w-14 lg:w-16 h-auto object-contain">
-
-        <h1 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gradient">
-            Finworld Solution
-        </h1>
+             class="w-10  sm:w-12 md:w-14 lg:w-16 h-auto object-contain ">
+<h1 class="source-serif font-bold text-3xl bg-gradient-to-r from-purple-900 via-blue-600 to-purple-500 bg-clip-text text-transparent ">
+Finworld Solution
+</h1>
     </div>
 
     <!-- Mobile Toggle -->
