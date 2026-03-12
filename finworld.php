@@ -70,13 +70,12 @@
             </div>
           </div>
           <div class="relative">
-            <div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl">
-              <img src="https://images.unsplash.com/photo-1620266757065-5814239881fd?q=80&w=2400" class="rounded-2xl w-full object-cover animate-zoomIn">
+            <div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl overflow-hidden">
+              <img src="images/slider_img.png" class="rounded-2xl w-full  object-cover animate-zoomIn">
             </div>
           </div>
         </div>
 
-        <!-- SLIDE 2 -->
         <div class="min-w-full grid md:grid-cols-2 items-center gap-10">
           <div>
             <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
@@ -91,9 +90,9 @@
               <a href="#" class="px-7 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">View Plans</a>
             </div>
           </div>
-          <div class="relative">
-            <div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl">
-              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2400" class="rounded-2xl w-full object-cover animate-zoomIn">
+        <div class="relative">
+            <div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl overflow-hidden">
+              <img src="images/slider_img2.png" class="rounded-2xl w-full  object-cover animate-zoomIn">
             </div>
           </div>
         </div>
@@ -114,8 +113,8 @@
             </div>
           </div>
           <div class="relative">
-            <div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl">
-              <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=2400" class="rounded-2xl w-full object-cover animate-zoomIn">
+            <div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl overflow-hidden">
+              <img src="images/slider_img3.png" class="rounded-2xl w-full  object-cover animate-zoomIn">
             </div>
           </div>
         </div>
