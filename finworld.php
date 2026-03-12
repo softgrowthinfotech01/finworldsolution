@@ -169,7 +169,7 @@ animation: gradientMove 10s ease infinite;
   <img src="images/bg_slider_img.jpg"
        class="w-full h-full object-cover opacity-100">
 
-  <div class="absolute inset-0 bg-gradient-to-r from-blue-950/90 via-indigo-900/80 to-blue-900/90"></div>
+  <div class="absolute inset-0 bg-[linear-gradient(93.64deg,#f26f21_4.44%,#5c217a_93.74%)]"></div>
 </div>
   <div class="relative max-w-7xl mx-auto px-6 py-24">
     <div class="relative rounded-3xl overflow-hidden">
