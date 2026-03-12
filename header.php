@@ -76,7 +76,7 @@ shadow lg:shadow-none">
 
                 <a href="#" class="block hover:text-blue-700">HOME</a>
 
-                <a href="#" class="block hover:text-blue-700">ABOUT US</a>
+                <a href="about.php" class="block hover:text-blue-700">ABOUT US</a>
 
                 <!-- UNSECURED -->
                 <div class="relative">
