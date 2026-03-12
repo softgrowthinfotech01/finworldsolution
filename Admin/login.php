@@ -50,7 +50,7 @@ if(isset($_POST['submit']))
 
       <div>
         <input type="text" name="admin_login" 
-               placeholder="Email Address"
+               placeholder="Username."
                class="w-full px-4 py-3 rounded-lg 
                       bg-white/30 placeholder-white
                       focus:outline-none focus:ring-2 
