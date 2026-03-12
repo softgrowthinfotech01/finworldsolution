@@ -143,7 +143,7 @@ animation: gradientMove 10s ease infinite;
 </head>
 
 <body class="bg-gray-50">
-<div class="text-white py-2 bg-gradient-to-br from-linear-gradient(93.64deg, #f26f21 4.44%, #5c217a 93.74%);"">
+<div class="text-white py-2 bg-gradient-to-br from-linear-gradient(93.64deg, #f26f21 4.44%, #5c217a 93.74%);">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center text-sm">
                 <div class="flex items-center space-x-4">
