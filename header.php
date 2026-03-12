@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sticky Navbar</title>
+<title>Finworld</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -61,7 +61,7 @@ pointer-events:auto;
 
 <!-- Logo -->
                 <div class="flex items-center">
-                    <h1 class="text-3xl font-bold text-gradient">ALORNIX</h1>
+                    <h1 class="text-3xl font-bold text-gradient">Finworld Solution</h1>
                 </div>
 <!-- Mobile Button -->
 <button id="menuBtn" class="lg:hidden text-3xl">
@@ -77,9 +77,9 @@ absolute lg:static top-20 left-0
 w-full lg:w-auto bg-white lg:bg-transparent
 p-6 lg:p-0 shadow lg:shadow-none">
 
-<a href="finworld.php" class="hover:text-blue-700">HOME</a>
+<a href="finworld" class="hover:text-blue-700">HOME</a>
 
-<a href="about.php" class="hover:text-blue-700">ABOUT US</a>
+<a href="about" class="hover:text-blue-700">ABOUT US</a>
 
 <!-- Services -->
 <div class="relative">
@@ -125,9 +125,9 @@ w-56 mt-2 rounded shadow-lg">
 
 </div>
 
-<a href="faq.php" class="hover:text-blue-700">FAQ'S</a>
+<a href="faq" class="hover:text-blue-700">FAQ'S</a>
 
-<a href="contact.php" class="hover:text-blue-700">CONTACT US</a>
+<a href="contact" class="hover:text-blue-700">CONTACT US</a>
 
 </nav>
 
