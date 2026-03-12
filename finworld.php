@@ -147,12 +147,12 @@ animation: gradientMove 10s ease infinite;
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center text-sm">
                 <div class="flex items-center space-x-4">
-                    <span>📧 info@alornix.com</span>
-                    <span>📱 +1 (555) 123-4567</span>
+                    <span>📧 info@finworldsolution.org</span>
+                    <span>📱 +91-9850014153</span>
                 </div>
                 <div class="flex items-center space-x-4">
                     <a href="#" class="hover:text-gray-300">Support</a>
-                    <a href="#" class="hover:text-gray-300">Client Portal</a>
+                   
                 </div>
             </div>
         </div>
