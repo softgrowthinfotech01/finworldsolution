@@ -5,7 +5,9 @@
 
         <!-- ABOUT -->
         <div class="space-y-4">
-            <img src="logo.png" class="w-32 mb-4">
+            <div class="bg-gray-100 rounded-lg ">
+                    <h1 class="text-3xl font-bold text-center text-gradient">ALORNIX</h1>
+                </div>
             <p class="text-sm text-gray-400 leading-relaxed">
                 Money Trust Financial Services provides trusted financial guidance, 
                 loan solutions, and investment advisory services to help clients 

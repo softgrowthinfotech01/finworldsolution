@@ -537,55 +537,96 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
     </section>
 
     <!-- Loan Process Section -->
-<section class="py-24 bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 overflow-hidden">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <!-- Section Title -->
-    <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6" data-aos="fade-up" data-aos-duration="1000">
-      Our Loan Process
-    </h2>
-    <p class="text-gray-600 text-lg mb-16" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-      Simple, Fast, and Transparent. Get your loan in just a few easy steps.
-    </p>
+<section 
+class="py-24 relative overflow-hidden bg-fixed bg-center bg-cover"
+style="background-image:url('images/parallix_bg.avif');">
 
-    <!-- Process Cards -->
-    <div class="grid md:grid-cols-4 gap-8">
-      <!-- Step 1 -->
-      <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-        <div class="bg-gradient-to-r from-blue-500 to-indigo-600 p-5 rounded-full text-white mb-4 shadow-lg">
-          📝
-        </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-2">Apply Online</h3>
-        <p class="text-gray-600 text-center">Fill out a simple application form with your basic details.</p>
-      </div>
+<!-- Overlay -->
+<div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-indigo-900/80 to-purple-900/80"></div>
 
-      <!-- Step 2 -->
-      <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-        <div class="bg-gradient-to-r from-green-500 to-teal-600 p-5 rounded-full text-white mb-4 shadow-lg">
-          📄
-        </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-2">Document Verification</h3>
-        <p class="text-gray-600 text-center">Submit your documents and we verify them quickly and securely.</p>
-      </div>
+<div class="max-w-7xl mx-auto px-6 text-center relative z-10 text-white">
 
-      <!-- Step 3 -->
-      <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-        <div class="bg-gradient-to-r from-yellow-400 to-orange-500 p-5 rounded-full text-white mb-4 shadow-lg">
-          ✅
-        </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-2">Approval</h3>
-        <p class="text-gray-600 text-center">Get instant approval based on your eligibility and submitted documents.</p>
-      </div>
+<!-- Section Title -->
+<h2 class="text-4xl lg:text-5xl font-bold mb-6"
+data-aos="fade-up" data-aos-duration="1000">
+Our Loan Process
+</h2>
 
-      <!-- Step 4 -->
-      <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-        <div class="bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-full text-white mb-4 shadow-lg">
-          💰
-        </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-2">Receive Funds</h3>
-        <p class="text-gray-600 text-center">Funds are transferred directly to your account quickly and safely.</p>
-      </div>
-    </div>
-  </div>
+<p class="text-gray-200 text-lg mb-16"
+data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+Simple, Fast, and Transparent. Get your loan in just a few easy steps.
+</p>
+
+<!-- Process Cards -->
+<div class="grid md:grid-cols-4 gap-8">
+
+<!-- Step 1 -->
+<div class="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300"
+data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+
+<div class="bg-gradient-to-r from-blue-500 to-indigo-600 p-5 rounded-full text-white mb-4 shadow-lg">
+📝
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mb-2">Apply Online</h3>
+
+<p class="text-gray-600 text-center">
+Fill out a simple application form with your basic details.
+</p>
+
+</div>
+
+<!-- Step 2 -->
+<div class="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300"
+data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+
+<div class="bg-gradient-to-r from-green-500 to-teal-600 p-5 rounded-full text-white mb-4 shadow-lg">
+📄
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mb-2">Document Verification</h3>
+
+<p class="text-gray-600 text-center">
+Submit your documents and we verify them quickly and securely.
+</p>
+
+</div>
+
+<!-- Step 3 -->
+<div class="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300"
+data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+
+<div class="bg-gradient-to-r from-yellow-400 to-orange-500 p-5 rounded-full text-white mb-4 shadow-lg">
+✅
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mb-2">Approval</h3>
+
+<p class="text-gray-600 text-center">
+Get instant approval based on your eligibility and submitted documents.
+</p>
+
+</div>
+
+<!-- Step 4 -->
+<div class="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300"
+data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+
+<div class="bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-full text-white mb-4 shadow-lg">
+💰
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mb-2">Receive Funds</h3>
+
+<p class="text-gray-600 text-center">
+Funds are transferred directly to your account quickly and safely.
+</p>
+
+</div>
+
+</div>
+
+</div>
 </section>
     
 
@@ -657,8 +698,8 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
 
 <!-- Background -->
 <div class="absolute inset-0">
-  <img src="images/about_us_img.cms" class="w-full h-full object-cover opacity-30">
-  <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 opacity-80"></div>
+  <img src="images/about_us_img.cms" class="w-full h-full object-cover opacity-40">
+  <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900 to-gray-900 opacity-50"></div>
 </div>
 
 <h3 class="text-center text-3xl font-bold mb-12 relative z-10">
@@ -715,9 +756,15 @@ Our Banking Partners
 
 </section>
 
-<section id="contact" class="relative bg-gradient-to-r from-gray-900 via-blue-900 to-indigo-900 py-20 overflow-hidden">
+<section id="contact" 
+class="relative py-14 overflow-hidden bg-cover bg-center opacity-100%"
+style="background-image: url('images/contact_bg.avif');">
+
+<!-- Dark overlay for readability -->
+<div class="absolute inset-0 bg-black/60"></div>
 
 <div class="relative max-w-7xl mx-auto px-6">
+  
 <div class="grid lg:grid-cols-2 gap-12 items-center">
 
 <!-- Contact Form -->
@@ -725,7 +772,7 @@ Our Banking Partners
 data-aos="fade-right"
 data-aos-duration="1000"
 data-aos-offset="200"
-class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-10 shadow-2xl">
+class="bg-black/70 backdrop-blur-xl border border-white/20 rounded-2xl p-10 shadow-2xl">
 
 <h2 class="text-3xl text-white font-bold mb-6">Get in Touch</h2>
 
@@ -763,7 +810,7 @@ class="text-white space-y-6">
 
 <h3 class="text-3xl font-bold">Contact Information</h3>
 
-<p class="text-gray-300 leading-relaxed">
+<p class="text-gray-200 leading-relaxed">
 📞 Phone: +91 8080435343 <br>
 📧 Email: info@moneytrust.in <br>
 📍 Address: 123 Finance Street, Pune, India
@@ -771,16 +818,20 @@ class="text-white space-y-6">
 
 <div class="flex space-x-4 mt-6">
 
-<a href="#" class="p-3 bg-white/10 backdrop-blur-md rounded-full hover:bg-blue-600 transition hover:scale-110">
-<img src="icons/facebook.svg" class="w-5 h-5">
+<a href="#" class="p-4  backdrop-blur-md rounded-full  transition hover:scale-110">
+<!-- Facebook SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" class="bg-blue-600 p-[2px] rounded-lg " width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M13 22v-8h3l1-4h-4V8c0-1.2.3-2 2-2h2V2.3A27 27 0 0 0 14 2c-3 0-5 1.8-5 5v3H6v4h3v8h4z"/>
+</svg>
 </a>
 
-<a href="#" class="p-3 bg-white/10 backdrop-blur-md rounded-full hover:bg-indigo-500 transition hover:scale-110">
-<img src="icons/twitter.svg" class="w-5 h-5">
-</a>
-
-<a href="#" class="p-3 bg-white/10 backdrop-blur-md rounded-full hover:bg-purple-500 transition hover:scale-110">
-<img src="icons/linkedin.svg" class="w-5 h-5">
+<a href="#" class="p-4 backdrop-blur-md rounded-full  transition hover:scale-110">
+<!-- Instagram SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" class="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] p-[2px] rounded-lg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5z"/>
+  <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+  <circle cx="17.5" cy="6.5" r="1.25"/>
+</svg>
 </a>
 
 </div>
@@ -809,6 +860,8 @@ class="w-6 h-6">
 </svg>
 
 </a>
+
+
 
 
 
