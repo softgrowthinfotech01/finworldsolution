@@ -15,130 +15,7 @@
     <!-- Custom CSS -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
-       
-/* Marquee Animation */
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-.marquee-track {
-  display: flex;
-  width: calc(2 * 100%);
-  gap: 4rem;
-}
-
-.animate-marquee {
-  animation: marquee 25s linear infinite;
-}
-
-
-
-
-
-
-
-        
-
-        .gradient-text {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-
-        .card-hover:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-        }
-
-        .slider-container {
-            overflow: hidden;
-        }
-
-        .slider-track {
-            display: flex;
-            animation: slide 20s linear infinite;
-        }
-
-        @keyframes slide {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-        /* Glassmorphism */
-.glass{
-background: rgba(255,255,255,0.1);
-backdrop-filter: blur(10px);
-border:1px solid rgba(255,255,255,0.2);
-}
-
-/* Gradient animation */
-.animate-gradient{
-background-size: 300% 300%;
-animation: gradientMove 10s ease infinite;
-}
-
-@keyframes gradientMove{
-0%{background-position:0% 50%}
-50%{background-position:100% 50%}
-100%{background-position:0% 50%}
-}
-
-
  
-/* Premium Floating Blob Animation */
-
-@keyframes blob {
-  0% {
-    transform: translate(0px,0px) scale(1);
-  }
-  33% {
-    transform: translate(30px,-50px) scale(1.1);
-  }
-  66% {
-    transform: translate(-20px,20px) scale(0.9);
-  }
-  100% {
-    transform: translate(0px,0px) scale(1);
-  }
-}
-
-.animate-blob{
-  animation: blob 12s infinite ease-in-out;
-}
-
-.animation-delay-2000{
-  animation-delay:2s;
-}
-
-.animation-delay-4000{
-  animation-delay:4s;
-}
-
-
-.client-slider-track{
-  animation: clientSlide 3s linear infinite;
-}
-
-@keyframes clientSlide{
-  0%{
-    transform: translateX(0);
-  }
-  100%{
-    transform: translateX(-50%);
-  }
-}
-
     </style>
 </head>
 
@@ -301,7 +178,8 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
     <!-- Content -->
     <div data-aos="fade-left" data-aos-duration="1200">
       <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
-        Trusted Financial Guidance for Your Future
+        Trusted Financial Guidance for
+        <span class="bg-main"> Your Future </span>
       </h2>
 
       <p class="text-gray-700 mb-5 leading-relaxed text-lg">
@@ -333,7 +211,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
     <section class="py-20 bg-gradient-to-b from-gray-100 via-blue-200 to-gray-300">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl lg:text-5xl font-bold mb-4 gradient-text">Our Services</h2>
+                <h2 class="text-4xl lg:text-5xl font-bold mb-4 ">Our <span class="bg-main">Services</span></h2>
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto">
                     Comprehensive digital solutions tailored to your business needs
                 </p>
