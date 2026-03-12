@@ -39,7 +39,7 @@
 <body class="bg-gray-100">
 
 <!-- HEADER -->
-<header id="header" class="sticky top-0 z-50 py-4 ">
+<header id="header" class="sticky bg-white top-0 z-50 py-4 ">
 
         <div class=" flex justify-between max-w-7xl mx-auto px-4">
 
