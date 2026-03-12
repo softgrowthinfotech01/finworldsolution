@@ -330,7 +330,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
 </section>
 
     <!-- Services Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-gradient-to-b from-gray-100 via-blue-200 to-gray-300">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-4 gradient-text">Our Services</h2>
@@ -537,60 +537,101 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
     </section>
 
     <!-- Loan Process Section -->
-<section class="py-24 bg-gray-50 overflow-hidden">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <!-- Section Title -->
-    <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6" data-aos="fade-up" data-aos-duration="1000">
-      Our Loan Process
-    </h2>
-    <p class="text-gray-600 text-lg mb-16" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-      Simple, Fast, and Transparent. Get your loan in just a few easy steps.
-    </p>
+<section 
+class="py-24 relative overflow-hidden bg-fixed bg-center bg-cover"
+style="background-image:url('images/parallix_bg.avif');">
 
-    <!-- Process Cards -->
-    <div class="grid md:grid-cols-4 gap-8">
-      <!-- Step 1 -->
-      <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-        <div class="bg-gradient-to-r from-blue-500 to-indigo-600 p-5 rounded-full text-white mb-4 shadow-lg">
-          📝
-        </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-2">Apply Online</h3>
-        <p class="text-gray-600 text-center">Fill out a simple application form with your basic details.</p>
-      </div>
+<!-- Overlay -->
+<div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-indigo-900/80 to-purple-900/80"></div>
 
-      <!-- Step 2 -->
-      <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-        <div class="bg-gradient-to-r from-green-500 to-teal-600 p-5 rounded-full text-white mb-4 shadow-lg">
-          📄
-        </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-2">Document Verification</h3>
-        <p class="text-gray-600 text-center">Submit your documents and we verify them quickly and securely.</p>
-      </div>
+<div class="max-w-7xl mx-auto px-6 text-center relative z-10 text-white">
 
-      <!-- Step 3 -->
-      <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-        <div class="bg-gradient-to-r from-yellow-400 to-orange-500 p-5 rounded-full text-white mb-4 shadow-lg">
-          ✅
-        </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-2">Approval</h3>
-        <p class="text-gray-600 text-center">Get instant approval based on your eligibility and submitted documents.</p>
-      </div>
+<!-- Section Title -->
+<h2 class="text-4xl lg:text-5xl font-bold mb-6"
+data-aos="fade-up" data-aos-duration="1000">
+Our Loan Process
+</h2>
 
-      <!-- Step 4 -->
-      <div class="bg-white rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-        <div class="bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-full text-white mb-4 shadow-lg">
-          💰
-        </div>
-        <h3 class="text-xl font-bold text-gray-900 mb-2">Receive Funds</h3>
-        <p class="text-gray-600 text-center">Funds are transferred directly to your account quickly and safely.</p>
-      </div>
-    </div>
-  </div>
+<p class="text-gray-200 text-lg mb-16"
+data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+Simple, Fast, and Transparent. Get your loan in just a few easy steps.
+</p>
+
+<!-- Process Cards -->
+<div class="grid md:grid-cols-4 gap-8">
+
+<!-- Step 1 -->
+<div class="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300"
+data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+
+<div class="bg-gradient-to-r from-blue-500 to-indigo-600 p-5 rounded-full text-white mb-4 shadow-lg">
+📝
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mb-2">Apply Online</h3>
+
+<p class="text-gray-600 text-center">
+Fill out a simple application form with your basic details.
+</p>
+
+</div>
+
+<!-- Step 2 -->
+<div class="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300"
+data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+
+<div class="bg-gradient-to-r from-green-500 to-teal-600 p-5 rounded-full text-white mb-4 shadow-lg">
+📄
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mb-2">Document Verification</h3>
+
+<p class="text-gray-600 text-center">
+Submit your documents and we verify them quickly and securely.
+</p>
+
+</div>
+
+<!-- Step 3 -->
+<div class="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300"
+data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+
+<div class="bg-gradient-to-r from-yellow-400 to-orange-500 p-5 rounded-full text-white mb-4 shadow-lg">
+✅
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mb-2">Approval</h3>
+
+<p class="text-gray-600 text-center">
+Get instant approval based on your eligibility and submitted documents.
+</p>
+
+</div>
+
+<!-- Step 4 -->
+<div class="bg-white/90 backdrop-blur-md rounded-3xl shadow-2xl p-8 flex flex-col items-center hover:scale-105 transition-transform duration-300"
+data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+
+<div class="bg-gradient-to-r from-purple-500 to-pink-500 p-5 rounded-full text-white mb-4 shadow-lg">
+💰
+</div>
+
+<h3 class="text-xl font-bold text-gray-900 mb-2">Receive Funds</h3>
+
+<p class="text-gray-600 text-center">
+Funds are transferred directly to your account quickly and safely.
+</p>
+
+</div>
+
+</div>
+
+</div>
 </section>
     
 
     <!-- Testimonials Section with Slider -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gradient-to-b from-white via-gray-50 to-gray-100">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl lg:text-5xl font-bold mb-4 gradient-text">Client Testimonials</h2>
@@ -653,12 +694,12 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
         </div>
     </section>
 
- <section class="py-20 relative text-white overflow-hidden">
+ <section class="py-20 bg-gradient-to-r from-slate-900 via-blue-900 to-indigo-900  relative text-white overflow-hidden">
 
 <!-- Background -->
 <div class="absolute inset-0">
-  <img src="images/about_us_img.cms" class="w-full h-full object-cover opacity-30">
-  <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 opacity-80"></div>
+  <img src="images/about_us_img.cms" class="w-full h-full object-cover opacity-40">
+  <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900 to-gray-900 opacity-50"></div>
 </div>
 
 <h3 class="text-center text-3xl font-bold mb-12 relative z-10">
@@ -715,9 +756,15 @@ Our Banking Partners
 
 </section>
 
-<section id="contact" class="relative bg-black py-20 overflow-hidden">
+<section id="contact" 
+class="relative py-14 overflow-hidden bg-cover bg-center opacity-100%"
+style="background-image: url('images/contact_bg.avif');">
+
+<!-- Dark overlay for readability -->
+<div class="absolute inset-0 bg-black/60"></div>
 
 <div class="relative max-w-7xl mx-auto px-6">
+  
 <div class="grid lg:grid-cols-2 gap-12 items-center">
 
 <!-- Contact Form -->
@@ -725,7 +772,7 @@ Our Banking Partners
 data-aos="fade-right"
 data-aos-duration="1000"
 data-aos-offset="200"
-class="bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-10 shadow-2xl">
+class="bg-black/70 backdrop-blur-xl border border-white/20 rounded-2xl p-10 shadow-2xl">
 
 <h2 class="text-3xl text-white font-bold mb-6">Get in Touch</h2>
 
@@ -763,7 +810,7 @@ class="text-white space-y-6">
 
 <h3 class="text-3xl font-bold">Contact Information</h3>
 
-<p class="text-gray-300 leading-relaxed">
+<p class="text-gray-200 leading-relaxed">
 📞 Phone: +91 8080435343 <br>
 📧 Email: info@moneytrust.in <br>
 📍 Address: 123 Finance Street, Pune, India
@@ -771,16 +818,20 @@ class="text-white space-y-6">
 
 <div class="flex space-x-4 mt-6">
 
-<a href="#" class="p-3 bg-white/10 backdrop-blur-md rounded-full hover:bg-blue-600 transition hover:scale-110">
-<img src="icons/facebook.svg" class="w-5 h-5">
+<a href="#" class="p-4  backdrop-blur-md rounded-full  transition hover:scale-110">
+<!-- Facebook SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" class="bg-blue-600 p-[2px] rounded-lg " width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M13 22v-8h3l1-4h-4V8c0-1.2.3-2 2-2h2V2.3A27 27 0 0 0 14 2c-3 0-5 1.8-5 5v3H6v4h3v8h4z"/>
+</svg>
 </a>
 
-<a href="#" class="p-3 bg-white/10 backdrop-blur-md rounded-full hover:bg-indigo-500 transition hover:scale-110">
-<img src="icons/twitter.svg" class="w-5 h-5">
-</a>
-
-<a href="#" class="p-3 bg-white/10 backdrop-blur-md rounded-full hover:bg-purple-500 transition hover:scale-110">
-<img src="icons/linkedin.svg" class="w-5 h-5">
+<a href="#" class="p-4 backdrop-blur-md rounded-full  transition hover:scale-110">
+<!-- Instagram SVG -->
+<svg xmlns="http://www.w3.org/2000/svg" class="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] p-[2px] rounded-lg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
+  <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5z"/>
+  <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
+  <circle cx="17.5" cy="6.5" r="1.25"/>
+</svg>
 </a>
 
 </div>
@@ -793,22 +844,54 @@ class="text-white space-y-6">
 </section>
     
 <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/919876543210"
-target="_blank"
-class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600
-text-white p-4 rounded-full shadow-lg transition duration-300
-z-50">
+<!-- Sticky CTA -->
+<!-- Sticky CTA -->
+<div class="fixed bottom-6 right-6 z-50">
 
-<svg xmlns="http://www.w3.org/2000/svg"
-viewBox="0 0 24 24"
-fill="currentColor"
-class="w-6 h-6">
+  <div class="flex flex-col gap-3 items-end">
 
-<path d="M20.52 3.48A11.86 11.86 0 0012.03 0C5.4 0 .02 5.38.02 12c0 2.12.55 4.2 1.6 6.04L0 24l6.15-1.6A11.96 11.96 0 0012.03 24c6.63 0 12-5.38 12-12 0-3.2-1.25-6.22-3.51-8.52zm-8.49 18.1c-1.82 0-3.6-.49-5.16-1.41l-.37-.22-3.65.95.97-3.55-.24-.37A9.96 9.96 0 012.03 12c0-5.5 4.48-9.98 10-9.98 2.67 0 5.18 1.04 7.07 2.93A9.93 9.93 0 0122.03 12c0 5.5-4.48 9.98-10 9.98zm5.47-7.48c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.28-.47-2.44-1.5-.9-.8-1.51-1.8-1.69-2.1-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.48-.5-.67-.5-.17 0-.37-.02-.57-.02s-.52.07-.8.37c-.27.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.1 4.48.71.31 1.27.49 1.7.63.71.22 1.35.19 1.86.11.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+    <!-- Call Button -->
+    <button onclick="playSound()" 
+    class="flex items-center gap-2 px-5 py-3 rounded-full 
+    bg-gradient-to-r from-blue-600 to-indigo-600 
+    text-white font-semibold shadow-xl
+    hover:scale-105 transition-all duration-300">
 
-</svg>
+      📞 Call
+    </button>
 
-</a>
+    <!-- Apply Loan -->
+    <!-- <button onclick="playSound()" 
+    class="flex items-center gap-2 px-5 py-3 rounded-full 
+    bg-gradient-to-r from-purple-600 to-pink-600 
+    text-white font-semibold shadow-xl
+    hover:scale-105 transition-all duration-300">
+
+      💰 Apply Loan
+    </button> -->
+
+    <!-- WhatsApp -->
+    <button onclick="playSound()" 
+    class="flex items-center gap-2 px-5 py-3 rounded-full 
+    bg-green-500 text-white font-semibold shadow-xl
+    hover:scale-105 transition-all duration-300 animate-pulse">
+
+      💬 WhatsApp
+    </button>
+
+  </div>
+
+</div>
+
+<!-- Sound -->
+<audio id="clickSound" preload="auto">
+  <source src="images/mixkit-select-click-1109.wav" type="audio/mpeg">
+</audio>
+
+
+
+
+
 
 
 
@@ -818,6 +901,12 @@ class="w-6 h-6">
     <!-- JavaScript -->
     <script>
         
+function playSound(){
+  const sound = document.getElementById("clickSound");
+  sound.currentTime = 0;
+  sound.play();
+}
+
         // Mobile Menu Toggle
         document.getElementById('mobile-menu-btn').addEventListener('click', function () {
             document.getElementById('mobile-menu').classList.toggle('hidden');

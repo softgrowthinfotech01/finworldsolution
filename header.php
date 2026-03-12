@@ -57,17 +57,22 @@ pointer-events:auto;
 <!-- HEADER -->
 <header id="header" class="bg-white sticky top-0 z-50 py-4">
 
-<div class="max-w-7xl mx-auto flex items-center justify-between px-4">
+<div class="flex items-center  px-4">
 
 <!-- Logo -->
+<<<<<<< HEAD
                 <div class="flex items-center">
                     <h1 class="text-3xl font-bold text-gradient">Finworld Solution</h1>
+=======
+                <div class="flex-1 ">
+                    <h1 class="text-3xl font-bold text-gradient">ALORNIX</h1>
+>>>>>>> 0361f3055861e710be5acf0dbc906b791d6b279d
                 </div>
 <!-- Mobile Button -->
 <button id="menuBtn" class="lg:hidden text-3xl">
 ☰
 </button>
-
+<div class="flex justify-center flex-1">
 <!-- Navigation -->
 <nav id="menu"
 class="hidden lg:flex flex-col lg:flex-row lg:items-center
@@ -130,7 +135,18 @@ w-56 mt-2 rounded shadow-lg">
 <a href="contact" class="hover:text-blue-700">CONTACT US</a>
 
 </nav>
+</div>
+<!-- RIGHT : APPLY BUTTON -->
+<div class="flex-1 flex justify-end">
 
+<a href="apply-loan.php"
+class="hidden lg:inline-block px-6 py-2 rounded-lg
+bg-yellow-400 text-black font-semibold
+hover:scale-105 transition">
+Apply Now
+</a>
+
+</div>
 </div>
 
 </header>
