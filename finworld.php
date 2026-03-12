@@ -854,7 +854,7 @@ class="text-white space-y-6">
     <button onclick="playSound()" 
     class="flex items-center gap-2 px-5 py-3 rounded-full 
     bg-gradient-to-r from-blue-600 to-indigo-600 
-    text-white font-semibold shadow-xl
+    text-white font-semibold  shadow-xl
     hover:scale-105 transition-all duration-300">
 
       📞 Call
