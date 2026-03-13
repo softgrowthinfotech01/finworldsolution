@@ -19,7 +19,7 @@
     </style>
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-gray-50  overflow-x-hidden">
 <div class="text-white py-2 bg-[linear-gradient(93.64deg,#f26f21_4.44%,#5c217a_93.74%)]">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center text-sm">
@@ -127,7 +127,7 @@
     </div>
   <!-- Slider Arrows - Premium Design -->
 <button id="prev" 
-class="absolute left-[-75px] top-1/2 -translate-y-1/2 
+class="absolute left-2 md:left-[-75px] top-1/2 -translate-y-1/2 
 flex items-center justify-center w-14 h-14
 bg-white/10 backdrop-blur-xl border border-white/20
 rounded-full shadow-2xl text-white font-bold text-3xl 
@@ -137,7 +137,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
 </button>
 
 <button id="next" 
-class="absolute right-[-75px] top-1/2 -translate-y-1/2
+class="absolute right-2 md:right-[-75px] top-1/2 -translate-y-1/2
 flex items-center justify-center w-14 h-14
 bg-white/10 backdrop-blur-xl border border-white/20
 rounded-full shadow-2xl text-white font-bold text-3xl
@@ -220,7 +220,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                 <!-- Service Card 1 -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border-[4px] border-purple-500 "data-aos="flip-right">
                     <div
-                        class="relative w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex ml-[165px] justify-center mb-6">
+                        class="relative w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-2xl flex mx-auto justify-center mb-6">
                       <svg xmlns="http://www.w3.org/2000/svg" class="w-15 h-15 top-1/2 right-0 transform -translate-y-1/2  translate-x-1/2 text-purple-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
                         <circle cx="12" cy="7" r="4"/>
                         <path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/>
@@ -687,11 +687,34 @@ class="text-white space-y-6">
 
 <h3 class="text-3xl font-bold">Contact Information</h3>
 
-<p class="text-gray-200 leading-relaxed">
-📞 Phone: +91 8080435343 <br>
-📧 Email: finworldsolution01@gmail.com <br>
-📍 Address: 123 Finance Street, Pune, India
-</p>
+<div class="text-sm sm:text-base">
+  
+  <h3 class="text-white text-lg font-semibold mb-4">Contact Us</h3>
+
+  <!-- Address -->
+  <div class="flex items-start gap-3 mb-3">
+    <span class="text-lg">📍</span>
+    <p class="leading-relaxed">
+      Akashwani Road, Near LTV School,<br class="hidden sm:block">
+      Opp. Dhanorkar House,<br class="hidden sm:block">
+      Chandrapur – 442401,<br class="hidden sm:block">
+      Maharashtra, India
+    </p>
+  </div>
+
+  <!-- Phone -->
+  <div class="flex items-center gap-3 mb-3">
+    <span class="text-lg">📞</span>
+    <p>+91 7588086103</p>
+  </div>
+
+  <!-- Email -->
+  <div class="flex items-center gap-3 mb-3">
+    <span class="text-lg">✉</span>
+    <p class="break-all">finworldsolution01@gmail.com</p>
+  </div>
+
+</div>
 
 
 
@@ -705,43 +728,41 @@ class="text-white space-y-6">
 <!-- WhatsApp Floating Button -->
 <!-- Sticky CTA -->
 <!-- Sticky CTA -->
-<div class="fixed bottom-6 right-6 z-50">
+<div class="fixed bottom-[100px] right-4 sm:right-[100px] z-50">
 
   <div class="flex flex-col gap-3 items-end">
 
     <!-- Call Button -->
     <button onclick="playSound()" 
-    class="flex items-center gap-2 px-5 py-3 rounded-full 
-   bg-main 
-    text-white font-semibold  shadow-xl
+    class="flex items-center justify-center gap-2
+    w-12 h-12 sm:w-auto sm:h-auto
+    sm:px-5 sm:py-3
+    rounded-full
+    bg-main text-white font-semibold shadow-xl
     hover:scale-105 transition-all duration-300">
 
-      📞 Call
+      <span class="text-xl">📞</span>
+      <span class="hidden sm:inline">Call</span>
+
     </button>
 
-    <!-- Apply Loan -->
-    <!-- <button onclick="playSound()" 
-    class="flex items-center gap-2 px-5 py-3 rounded-full 
-    bg-gradient-to-r from-purple-600 to-pink-600 
-    text-white font-semibold shadow-xl
-    hover:scale-105 transition-all duration-300">
-
-      💰 Apply Loan
-    </button> -->
-
-    <!-- WhatsApp -->
+    <!-- WhatsApp Button -->
     <button onclick="playSound()" 
-    class="flex items-center gap-2 px-5 py-3 rounded-full 
-   bg-main  text-white font-semibold shadow-xl
+    class="flex items-center justify-center gap-2
+    w-12 h-12 sm:w-auto sm:h-auto
+    sm:px-5 sm:py-3
+    rounded-full
+    bg-main text-white font-semibold shadow-xl
     hover:scale-105 transition-all duration-300 animate-pulse">
 
-      💬 WhatsApp
+      <span class=" text-xl">💬</span>
+      <span class="hidden sm:inline">WhatsApp</span>
+
     </button>
 
   </div>
 
 </div>
-
 <!-- Sound -->
 <audio id="clickSound" preload="auto">
   <source src="images/mixkit-select-click-1109.wav" type="audio/mpeg">

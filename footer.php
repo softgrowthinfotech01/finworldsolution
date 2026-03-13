@@ -49,16 +49,34 @@
       </div>
 
       <!-- Contact Info -->
-      <div>
-        <h3 class="text-white text-lg font-semibold mb-4">Contact Us</h3>
+      <div class="text-sm sm:text-base">
+  
+  <h3 class="text-white text-lg font-semibold mb-4">Contact Us</h3>
 
-        <p class="mb-3">📍 Mumbai, Maharashtra</p>
-        <p class="mb-3">📞 +91 98765 43210</p>
-        <p class="mb-3">✉ finworldsolution01@gmail.com</p>
+  <!-- Address -->
+  <div class="flex items-start gap-3 mb-3">
+    <span class="text-lg">📍</span>
+    <p class="leading-relaxed">
+      Akashwani Road, Near LTV School,<br class="hidden sm:block">
+      Opp. Dhanorkar House,<br class="hidden sm:block">
+      Chandrapur – 442401,<br class="hidden sm:block">
+      Maharashtra, India
+    </p>
+  </div>
 
-        <!-- Newsletter -->
-       
-      </div>
+  <!-- Phone -->
+  <div class="flex items-center gap-3 mb-3">
+    <span class="text-lg">📞</span>
+    <p>+91 7588086103</p>
+  </div>
+
+  <!-- Email -->
+  <div class="flex items-center gap-3 mb-3">
+    <span class="text-lg">✉</span>
+    <p class="break-all">finworldsolution01@gmail.com</p>
+  </div>
+
+</div>
 
     </div>
 

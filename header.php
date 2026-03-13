@@ -85,14 +85,14 @@ background: linear-gradient(93.64deg, #f26f21 4.44%, #5c217a 93.74%);
             <div class="flex justify-between items-center">
 
     <!-- Logo + Name -->
-    <div class="flex items-center mb-1 gap-2">
+    <a href="finworld.php"> <div class="flex items-center mb-1 gap-2">
         <img src="images/finworld_logo.png"
              alt="Finworld Logo"
              class="w-10  sm:w-12 md:w-14 lg:w-16 h-auto object-contain ">
                 <h1 class="source-serif font-bold text-3xl bg-gradient-to-r from-purple-900 via-blue-600 to-purple-500 bg-clip-text text-transparent ">
                 Finworld Solution
                 </h1>
-    </div>
+    </div></a>
 
     <!-- Mobile Toggle -->
     <button id="menuBtn" class="ml-[150px]  lg:hidden  text-3xl">
@@ -112,7 +112,6 @@ bg-white lg:bg-transparent
 p-6 lg:p-0
 shadow lg:shadow-none">
 
-                <a href="finworld.php" class="block space-grotesk hover:text-blue-700">HOME</a>
 
                 <a href="about.php" class="block space-grotesk  hover:text-blue-700">ABOUT US</a>
 
@@ -200,13 +199,13 @@ shadow lg:shadow-none">
 
                     <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded shadow">
 
-                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Terms & Conditions</a>
+                        <a href="terms-and-condition.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Terms & Conditions</a>
 
-                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">EMI Calculator</a>
+                        <a href="emi_calculator.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">EMI Calculator</a>
 
-                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Loan Calculator</a>
+                        <a href="loan_calculator.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Loan Calculator</a>
 
-                        <a href="#" class="block px-5 py-3 hover:bg-blue-600">Privacy Policy</a>
+                        <a href="privacy-policy.php" class="block px-5 py-3 hover:bg-blue-600">Privacy Policy</a>
 
                     </div>
 
@@ -230,15 +229,18 @@ shadow lg:shadow-none">
 
                     <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded shadow">
 
-                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Career</a>
+                        <a href="career.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Career</a>
 
-                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Feedback</a>
+                        <a href="feedback.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Feedback</a>
 
-                        <a href="#" class="block px-5 py-3 hover:bg-blue-600">Contact Us</a>
+                        <a href="contact.php" class="block px-5 py-3 hover:bg-blue-600">Contact Us</a>
 
                     </div>
 
                 </div>
+
+                <a href="gallery.php" class="block space-grotesk hover:text-blue-700">GALLERY</a>
+
 
               
 
