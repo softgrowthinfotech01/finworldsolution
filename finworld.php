@@ -64,10 +64,10 @@
             <p class="text-gray-200 mb-8 text-lg">
               Get quick approval with minimal documents and flexible EMI options designed for your financial needs.
             </p>
-            <div class="flex gap-4">
+            <!-- <div class="flex gap-4">
               <a href="#" class="px-7 py-3 bg-yellow-400 text-black rounded-lg font-semibold hover:scale-105 transition">Apply Now</a>
               <a href="#" class="px-7 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">Check Eligibility</a>
-            </div>
+            </div> -->
           </div>
           <div class="relative">
             <div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl overflow-hidden">
@@ -85,10 +85,10 @@
             <p class="text-gray-200 mb-8 text-lg">
               Turn your dream home into reality with easy EMI options and fast loan approvals.
             </p>
-            <div class="flex gap-4">
+            <!-- <div class="flex gap-4">
               <a href="#" class="px-7 py-3 bg-yellow-400 text-black rounded-lg font-semibold hover:scale-105 transition">Apply Now</a>
               <a href="#" class="px-7 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">View Plans</a>
-            </div>
+            </div> -->
           </div>
         <div class="relative">
             <div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl overflow-hidden">
@@ -107,10 +107,10 @@
             <p class="text-gray-200 mb-8 text-lg">
               Fuel your business growth with instant capital and flexible repayment solutions.
             </p>
-            <div class="flex gap-4">
+            <!-- <div class="flex gap-4">
               <a href="#" class="px-7 py-3 bg-yellow-400 text-black rounded-lg font-semibold hover:scale-105 transition">Apply Today</a>
               <a href="#" class="px-7 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">Learn More</a>
-            </div>
+            </div> -->
           </div>
           <div class="relative">
             <div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl overflow-hidden">
@@ -728,20 +728,20 @@ class="text-white space-y-6">
 <!-- WhatsApp Floating Button -->
 <!-- Sticky CTA -->
 <!-- Sticky CTA -->
-<div class="fixed bottom-[100px] right-4 sm:right-[100px] z-50">
+<div class="fixed bottom-[50px] right-5 sm:right-[100px] z-50">
 
   <div class="flex flex-col gap-3 items-end">
 
     <!-- Call Button -->
     <button onclick="playSound()" 
-    class="flex items-center justify-center gap-2
+    class="flex  items-center justify-center gap-2
     w-12 h-12 sm:w-auto sm:h-auto
     sm:px-5 sm:py-3
     rounded-full
     bg-main text-white font-semibold shadow-xl
     hover:scale-105 transition-all duration-300">
 
-      <span class="text-xl">📞</span>
+      <span class="text-xl ">📞</span>
       <span class="hidden sm:inline">Call</span>
 
     </button>
