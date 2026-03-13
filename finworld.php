@@ -24,7 +24,7 @@
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center text-sm">
                 <div class="flex items-center space-x-4">
-                    <span>📧 info@finworldsolution.org</span>
+                    <span>📧 Finworldsolution01@gmail.com</span>
                     <span>📱 +91-7588086103</span>
                 </div>
                 <div class="flex items-center space-x-4">
@@ -689,7 +689,7 @@ class="text-white space-y-6">
 
 <p class="text-gray-200 leading-relaxed">
 📞 Phone: +91 8080435343 <br>
-📧 Email: info@moneytrust.in <br>
+📧 Email: Finworldsolution01@gmail.com <br>
 📍 Address: 123 Finance Street, Pune, India
 </p>
 

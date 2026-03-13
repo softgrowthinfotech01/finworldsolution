@@ -39,6 +39,14 @@
   font-weight: weight;
   font-style: normal;
 }
+.space-grotesk{
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
 
         /* .axis-top-bar{
 }
@@ -70,20 +78,20 @@ background: linear-gradient(93.64deg, #f26f21 4.44%, #5c217a 93.74%);
 
 
 <!-- HEADER -->
-<header id="header" class="sticky bg-white top-0 z-50 py-4 ">
+<header id="header" class="sticky  bg-white top-0 z-50 py-4 ">
 <div class="axis-shape"></div>
         <div class=" flex justify-between max-w-7xl mx-auto px-4 z-10">
 
             <div class="flex justify-between items-center">
 
     <!-- Logo + Name -->
-    <div class="flex items-center gap-2">
+    <div class="flex items-center mb-1 gap-2">
         <img src="images/finworld_logo.png"
              alt="Finworld Logo"
              class="w-10  sm:w-12 md:w-14 lg:w-16 h-auto object-contain ">
-<h1 class="source-serif font-bold text-3xl bg-gradient-to-r from-purple-900 via-blue-600 to-purple-500 bg-clip-text text-transparent ">
-Finworld Solution
-</h1>
+                <h1 class="source-serif font-bold text-3xl bg-gradient-to-r from-purple-900 via-blue-600 to-purple-500 bg-clip-text text-transparent ">
+                Finworld Solution
+                </h1>
     </div>
 
     <!-- Mobile Toggle -->
@@ -95,7 +103,7 @@ Finworld Solution
 
           <nav id="menu"
 class="hidden lg:flex items-center justify-center
-gap-10
+gap-5
 font-semibold text-gray-700
 absolute lg:static
 top-20 left-0
@@ -104,14 +112,14 @@ bg-white lg:bg-transparent
 p-6 lg:p-0
 shadow lg:shadow-none">
 
-                <a href="#" class="block hover:text-blue-700">HOME</a>
+                <a href="finworld.php" class="block space-grotesk hover:text-blue-700">HOME</a>
 
-                <a href="about.php" class="block hover:text-blue-700">ABOUT US</a>
+                <a href="about.php" class="block space-grotesk  hover:text-blue-700">ABOUT US</a>
 
                 <!-- UNSECURED -->
                 <div class="relative">
 
-                    <button class="dropdownBtn flex items-center gap-1 hover:text-blue-700">
+                    <button class="dropdownBtn space-grotesk flex items-center gap-1 hover:text-blue-700">
 
                         UNSECURED LOAN
 
@@ -139,7 +147,7 @@ shadow lg:shadow-none">
                 <!-- SECURED -->
                 <div class="relative">
 
-                    <button class="dropdownBtn flex items-center gap-1 hover:text-blue-700">
+                    <button class="dropdownBtn space-grotesk flex items-center gap-1 hover:text-blue-700">
 
                         SECURED LOAN
 
@@ -167,7 +175,7 @@ shadow lg:shadow-none">
                 <!-- UTILITY -->
                 <div class="relative">
 
-                    <button class="dropdownBtn flex items-center gap-1 hover:text-blue-700">
+                    <button class="dropdownBtn space-grotesk flex items-center gap-1 hover:text-blue-700">
 
                         UTILITY & TOOLS
 
@@ -197,7 +205,7 @@ shadow lg:shadow-none">
                 <!-- QUICK LINKS -->
                 <div class="relative">
 
-                    <button class="dropdownBtn flex items-center gap-1 hover:text-blue-700">
+                    <button class="dropdownBtn space-grotesk flex items-center gap-1 hover:text-blue-700">
 
                         QUICK LINKS
 
