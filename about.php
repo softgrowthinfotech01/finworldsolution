@@ -4,14 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>About Us - Money Trust</title>
+<title>About Us - Finworld Solution</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
 </head>
 
-<body class="bg-gray-50">
-         <?php  include_once "header.php"; ?>
+<body class="bg-gray-50 overflow-x-hidden">
+
+<?php include_once "header.php"; ?>
 
 <!-- HERO SECTION -->
 
@@ -19,7 +24,7 @@
 
 <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
-<div>
+<div data-aos="fade-right">
 
 <h1 class="text-4xl font-bold mb-4">About Finworld Solution</h1>
 
@@ -30,10 +35,10 @@ and businesses achieve their financial goals.
 
 </div>
 
-<div>
+<div data-aos="zoom-in">
 
 <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d"
-class="rounded-xl shadow-lg">
+class="rounded-xl shadow-lg w-full">
 
 </div>
 
@@ -49,9 +54,10 @@ class="rounded-xl shadow-lg">
 <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
 <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d"
-class="rounded-xl shadow-lg">
+class="rounded-xl shadow-lg w-full"
+data-aos="fade-right">
 
-<div>
+<div data-aos="fade-left">
 
 <h2 class="text-3xl font-bold mb-4">Who We Are</h2>
 
@@ -63,7 +69,7 @@ guidance that helps individuals and businesses achieve their financial goals.
 </p>
 
 <p class="text-gray-600 mb-4">
- Our organization was built with the aim of providing
+Our organization was built with the aim of providing
 clear, unbiased, and practical financial advice to our clients. We carefully
 analyze each client's financial profile including risk appetite, current
 liabilities, and future financial requirements before suggesting solutions.
@@ -87,11 +93,13 @@ providing a one-stop destination for loans, insurance, and financial services.
 
 <div class="max-w-7xl mx-auto px-6">
 
-<h2 class="text-3xl font-bold text-center mb-12">Why Choose Us</h2>
+<h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+Why Choose Us
+</h2>
 
 <div class="grid md:grid-cols-3 gap-8">
 
-<div class="p-8 bg-gray-50 rounded-xl shadow text-center">
+<div class="p-8 bg-gray-50 rounded-xl shadow text-center" data-aos="zoom-in">
 
 <h3 class="text-xl font-semibold mb-3">Trusted Financial Experts</h3>
 
@@ -103,7 +111,7 @@ and a strong commitment to providing the best financial solutions.
 </div>
 
 
-<div class="p-8 bg-gray-50 rounded-xl shadow text-center">
+<div class="p-8 bg-gray-50 rounded-xl shadow text-center" data-aos="zoom-in" data-aos-delay="150">
 
 <h3 class="text-xl font-semibold mb-3">Client-Centric Approach</h3>
 
@@ -115,7 +123,7 @@ financial solutions based on their goals and financial profile.
 </div>
 
 
-<div class="p-8 bg-gray-50 rounded-xl shadow text-center">
+<div class="p-8 bg-gray-50 rounded-xl shadow text-center" data-aos="zoom-in" data-aos-delay="300">
 
 <h3 class="text-xl font-semibold mb-3">Complete Financial Solutions</h3>
 
@@ -139,7 +147,7 @@ we offer a wide range of services to meet all financial needs.
 
 <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
 
-<div class="bg-blue-50 p-10 rounded-xl shadow">
+<div class="bg-blue-50 p-10 rounded-xl shadow" data-aos="fade-right">
 
 <h3 class="text-2xl font-bold mb-3">Our Vision</h3>
 
@@ -151,7 +159,7 @@ through well-researched, unbiased, and client-focused financial solutions.
 </div>
 
 
-<div class="bg-green-50 p-10 rounded-xl shadow">
+<div class="bg-green-50 p-10 rounded-xl shadow" data-aos="fade-left">
 
 <h3 class="text-2xl font-bold mb-3">Our Mission</h3>
 
@@ -174,11 +182,13 @@ solutions that support long-term financial success.
 
 <div class="max-w-7xl mx-auto px-6 text-center">
 
-<h2 class="text-3xl font-bold mb-10">Our Core Principles</h2>
+<h2 class="text-3xl font-bold mb-10" data-aos="fade-up">
+Our Core Principles
+</h2>
 
 <div class="grid md:grid-cols-3 gap-8">
 
-<div class="p-6">
+<div class="p-6" data-aos="fade-up">
 
 <h4 class="font-semibold text-lg mb-2">Building Trust</h4>
 
@@ -190,7 +200,7 @@ honesty, and reliable financial advice.
 </div>
 
 
-<div class="p-6">
+<div class="p-6" data-aos="fade-up" data-aos-delay="150">
 
 <h4 class="font-semibold text-lg mb-2">Maintaining Integrity</h4>
 
@@ -202,7 +212,7 @@ in every financial service we provide.
 </div>
 
 
-<div class="p-6">
+<div class="p-6" data-aos="fade-up" data-aos-delay="300">
 
 <h4 class="font-semibold text-lg mb-2">Growing Together</h4>
 
@@ -224,7 +234,7 @@ their financial dreams and long-term wealth goals.
 
 <section class="bg-blue-900 text-white py-16 text-center">
 
-<div class="max-w-4xl mx-auto px-6">
+<div class="max-w-4xl mx-auto px-6" data-aos="zoom-in">
 
 <h2 class="text-3xl font-bold mb-4">Trusted by Our Clients</h2>
 
@@ -237,8 +247,15 @@ solutions that help turn financial dreams into reality.
 </div>
 
 </section>
-       <?php  include_once "footer.php"; ?>
 
+<?php include_once "footer.php"; ?>
+
+<script>
+AOS.init({
+duration:1000,
+once:false
+});
+</script>
 
 </body>
 </html>
