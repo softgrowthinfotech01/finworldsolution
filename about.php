@@ -21,7 +21,7 @@
 
 <div>
 
-<h1 class="text-4xl font-bold mb-4">About Money Trust Financial Services</h1>
+<h1 class="text-4xl font-bold mb-4">About Finworld Solution</h1>
 
 <p class="text-lg text-gray-200">
 Providing reliable financial guidance and solutions to help individuals
@@ -56,14 +56,14 @@ class="rounded-xl shadow-lg">
 <h2 class="text-3xl font-bold mb-4">Who We Are</h2>
 
 <p class="text-gray-600 mb-4">
-Money Trust Financial Services offers a wide range of financial solutions
+Finworld Solution offers a wide range of financial solutions
 supported by professional expertise and a strong commitment to client success.
 Our team focuses on delivering well-researched and client-centric financial
 guidance that helps individuals and businesses achieve their financial goals.
 </p>
 
 <p class="text-gray-600 mb-4">
-Established in 2021, our organization was built with the aim of providing
+ Our organization was built with the aim of providing
 clear, unbiased, and practical financial advice to our clients. We carefully
 analyze each client's financial profile including risk appetite, current
 liabilities, and future financial requirements before suggesting solutions.
