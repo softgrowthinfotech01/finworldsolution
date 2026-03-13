@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,10 @@
     <meta property="og:title" content="ALORNIX Pricing - Choose Your Plan">
     <meta property="og:description" content="Transparent pricing with flexible plans to suit your business needs">
     <title>Pricing - ALORNIX</title>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Custom CSS -->
     <style>
         @keyframes fadeInUp {
@@ -19,66 +20,76 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         @keyframes scaleIn {
             from {
                 opacity: 0;
                 transform: scale(0.9);
             }
+
             to {
                 opacity: 1;
                 transform: scale(1);
             }
         }
-        
+
         @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
-        
+
         .animate-fadeInUp {
             animation: fadeInUp 0.8s ease-out;
         }
-        
+
         .animate-scaleIn {
             animation: scaleIn 0.6s ease-out;
         }
-        
+
         .animate-float {
             animation: float 3s ease-in-out infinite;
         }
-        
+
         .gradient-text {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
         .pricing-card {
             transition: all 0.3s ease;
         }
-        
+
         .pricing-card:hover {
             transform: translateY(-10px);
         }
-        
+
         .popular-badge {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
         }
-        
+
         .toggle-switch {
             transition: all 0.3s ease;
         }
     </style>
 </head>
+
 <body class="bg-gray-50">
-    
+
     <!-- Navigation -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 lg:px-8">
@@ -86,7 +97,7 @@
                 <div class="flex items-center">
                     <span class="text-2xl font-bold gradient-text">ALORNIX</span>
                 </div>
-                
+
                 <div class="hidden lg:flex items-center space-x-8">
                     <a href="index.html" class="text-gray-600 hover:text-purple-600 transition">Home</a>
                     <a href="about.html" class="text-gray-600 hover:text-purple-600 transition">About</a>
@@ -96,14 +107,14 @@
                     <a href="pricing.html" class="text-purple-600 font-medium">Pricing</a>
                     <a href="contact.html" class="text-gray-600 hover:text-purple-600 transition">Contact</a>
                 </div>
-                
+
                 <button class="px-6 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg hover:shadow-lg transition">
                     Get Started
                 </button>
             </div>
         </div>
     </nav>
-    
+
     <!-- Hero Section -->
     <section class="py-20 bg-gradient-to-br from-purple-50 to-indigo-50">
         <div class="container mx-auto px-4">
@@ -114,7 +125,7 @@
                 <p class="text-xl text-gray-600 mb-8">
                     Choose the perfect plan for your business. No hidden fees, no surprises.
                 </p>
-                
+
                 <!-- Billing Toggle -->
                 <div class="inline-flex items-center bg-white rounded-full p-1 shadow-lg">
                     <button id="monthly-btn" class="px-6 py-2 bg-purple-600 text-white rounded-full font-medium transition">
@@ -128,7 +139,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Pricing Cards -->
     <section class="py-20">
         <div class="container mx-auto px-4">
@@ -139,7 +150,7 @@
                         <h3 class="text-2xl font-bold mb-2">Starter</h3>
                         <p class="text-gray-600">Perfect for small projects</p>
                     </div>
-                    
+
                     <div class="mb-8">
                         <div class="flex items-baseline">
                             <span class="text-5xl font-bold">$29</span>
@@ -147,7 +158,7 @@
                         </div>
                         <p class="text-sm text-gray-500 mt-2">Billed monthly</p>
                     </div>
-                    
+
                     <ul class="space-y-4 mb-8">
                         <li class="flex items-start">
                             <svg class="w-5 h-5 text-green-500 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -186,12 +197,12 @@
                             <span>Advanced analytics</span>
                         </li>
                     </ul>
-                    
+
                     <button class="w-full px-6 py-3 border-2 border-purple-600 text-purple-600 rounded-lg hover:bg-purple-50 transition font-semibold">
                         Start Free Trial
                     </button>
                 </div>
-                
+
                 <!-- Professional Plan (Most Popular) -->
                 <div class="pricing-card bg-white rounded-2xl shadow-xl p-8 relative transform scale-105 animate-scaleIn" style="animation-delay: 0.1s">
                     <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -199,12 +210,12 @@
                             MOST POPULAR
                         </span>
                     </div>
-                    
+
                     <div class="mb-8">
                         <h3 class="text-2xl font-bold mb-2">Professional</h3>
                         <p class="text-gray-600">For growing businesses</p>
                     </div>
-                    
+
                     <div class="mb-8">
                         <div class="flex items-baseline">
                             <span class="text-5xl font-bold">$79</span>
@@ -212,7 +223,7 @@
                         </div>
                         <p class="text-sm text-gray-500 mt-2">Billed monthly</p>
                     </div>
-                    
+
                     <ul class="space-y-4 mb-8">
                         <li class="flex items-start">
                             <svg class="w-5 h-5 text-green-500 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -251,19 +262,19 @@
                             <span>Advanced analytics</span>
                         </li>
                     </ul>
-                    
+
                     <button class="w-full px-6 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg hover:shadow-lg transition font-semibold">
                         Get Started
                     </button>
                 </div>
-                
+
                 <!-- Enterprise Plan -->
                 <div class="pricing-card bg-white rounded-2xl shadow-xl p-8 animate-scaleIn" style="animation-delay: 0.2s">
                     <div class="mb-8">
                         <h3 class="text-2xl font-bold mb-2">Enterprise</h3>
                         <p class="text-gray-600">For large organizations</p>
                     </div>
-                    
+
                     <div class="mb-8">
                         <div class="flex items-baseline">
                             <span class="text-5xl font-bold">$199</span>
@@ -271,7 +282,7 @@
                         </div>
                         <p class="text-sm text-gray-500 mt-2">Billed monthly</p>
                     </div>
-                    
+
                     <ul class="space-y-4 mb-8">
                         <li class="flex items-start">
                             <svg class="w-5 h-5 text-green-500 mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -310,13 +321,13 @@
                             <span>Custom integrations</span>
                         </li>
                     </ul>
-                    
+
                     <button class="w-full px-6 py-3 border-2 border-purple-600 text-purple-600 rounded-lg hover:bg-purple-50 transition font-semibold">
                         Contact Sales
                     </button>
                 </div>
             </div>
-            
+
             <!-- Custom Plan -->
             <div class="max-w-4xl mx-auto mt-16 text-center">
                 <div class="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl p-12 text-white">
@@ -331,13 +342,13 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Feature Comparison -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
                 <h2 class="text-4xl font-bold text-center mb-12">Compare Plans</h2>
-                
+
                 <div class="overflow-x-auto">
                     <table class="w-full">
                         <thead>
@@ -409,13 +420,13 @@
             </div>
         </div>
     </section>
-    
+
     <!-- FAQ Section -->
     <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto">
                 <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-                
+
                 <div class="space-y-6">
                     <div class="bg-white rounded-xl p-6 shadow-sm">
                         <button class="w-full text-left flex justify-between items-center">
@@ -428,7 +439,7 @@
                             Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle.
                         </p>
                     </div>
-                    
+
                     <div class="bg-white rounded-xl p-6 shadow-sm">
                         <button class="w-full text-left flex justify-between items-center">
                             <h3 class="text-lg font-semibold">Do you offer refunds?</h3>
@@ -440,7 +451,7 @@
                             We offer a 30-day money-back guarantee. If you're not satisfied, contact our support team for a full refund.
                         </p>
                     </div>
-                    
+
                     <div class="bg-white rounded-xl p-6 shadow-sm">
                         <button class="w-full text-left flex justify-between items-center">
                             <h3 class="text-lg font-semibold">What payment methods do you accept?</h3>
@@ -452,7 +463,7 @@
                             We accept all major credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers for enterprise plans.
                         </p>
                     </div>
-                    
+
                     <div class="bg-white rounded-xl p-6 shadow-sm">
                         <button class="w-full text-left flex justify-between items-center">
                             <h3 class="text-lg font-semibold">Is there a free trial?</h3>
@@ -468,13 +479,13 @@
             </div>
         </div>
     </section>
-    
+
     <!-- CTA Section -->
     <section class="py-20 bg-gradient-to-r from-purple-600 to-indigo-600">
         <div class="container mx-auto px-4 text-center">
             <div class="animate-float">
                 <svg class="w-20 h-20 text-white/20 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
             </div>
             <h2 class="text-4xl font-bold text-white mb-6">Ready to Get Started?</h2>
@@ -491,7 +502,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4">
@@ -536,33 +547,33 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- JavaScript -->
     <script>
         // Billing toggle
         const monthlyBtn = document.getElementById('monthly-btn');
         const annualBtn = document.getElementById('annual-btn');
-        
+
         monthlyBtn.addEventListener('click', function() {
             monthlyBtn.classList.add('bg-purple-600', 'text-white');
             monthlyBtn.classList.remove('text-gray-600');
             annualBtn.classList.remove('bg-purple-600', 'text-white');
             annualBtn.classList.add('text-gray-600');
         });
-        
+
         annualBtn.addEventListener('click', function() {
             annualBtn.classList.add('bg-purple-600', 'text-white');
             annualBtn.classList.remove('text-gray-600');
             monthlyBtn.classList.remove('bg-purple-600', 'text-white');
             monthlyBtn.classList.add('text-gray-600');
         });
-        
+
         // FAQ Accordion
         document.querySelectorAll('.bg-white button').forEach(button => {
             button.addEventListener('click', function() {
                 const content = this.nextElementSibling;
                 const arrow = this.querySelector('svg');
-                
+
                 if (content && content.tagName === 'P') {
                     content.classList.toggle('hidden');
                     arrow.classList.toggle('rotate-180');
@@ -571,4 +582,5 @@
         });
     </script>
 </body>
+
 </html>

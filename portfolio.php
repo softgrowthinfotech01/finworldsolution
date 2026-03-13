@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,10 @@
     <meta property="og:title" content="ALORNIX Portfolio - Our Work">
     <meta property="og:description" content="Discover our portfolio of successful digital projects">
     <title>Portfolio - ALORNIX</title>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Custom CSS -->
     <style>
         @keyframes fadeInUp {
@@ -19,62 +20,65 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         @keyframes scaleIn {
             from {
                 opacity: 0;
                 transform: scale(0.9);
             }
+
             to {
                 opacity: 1;
                 transform: scale(1);
             }
         }
-        
+
         .animate-fadeInUp {
             animation: fadeInUp 0.8s ease-out;
         }
-        
+
         .animate-scaleIn {
             animation: scaleIn 0.6s ease-out;
         }
-        
+
         .gradient-text {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
         .portfolio-item {
             transition: all 0.3s ease;
         }
-        
+
         .portfolio-item:hover {
             transform: translateY(-10px);
         }
-        
+
         .portfolio-overlay {
-            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
         }
-        
+
         .filter-btn {
             transition: all 0.3s ease;
         }
-        
+
         .filter-btn.active {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
         }
     </style>
 </head>
+
 <body class="bg-gray-50">
-    
+
     <!-- Navigation -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 lg:px-8">
@@ -82,7 +86,7 @@
                 <div class="flex items-center">
                     <span class="text-2xl font-bold gradient-text">ALORNIX</span>
                 </div>
-                
+
                 <div class="hidden lg:flex items-center space-x-8">
                     <a href="index.html" class="text-gray-600 hover:text-purple-600 transition">Home</a>
                     <a href="about.html" class="text-gray-600 hover:text-purple-600 transition">About</a>
@@ -92,14 +96,14 @@
                     <a href="pricing.html" class="text-gray-600 hover:text-purple-600 transition">Pricing</a>
                     <a href="contact.html" class="text-gray-600 hover:text-purple-600 transition">Contact</a>
                 </div>
-                
+
                 <button class="px-6 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg hover:shadow-lg transition">
                     Start Project
                 </button>
             </div>
         </div>
     </nav>
-    
+
     <!-- Hero Section -->
     <section class="py-20 bg-gradient-to-br from-purple-50 to-indigo-50">
         <div class="container mx-auto px-4">
@@ -113,7 +117,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Filter Section -->
     <section class="py-10 bg-white sticky top-16 z-40 shadow-sm">
         <div class="container mx-auto px-4">
@@ -139,7 +143,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Portfolio Grid -->
     <section class="py-20">
         <div class="container mx-auto px-4">
@@ -148,9 +152,9 @@
                 <div class="portfolio-item animate-scaleIn">
                     <div class="bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer group">
                         <div class="relative overflow-hidden h-64">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" 
-                                 alt="E-Commerce Platform" 
-                                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800"
+                                alt="E-Commerce Platform"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                             <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                 <div class="text-white">
                                     <span class="text-sm font-medium text-purple-300">E-Commerce</span>
@@ -169,14 +173,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Portfolio Item 2 -->
                 <div class="portfolio-item animate-scaleIn" style="animation-delay: 0.1s">
                     <div class="bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer group">
                         <div class="relative overflow-hidden h-64">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" 
-                                 alt="Analytics Dashboard" 
-                                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800"
+                                alt="Analytics Dashboard"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                             <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                 <div class="text-white">
                                     <span class="text-sm font-medium text-purple-300">Analytics</span>
@@ -195,14 +199,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Portfolio Item 3 -->
                 <div class="portfolio-item animate-scaleIn" style="animation-delay: 0.2s">
                     <div class="bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer group">
                         <div class="relative overflow-hidden h-64">
-                            <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=800" 
-                                 alt="Mobile Banking App" 
-                                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=800"
+                                alt="Mobile Banking App"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                             <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                 <div class="text-white">
                                     <span class="text-sm font-medium text-purple-300">Mobile App</span>
@@ -221,14 +225,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Portfolio Item 4 -->
                 <div class="portfolio-item animate-scaleIn" style="animation-delay: 0.3s">
                     <div class="bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer group">
                         <div class="relative overflow-hidden h-64">
-                            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800" 
-                                 alt="Corporate Website" 
-                                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800"
+                                alt="Corporate Website"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                             <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                 <div class="text-white">
                                     <span class="text-sm font-medium text-purple-300">Web Design</span>
@@ -247,14 +251,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Portfolio Item 5 -->
                 <div class="portfolio-item animate-scaleIn" style="animation-delay: 0.4s">
                     <div class="bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer group">
                         <div class="relative overflow-hidden h-64">
-                            <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?w=800" 
-                                 alt="Learning Platform" 
-                                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?w=800"
+                                alt="Learning Platform"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                             <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                 <div class="text-white">
                                     <span class="text-sm font-medium text-purple-300">EdTech</span>
@@ -273,14 +277,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Portfolio Item 6 -->
                 <div class="portfolio-item animate-scaleIn" style="animation-delay: 0.5s">
                     <div class="bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer group">
                         <div class="relative overflow-hidden h-64">
-                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800" 
-                                 alt="Social Media Campaign" 
-                                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800"
+                                alt="Social Media Campaign"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                             <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                 <div class="text-white">
                                     <span class="text-sm font-medium text-purple-300">Marketing</span>
@@ -299,14 +303,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Portfolio Item 7 -->
                 <div class="portfolio-item animate-scaleIn" style="animation-delay: 0.6s">
                     <div class="bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer group">
                         <div class="relative overflow-hidden h-64">
-                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800" 
-                                 alt="Financial Dashboard" 
-                                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800"
+                                alt="Financial Dashboard"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                             <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                 <div class="text-white">
                                     <span class="text-sm font-medium text-purple-300">FinTech</span>
@@ -325,14 +329,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Portfolio Item 8 -->
                 <div class="portfolio-item animate-scaleIn" style="animation-delay: 0.7s">
                     <div class="bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer group">
                         <div class="relative overflow-hidden h-64">
-                            <img src="https://images.unsplash.com/photo-1498049860654-af1a5c566876?w=800" 
-                                 alt="Brand Identity" 
-                                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <img src="https://images.unsplash.com/photo-1498049860654-af1a5c566876?w=800"
+                                alt="Brand Identity"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                             <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                 <div class="text-white">
                                     <span class="text-sm font-medium text-purple-300">Branding</span>
@@ -351,14 +355,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Portfolio Item 9 -->
                 <div class="portfolio-item animate-scaleIn" style="animation-delay: 0.8s">
                     <div class="bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer group">
                         <div class="relative overflow-hidden h-64">
-                            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=800" 
-                                 alt="Restaurant App" 
-                                 class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=800"
+                                alt="Restaurant App"
+                                class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
                             <div class="absolute inset-0 portfolio-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                                 <div class="text-white">
                                     <span class="text-sm font-medium text-purple-300">Mobile App</span>
@@ -378,7 +382,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Load More Button -->
             <div class="text-center mt-12">
                 <button class="px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-lg hover:shadow-lg transition">
@@ -387,7 +391,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- CTA Section -->
     <section class="py-20 bg-gradient-to-r from-purple-600 to-indigo-600">
         <div class="container mx-auto px-4 text-center">
@@ -405,7 +409,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4">
@@ -450,7 +454,7 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- JavaScript -->
     <script>
         // Filter functionality
@@ -460,11 +464,11 @@
                 this.classList.add('active');
             });
         });
-        
+
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        
+
         if (mobileMenuBtn) {
             mobileMenuBtn.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
@@ -472,4 +476,5 @@
         }
     </script>
 </body>
+
 </html>

@@ -6,103 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Finworld</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="stylesheet" href="style.css">
     <style>
-        header {
-            transition: .3s
-        }
 
-        .text-gradient {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent
-        }
-
-        .dropdown {
-            display: none;
-        }
-
-        .dropdown.show {
-            display: block;
-        }
-
-        header.shrink {
-            padding: 8px 0;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, .15);
-        }
-
-        .source-serif {
-  font-family: "Source Serif 4", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
-.space-grotesk{
-  font-family: "Space Grotesk", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-}
-
-
-
-        /* .axis-top-bar{
-}
-
-.axis-shape{
-position:absolute;
-top:0;
-left:0;
-width:700px;
-height:120px;
-background: linear-gradient(93.64deg, #f26f21 4.44%, #5c217a 93.74%);
- 
- --mask:
-    radial-gradient(129px at calc(100% - 129px) 50%,#000 99%,#0000 101%) 0 calc(50% - 258px)/100% 516px,
-    radial-gradient(129px at calc(100% + 0px) 50%,#0000 99%,#000 101%) calc(100% - 129px) 50%/100% 516px repeat-y;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
-
-          
-          z-index:1;
-} */
 
     </style>
 
 </head>
 
 <body class="bg-gray-100">
-<div class="axis-top-bar w-full"></div>
+    <div class="axis-top-bar w-full"></div>
 
 
-<!-- HEADER -->
-<header id="header" class="sticky  bg-white top-0 z-50 py-4 ">
-<div class="axis-shape"></div>
+    <!-- HEADER -->
+    <header id="header" class="sticky  bg-white top-0 z-50 py-4 ">
+        <div class="axis-shape"></div>
         <div class=" flex justify-between max-w-7xl mx-auto px-4 z-10">
 
             <div class="flex justify-between items-center">
 
-    <!-- Logo + Name -->
-    <a href="finworld.php"> <div class="flex items-center mb-1 gap-2">
-        <img src="images/finworld_logo.png"
-             alt="Finworld Logo"
-             class="w-10  sm:w-12 md:w-14 lg:w-16 h-auto object-contain ">
-                <h1 class="source-serif font-bold text-3xl bg-gradient-to-r from-purple-900 via-blue-600 to-purple-500 bg-clip-text text-transparent ">
-                Finworld Solution
-                </h1>
-    </div></a>
+                <!-- Logo + Name -->
+                <a href="finworld.php">
+                    <div class="flex items-center mb-1 gap-2">
+                        <img src="images/finworld_logo.png"
+                            alt="Finworld Logo"
+                            class="w-10  sm:w-12 md:w-14 lg:w-16 h-auto object-contain ">
+                        <h1 class="source-serif font-bold text-3xl bg-gradient-to-r from-purple-900 via-blue-600 to-purple-500 bg-clip-text text-transparent ">
+                            Finworld Solution
+                        </h1>
+                    </div>
+                </a>
 
-    <!-- Mobile Toggle -->
-    <button id="menuBtn" class="ml-[150px]  lg:hidden  text-3xl">
-        ☰
-    </button>
+                <!-- Mobile Toggle -->
+                <button id="menuBtn" class="ml-[150px]  lg:hidden  text-3xl">
+                    ☰
+                </button>
 
-</div>
+            </div>
 
-          <nav id="menu"
-class="hidden lg:flex items-center justify-center
+            <nav id="menu"
+                class="hidden lg:flex items-center justify-center
 gap-5
 font-semibold text-gray-700
 absolute lg:static
@@ -143,7 +88,7 @@ shadow lg:shadow-none">
 
                         <a href="health-insurance.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Health insurance </a>
 
-                        
+
 
                     </div>
 
@@ -242,7 +187,7 @@ shadow lg:shadow-none">
                 <a href="gallery.php" class="block space-grotesk hover:text-blue-700">GALLERY</a>
 
 
-              
+
 
             </nav>
 
