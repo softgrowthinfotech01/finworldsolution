@@ -24,7 +24,7 @@
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center text-sm">
                 <div class="flex items-center space-x-4">
-                    <span>📧 Finworldsolution01@gmail.com</span>
+                    <span>📧 finworldsolution01@gmail.com</span>
                     <span>📱 +91-7588086103</span>
                 </div>
                 <div class="flex items-center space-x-4">
@@ -689,29 +689,11 @@ class="text-white space-y-6">
 
 <p class="text-gray-200 leading-relaxed">
 📞 Phone: +91 8080435343 <br>
-📧 Email: Finworldsolution01@gmail.com <br>
+📧 Email: finworldsolution01@gmail.com <br>
 📍 Address: 123 Finance Street, Pune, India
 </p>
 
-<div class="flex space-x-4 mt-6">
 
-<a href="#" class="p-4  backdrop-blur-md rounded-full  transition hover:scale-110">
-<!-- Facebook SVG -->
-<svg xmlns="http://www.w3.org/2000/svg" class="bg-blue-600 p-[2px] rounded-lg " width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
-  <path d="M13 22v-8h3l1-4h-4V8c0-1.2.3-2 2-2h2V2.3A27 27 0 0 0 14 2c-3 0-5 1.8-5 5v3H6v4h3v8h4z"/>
-</svg>
-</a>
-
-<a href="#" class="p-4 backdrop-blur-md rounded-full  transition hover:scale-110">
-<!-- Instagram SVG -->
-<svg xmlns="http://www.w3.org/2000/svg" class="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] p-[2px] rounded-lg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24">
-  <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 2A3.75 3.75 0 0 0 4 7.75v8.5A3.75 3.75 0 0 0 7.75 20h8.5A3.75 3.75 0 0 0 20 16.25v-8.5A3.75 3.75 0 0 0 16.25 4h-8.5z"/>
-  <path d="M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/>
-  <circle cx="17.5" cy="6.5" r="1.25"/>
-</svg>
-</a>
-
-</div>
 
 </div>
 

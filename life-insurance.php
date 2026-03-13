@@ -7,8 +7,14 @@
 <body class="bg-gray-100">
   <?php  include_once "header.php"; ?>
 
-<section class="bg-blue-900 text-white py-16 text-center">
-<h1 class="text-4xl font-bold">Life Insurance</h1>
+<section class="bg-blue-900 ">
+  
+  <img 
+    src="images/life_insurance.png" 
+    alt="life insurance"
+    class="w-full h-60 sm:h-80 md:h-[400px]  object-cover"
+  >
+
 </section>
 
 <section class="max-w-6xl mx-auto bg-white p-8 mt-8 rounded shadow">

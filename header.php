@@ -134,11 +134,17 @@ shadow lg:shadow-none">
 
                     <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded shadow">
 
-                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Personal Loan</a>
+                        <a href="personal-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Personal Loan</a>
 
-                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Business Loan</a>
+                        <a href="business-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Business Loan</a>
 
-                        <a href="#" class="block px-5 py-3 hover:bg-blue-600">Credit Card</a>
+                        <a href="credit-card.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Credit Card</a>
+
+                        <a href="commercial-vehicle-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Commercial vehical loan</a>
+
+                        <a href="health-insurance.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Health insurance </a>
+
+                        
 
                     </div>
 
@@ -162,11 +168,15 @@ shadow lg:shadow-none">
 
                     <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded shadow">
 
-                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Home Loan</a>
+                        <a href="home-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Home Loan</a>
 
-                        <a href="#" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Car Loan</a>
+                        <a href="car-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Car Loan</a>
 
-                        <a href="#" class="block px-5 py-3 hover:bg-blue-600">Loan Against Property</a>
+                        <a href="loan-against-property.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Loan Against Property</a>
+
+                        <a href="life-insurance.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Life insurance </a>
+
+                        <a href="general-insurance.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">General insurance</a>
 
                     </div>
 

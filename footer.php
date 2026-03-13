@@ -21,25 +21,7 @@
         </p>
 
         <!-- Social Icons -->
-        <div class="flex gap-4 mt-6">
-          <a href="#" class="bg-gray-800 p-3 rounded-lg hover:bg-blue-600 transition">
-            <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
-              <path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.2v-2.9h2.2V9.6c0-2.2 1.3-3.4 3.3-3.4.9 0 1.9.1 1.9.1v2.1h-1.1c-1.1 0-1.5.7-1.5 1.4v1.7h2.6l-.4 2.9h-2.2v7A10 10 0 0 0 22 12z"/>
-            </svg>
-          </a>
-
-          <a href="#" class="bg-gray-800 p-3 rounded-lg hover:bg-pink-600 transition">
-            <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
-              <path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4A5.8 5.8 0 0 1 16.2 22H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm4.2 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 1.8a3.2 3.2 0 1 1 0 6.4 3.2 3.2 0 0 1 0-6.4zm4.6-.9a1.2 1.2 0 1 0 0-2.3 1.2 1.2 0 0 0 0 2.3z"/>
-            </svg>
-          </a>
-
-          <a href="#" class="bg-gray-800 p-3 rounded-lg hover:bg-blue-500 transition">
-            <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
-              <path d="M22.46 6c-.77.35-1.5.6-2.23.7a3.86 3.86 0 0 0 1.7-2.1 7.72 7.72 0 0 1-2.4.92 3.86 3.86 0 0 0-6.57 3.52A11 11 0 0 1 3 4.8a3.86 3.86 0 0 0 1.2 5.15 3.8 3.8 0 0 1-1.74-.48v.05a3.87 3.87 0 0 0 3.1 3.8 3.87 3.87 0 0 1-1.73.06 3.87 3.87 0 0 0 3.6 2.7A7.75 7.75 0 0 1 2 18.6 11 11 0 0 0 8 20c7.2 0 11.2-6 11.2-11.2v-.5A8 8 0 0 0 22.46 6z"/>
-            </svg>
-          </a>
-        </div>
+      
       </div>
 
       <!-- Quick Links -->
@@ -72,7 +54,7 @@
 
         <p class="mb-3">📍 Mumbai, Maharashtra</p>
         <p class="mb-3">📞 +91 98765 43210</p>
-        <p class="mb-3">✉ Finworldsolution01@gmail.com</p>
+        <p class="mb-3">✉ finworldsolution01@gmail.com</p>
 
         <!-- Newsletter -->
        
