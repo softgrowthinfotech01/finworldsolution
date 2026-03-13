@@ -76,7 +76,7 @@ shadow lg:shadow-none">
 
                     </button>
 
-                    <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded shadow">
+                    <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded-xl shadow">
 
                         <a href="personal-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Personal Loan</a>
 
@@ -110,7 +110,7 @@ shadow lg:shadow-none">
 
                     </button>
 
-                    <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded shadow">
+                    <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded-xl shadow">
 
                         <a href="home-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Home Loan</a>
 
@@ -142,7 +142,7 @@ shadow lg:shadow-none">
 
                     </button>
 
-                    <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded shadow">
+                    <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded-xl shadow">
 
                         <a href="terms-and-condition.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Terms & Conditions</a>
 
@@ -172,7 +172,7 @@ shadow lg:shadow-none">
 
                     </button>
 
-                    <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded shadow">
+                    <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded-xl shadow">
 
                         <a href="career.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Career</a>
 
