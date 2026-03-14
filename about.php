@@ -20,7 +20,7 @@
 
 <!-- HERO SECTION -->
 
-<section class="bg-blue-900 text-white py-20">
+<section class="bg-blue-900  text-white py-20">
 
 <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
@@ -37,8 +37,8 @@ and businesses achieve their financial goals.
 
 <div data-aos="zoom-in">
 
-<img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d"
-class="rounded-xl shadow-lg w-full">
+<img src="images/about-us-bg.png"
+class="rounded-xl  w-full">
 
 </div>
 
