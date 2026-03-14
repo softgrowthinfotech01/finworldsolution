@@ -72,8 +72,12 @@ class="w-full border border-gray-300 p-3 rounded mt-2 focus:outline-none focus:r
 <option>Home Loan</option>
 <option>Business Loan</option>
 <option>Car Loan</option>
-<option>Insurance</option>
+<option>Health insurance</option>
+<option>Life insurance</option>
+<option>General  insurance</option>
 <option>Credit Card</option>
+<option>Loan Against Property</option>
+<option>Commercial vehical loan </option>
 
 </select>
 </div>

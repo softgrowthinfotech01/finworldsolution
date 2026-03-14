@@ -87,17 +87,17 @@ Attractive incentives and recognition for outstanding performance.
 
 
 <!-- JOB OPENINGS -->
-<section class="max-w-6xl mx-auto py-10 px-6">
+<!-- <section class="max-w-6xl mx-auto py-10 px-6">
 
 <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
 Current Openings
 </h2>
 
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"> -->
 
 
 <!-- Job 1 -->
-<div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition"
+<!-- <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition"
 data-aos="fade-up">
 
 <h3 class="text-xl font-bold mb-2">Loan Consultant</h3>
@@ -114,11 +114,11 @@ Experience: 1+ Years
 Apply Now
 </button>
 
-</div>
+</div> -->
 
 
 <!-- Job 2 -->
-<div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition"
+<!-- <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition"
 data-aos="fade-up" data-aos-delay="150">
 
 <h3 class="text-xl font-bold mb-2">Sales Executive</h3>
@@ -135,11 +135,11 @@ Experience: 1+ Years
 Apply Now
 </button>
 
-</div>
+</div> -->
 
 
 <!-- Job 3 -->
-<div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition"
+<!-- <div class="bg-white p-8 rounded-xl shadow hover:shadow-xl transition"
 data-aos="fade-up" data-aos-delay="300">
 
 <h3 class="text-xl font-bold mb-2">Customer Support</h3>
@@ -160,7 +160,7 @@ Apply Now
 
 </div>
 
-</section>
+</section> -->
 
 
 
