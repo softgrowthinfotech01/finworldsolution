@@ -1,77 +1,92 @@
-<header class="bg-white shadow-lg">
-    <div class="flex justify-between items-center px-4 h-22">
+<header class="bg-white/90 backdrop-blur border-b shadow-sm  z-50" >
+<div class="flex items-center justify-between px-6 h-20 relative">
 
-        <!-- Left -->
-        <div class="flex items-center gap-4">
+<!-- LEFT -->
+<div class="flex items-center gap-3">
 
-            <!-- Sidebar Toggle (Mobile Only) -->
-            <i class="fas fa-bars text-gray-700 cursor-pointer hover:bg-gray-300 p-2 rounded-sm md:hidden"
-                onclick="sidebarToggle()"></i>
+<button onclick="sidebarToggle()" class="p-2 rounded bg-gray-200 hover:bg-gray-300">
 
-            <h1 class="text-gray-700 text-sm md:text-lg font-semibold">
-          
-            </h1>
-        </div>
+<svg xmlns="http://www.w3.org/2000/svg"
+class="h-6 w-6 text-gray-600"
+fill="none"
+viewBox="0 0 24 24"
+stroke="currentColor">
 
-        <!-- Center Logo -->
-        <div class="hidden sm:block">
-            <img src="../images/logo.png" alt="logo"
-                class="w-24 md:w-32 rounded-sm">
-        </div>
+<path stroke-linecap="round"
+stroke-linejoin="round"
+stroke-width="2"
+d="M4 6h16M4 12h16M4 18h16"/>
 
-        <!-- Right Profile -->
-        <div class="relative flex items-center bg-gray-300 rounded-lg">
+</svg>
 
-            <a href="#"
-                onclick="profileToggle()"
-                class="flex items-center gap-2 px-3 py-2 rounded-sm hover:bg-gray-500 cursor-pointer text-gray-900 hover:text-white">
+</button>
 
-                <img src="../images/profile.png" class="w-8 h-8 rounded-full">
+</div>
 
-                <!-- Hide username on mobile -->
-                <span class="hidden md:block font-medium">User</span>
 
-            </a>
+<!-- CENTER COMPANY NAME -->
+<div class="absolute left-1/2 transform -translate-x-1/2 flex items-center gap-3">
 
-            <!-- Dropdown -->
-            <div id="ProfileDropDown"
-                class="hidden absolute right-0 top-14 w-48
-                        bg-white rounded shadow-lg z-50">
+<img src="Images/logo.png"
+class="w-10 h-10 object-contain">
 
-                <ul class="text-sm text-gray-700">
+<h1 class="text-2xl font-extrabold bg-gradient-to-r from-purple-700 via-blue-600 to-purple-500 bg-clip-text text-transparent tracking-wide">
+Finworld Solution
+</h1>
 
-                
-                   
+</div>
 
-                    <li>
-                        <hr class="my-1 border-gray-200">
-                    </li>
 
-                    <li>
-                        <a style="cursor:pointer"
-                           onclick="logout()"
-                           class="block px-4 py-2 hover:bg-gray-100 text-red-600">
-                            Logout
-                        </a>
-                    </li>
+<!-- RIGHT -->
+<div class="flex items-center gap-4">
 
-                </ul>
+<div class="relative profile-area">
 
-            </div>
-        </div>
+<button onclick="profileToggle(event)"
+class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-gray-200 hover:bg-gray-300 transition">
 
-    </div>
+<img src="Images/user.png"
+class="w-8 h-8 rounded-full border border-gray-300">
+
+<span class="hidden md:block font-medium text-gray-700">
+Admin
+</span>
+
+</button>
+
+
+<!-- DROPDOWN -->
+<div id="ProfileDropDown"
+class="hidden absolute right-0 mt-3 w-48 bg-white rounded-xl shadow-lg border overflow-hidden z-9">
+
+<!-- user info -->
+<div class="flex items-center gap-3 px-4 py-3 border-b bg-gray-50">
+
+<img src="Images/user.png"
+class="w-9 h-9 rounded-full">
+
+<div class="text-sm">
+<p class="font-semibold text-gray-700">Admin</p>
+
+</div>
+
+</div>
+
+<!-- logout -->
+<a href="logout.php"
+class="flex items-center gap-2 px-4 py-3 text-red-500 hover:bg-red-50 cursor-pointer">
+
+<span class="text-lg">⎋</span>
+
+<span class="font-medium">Logout</span>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 </header>
-
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<script src="../url.js"></script>
-<script>
-function profileToggle(){
-
-    const dropdown = document.getElementById("ProfileDropDown");
-
-    dropdown.classList.toggle("hidden");
-}
-</script>
