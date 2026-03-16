@@ -17,7 +17,7 @@
                     </h1>
                 </div>
                 <p class="text-gray-400 leading-relaxed">
-                    Trusted finworld solutions for loans, investments, and wealth
+                     finworld solutions for loans, investments, and wealth
                     management. Helping individuals and businesses achieve financial growth.
                 </p>
 
@@ -29,11 +29,11 @@
             <div>
                 <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
                 <ul class="space-y-3">
-                    <li><a href="finworld.php" class="hover:text-blue-400 transition">Home</a></li>
-                    <li><a href="about.php" class="hover:text-blue-400 transition">About Us</a></li>
+                    <li><a href="finworld" class="hover:text-blue-400 transition">Home</a></li>
+                    <li><a href="about" class="hover:text-blue-400 transition">About Us</a></li>
                     <li><a href="#" class="hover:text-blue-400 transition">Services</a></li>
                     <li><a href="#" class="hover:text-blue-400 transition">Loan Process</a></li>
-                    <li><a href="contact.php" class="hover:text-blue-400 transition">Contact</a></li>
+                    <li><a href="contact" class="hover:text-blue-400 transition">Contact</a></li>
                 </ul>
             </div>
 
@@ -41,11 +41,11 @@
             <div>
                 <h3 class="text-white text-lg font-semibold mb-4">Our Services</h3>
                 <ul class="space-y-3">
-                    <li><a href="hom  e-loan.php" class="hover:text-blue-400 transition">Home Loan</a></li>
-                    <li><a href="busin    ess-loan.php" class="hover:text-blue-400 transition">Business Loan</a></li>
-                    <li><a href="personal-loan.php" class="hover:text-blue-400 transition">Personal Loan</a></li>
-                    <li><a href="loan-against-property.php" class="hover:text-blue-400 transition">Loan Against Property</a></li>
-                    <li><a href="credit-card.php" class="hover:text-blue-400 transition">Credit Card</a></li>
+                    <li><a href="home-loan" class="hover:text-blue-400 transition">Home Loan</a></li>
+                    <li><a href="business-loan" class="hover:text-blue-400 transition">Business Loan</a></li>
+                    <li><a href="personal-loan" class="hover:text-blue-400 transition">Personal Loan</a></li>
+                    <li><a href="loan-against-property" class="hover:text-blue-400 transition">Loan Against Property</a></li>
+                    <li><a href="credit-card" class="hover:text-blue-400 transition">Credit Card</a></li>
                 </ul>
             </div>
 
