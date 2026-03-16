@@ -165,7 +165,7 @@ Apply Now
 
 
 <!-- CTA -->
-<section class="max-w-6xl mx-auto py-16 px-6">
+<!-- <section class="max-w-6xl mx-auto py-16 px-6">
 
 <div class="bg-blue-900 text-white rounded-xl p-12 text-center"
 data-aos="zoom-in">
@@ -185,7 +185,7 @@ Submit Resume
 
 </div>
 
-</section>
+</section> -->
 
 
 <?php include_once "footer.php"; ?>

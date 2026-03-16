@@ -83,7 +83,7 @@ class="w-full border border-gray-300 p-3 rounded mt-2 focus:outline-none focus:r
 </div>
 
 <!-- Rating -->
-<div>
+<!-- <div>
 <label class="font-semibold block mb-2">Rate Our Service</label>
 
 <div class="flex gap-2 text-2xl text-yellow-400 cursor-pointer">
@@ -98,7 +98,7 @@ class="w-full border border-gray-300 p-3 rounded mt-2 focus:outline-none focus:r
 
 <input type="hidden" id="rating" value="0">
 
-</div>
+</div> -->
 
 <!-- Feedback -->
 <div>
