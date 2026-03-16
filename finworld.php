@@ -177,7 +177,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
       <!-- Content -->
       <div data-aos="fade-left" data-aos-duration="1200">
         <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
-          Trusted Financial Guidance for
+        Finworld Solution Guidance for
           <span class="color-text"> Your Future </span>
         </h2>
 
