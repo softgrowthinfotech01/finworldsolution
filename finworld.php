@@ -16,6 +16,7 @@
   
   <style>
 
+
   </style>
 </head>
 
@@ -529,15 +530,13 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                 </svg>
               </div>
               <p class="text-lg text-gray-600 mb-6">
-                "ALORNIX transformed our online presence completely. Their attention to detail and
-                innovative approach exceeded our expectations."
+               "I was impressed by their transparency and quick response. Finworld Solution truly cares about helping customers make the right financial decisions."
               </p>
               <div class="flex items-center justify-center">
-                <img src="https://i.pravatar.cc/100?img=1" alt="Client"
-                  class="w-12 h-12 rounded-full mr-4">
+                <!-- <img src="https://i.pravatar.cc/100?img=1" alt="Client"
+                  class="w-12 h-12 rounded-full mr-4"> -->
                 <div class="text-left">
-                  <p class="font-semibold">John Smith</p>
-                  <p class="text-sm text-gray-500">CEO, TechCorp</p>
+                  <p class="font-semibold">Bharti Jadhav</p>
                 </div>
               </div>
             </div>
@@ -553,15 +552,13 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                 </svg>
               </div>
               <p class="text-lg text-gray-600 mb-6">
-                "Working with ALORNIX was a game-changer for our business. They delivered beyond what we
-                imagined possible."
+                "Finworld Solution made the loan process incredibly simple and fast. Their team guided us at every step and helped us secure the best option for our needs."
               </p>
               <div class="flex items-center justify-center">
-                <img src="https://i.pravatar.cc/100?img=5" alt="Client"
-                  class="w-12 h-12 rounded-full mr-4">
+                <!-- <img src="https://i.pravatar.cc/100?img=5" alt="Client"
+                  class="w-12 h-12 rounded-full mr-4"> -->
                 <div class="text-left">
-                  <p class="font-semibold">Sarah Johnson</p>
-                  <p class="text-sm text-gray-500">Founder, StartupX</p>
+                  <p class="text-sm text-gray-500">Dinesh Dubey</p>
                 </div>
               </div>
             </div>
@@ -855,7 +852,32 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
       duration: 800,
       once: false
     });
+
+
+
+
+
+    // Testimonials Slider
+let testimonialTrack = document.querySelector(".slider-track");
+let testimonialIndex = 0;
+let testimonialSlides = document.querySelectorAll(".slider-track > div").length;
+
+function moveTestimonial(){
+  testimonialTrack.style.transform = `translateX(-${testimonialIndex * 100}%)`;
+}
+
+setInterval(() => {
+  testimonialIndex++;
+  
+  if(testimonialIndex >= testimonialSlides){
+    testimonialIndex = 0;
+  }
+
+  moveTestimonial();
+
+}, 4000);
   </script>
+  
 
 </body>
 

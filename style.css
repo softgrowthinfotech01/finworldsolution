@@ -49,14 +49,6 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
-.slider-container {
-  overflow: hidden;
-}
-
-.slider-track {
-  display: flex;
-  animation: slide 20s linear infinite;
-}
 
 @keyframes slide {
   0% {
@@ -213,7 +205,15 @@
 
 
 
+/* testimonials slider */
+.slider-container{
+  overflow: hidden;
+}
 
-/* header css*/
+.slider-track{
+  display:flex;
+  transition: transform 0.7s ease;
+}
+
 
 
