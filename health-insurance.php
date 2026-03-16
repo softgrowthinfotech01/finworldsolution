@@ -36,7 +36,7 @@ Protect yourself and your family from unexpected medical expenses with reliable 
 </p>
 
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Get Insurance
 </a>
@@ -221,7 +221,7 @@ Protect Your Family Today
 Choose a health insurance plan that keeps your loved ones safe.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Buy Health Insurance
 </a>

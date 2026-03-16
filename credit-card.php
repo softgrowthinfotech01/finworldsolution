@@ -33,7 +33,7 @@ Enjoy rewards, cashback, and exclusive offers with our premium credit cards.
 Shop, travel, and pay later with complete financial flexibility.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply Now
 </a>
@@ -209,7 +209,7 @@ Apply for Your Credit Card Today
 Experience convenience, rewards, and financial flexibility.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply Now
 </a>

@@ -35,7 +35,7 @@ Make Your Dream Home a Reality
 Affordable home loans with low interest rates and flexible repayment options.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply For Home Loan
 </a>
@@ -219,7 +219,7 @@ Own Your Dream Home Today
 Apply for a home loan and turn your dream into reality.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply Now
 </a>

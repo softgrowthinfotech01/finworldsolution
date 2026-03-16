@@ -38,7 +38,7 @@ Get high-value loans by mortgaging your residential or commercial property
 with competitive interest rates.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply For Loan
 </a>
@@ -228,7 +228,7 @@ Get the Best Value From Your Property
 Apply for a Loan Against Property and unlock financial opportunities.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply Now
 </a>

@@ -160,7 +160,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
   </section>
 
 
-  <section class="relative py-24 bg-gradient-to-b from-gray-50 via-gray-100 to-gray-50 overflow-hidden">
+  <section class="relative py-24 bg-white overflow-hidden">
 
     <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
 
