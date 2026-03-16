@@ -95,7 +95,7 @@ p-6 lg:p-0
 shadow lg:shadow-none">
 
 
-                <a href="about.php" class="block space-grotesk  hover:text-blue-700">ABOUT US</a>
+                <a href="about" class="block space-grotesk  hover:text-blue-700">ABOUT US</a>
 
                 <!-- UNSECURED -->
                 <div class="relative">
@@ -115,15 +115,15 @@ shadow lg:shadow-none">
 
                     <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded-xl shadow">
 
-                        <a href="personal-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Personal Loan</a>
+                        <a href="personal-loan" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Personal Loan</a>
 
-                        <a href="business-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Business Loan</a>
+                        <a href="business-loan" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Business Loan</a>
 
-                        <a href="credit-card.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Credit Card</a>
+                        <a href="credit-card" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Credit Card</a>
 
-                        <a href="commercial-vehicle-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Commercial vehical loan</a>
+                        <a href="commercial-vehicle-loan" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Commercial vehical loan</a>
 
-                        <a href="health-insurance.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Health insurance </a>
+                        <a href="health-insurance" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Health insurance </a>
 
 
 
@@ -149,15 +149,15 @@ shadow lg:shadow-none">
 
                     <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded-xl shadow">
 
-                        <a href="home-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Home Loan</a>
+                        <a href="home-loan" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Home Loan</a>
 
-                        <a href="car-loan.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Car Loan</a>
+                        <a href="car-loan" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Car Loan</a>
 
-                        <a href="loan-against-property.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Loan Against Property</a>
+                        <a href="loan-against-property" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Loan Against Property</a>
 
-                        <a href="life-insurance.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Life insurance </a>
+                        <a href="life-insurance" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Life insurance </a>
 
-                        <a href="general-insurance.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">General insurance</a>
+                        <a href="general-insurance" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">General insurance</a>
 
                     </div>
 
@@ -181,13 +181,13 @@ shadow lg:shadow-none">
 
                     <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded-xl shadow">
 
-                        <a href="terms-and-condition.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Terms & Conditions</a>
+                        <a href="terms-and-condition" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Terms & Conditions</a>
 
-                        <a href="emi_calculator.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">EMI Calculator</a>
+                        <a href="emi_calculator" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">EMI Calculator</a>
 
-                        <a href="loan_calculator.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Loan Calculator</a>
+                        <a href="loan_calculator" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Loan Calculator</a>
 
-                        <a href="privacy-policy.php" class="block px-5 py-3 hover:bg-blue-600">Privacy Policy</a>
+                        <a href="privacy-policy" class="block px-5 py-3 hover:bg-blue-600">Privacy Policy</a>
 
                     </div>
 
@@ -211,17 +211,17 @@ shadow lg:shadow-none">
 
                     <div class="dropdown bg-[#2c3553] text-white lg:absolute w-full lg:w-56 mt-2 rounded-xl shadow">
 
-                        <a href="career.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Career</a>
+                        <a href="career" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Career</a>
 
-                        <a href="feedback.php" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Feedback</a>
+                        <a href="feedback" class="block px-5 py-3 border-b border-gray-600 hover:bg-blue-600">Feedback</a>
 
-                        <a href="contact.php" class="block px-5 py-3 hover:bg-blue-600">Contact Us</a>
+                        <a href="contact" class="block px-5 py-3 hover:bg-blue-600">Contact Us</a>
 
                     </div>
 
                 </div>
 
-                <a href="gallery.php" class="block space-grotesk hover:text-blue-700">GALLERY</a>
+                <a href="gallery" class="block space-grotesk hover:text-blue-700">GALLERY</a>
 
 
 
