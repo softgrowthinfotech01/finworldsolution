@@ -60,13 +60,13 @@ Apply For Insurance
 What is General Insurance?
 </h2>
 
-<p class="text-gray-600 leading-relaxed">
+<p class="text-gray-600 leading-relaxed text-justify">
 General insurance provides financial protection against risks
 other than life. It covers damages or losses related to vehicles,
 travel, property, and other valuable assets.
 </p>
 
-<p class="mt-4 text-gray-600">
+<p class="mt-4 text-gray-600 text-justify">
 It ensures peace of mind by helping individuals and businesses
 recover financially from unexpected incidents.
 </p>

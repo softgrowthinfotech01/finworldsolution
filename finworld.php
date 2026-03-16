@@ -180,12 +180,18 @@ hover:bg-yellow-400 hover:text-black transition z-20">
           <span class="color-text"> Your Future </span>
         </h2>
 
-        <p class="text-gray-700 mb-5 leading-relaxed text-lg">
-          Finworld Solution provides a wide range of financial solutions including personal loans, business loans, home loans, insurance, and investment advisory services. Our goal is to help individuals and businesses achieve their financial objectives through expert guidance and reliable financial products.
+        <p class="text-gray-700 mb-5 leading-relaxed text-lg text-justify">
+          Finworld Solution provides a wide range of financial solutions
+           including personal loans, business loans, home loans, insurance,
+            and investment advisory services. Our goal is to help individuals
+             and businesses achieve their financial objectives through expert
+              guidance and reliable financial products.
         </p>
 
-        <p class="text-gray-700 mb-8 leading-relaxed text-lg">
-          We carefully understand each client’s financial needs, risk profile, and long-term goals to provide customized financial solutions that ensure stability, growth, and financial confidence.
+        <p class="text-gray-700 mb-8 leading-relaxed text-lg text-justify">
+          We carefully understand each client’s financial needs, risk profile,
+           and long-term goals to provide customized financial solutions that
+            ensure stability, growth, and financial confidence.
         </p>
 
         <div class="flex gap-5 flex-wrap">
@@ -228,7 +234,7 @@ hover:bg-yellow-400 hover:text-black transition z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold text-center mb-4">Personal Loan</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             A personal loan is an unsecured loan that provides quick
             funds for personal expenses with flexible repayment options.
             <a href="personal-loan.php" class="text-purple-600 font-semibold hover:text-purple-700  transition">
@@ -247,7 +253,7 @@ hover:bg-yellow-400 hover:text-black transition z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">Business Loan</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             A business loan provides financial support to help businesses
             manage operations, expand, or invest in growth opportunities.
           </p>
@@ -267,7 +273,7 @@ hover:bg-yellow-400 hover:text-black transition z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">Loan against Property</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             Unlock the value of your property to get high-value
             loans at competitive interest rates.
           </p>
@@ -287,7 +293,7 @@ hover:bg-yellow-400 hover:text-black transition z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">Home Loan</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             A home loan helps individuals finance the purchase, construction, or
             renovation of a house with flexible repayment options.
           </p>
@@ -307,7 +313,7 @@ hover:bg-yellow-400 hover:text-black transition z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">Car Loan</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             A car loan helps individuals purchase a new or used
             vehicle by paying in easy monthly installments (EMIs).
           </p>
@@ -327,7 +333,7 @@ hover:bg-yellow-400 hover:text-black transition z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">Commercial Vehical Loan</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             Finance commercial vehicles easily to expand and grow your business operations.
           </p>
           <a href="commercial-vehicle-loan.php" class="text-purple-600 font-semibold hover:text-purple-700 transition">
@@ -365,7 +371,7 @@ hover:bg-yellow-400 hover:text-black transition z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">Health Insurance</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             Protect yourself and your family from medical expenses with comprehensive health coverage.
           </p>
           <a href="health-insurance.php" class="text-purple-600 font-semibold hover:text-purple-700 transition">
@@ -383,7 +389,7 @@ hover:bg-yellow-400 hover:text-black transition z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">Life Insurance</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             Secure your family's financial future with reliable life insurance protection.
           </p>
           <a href="life-insurance.php" class="text-purple-600 font-semibold hover:text-purple-700 transition">
@@ -401,7 +407,7 @@ hover:bg-yellow-400 hover:text-black transition z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">General Insurance</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             Comprehensive insurance solutions to protect your assets, travel, and valuables.
           </p>
           <a href="general-insurance.php" class="text-purple-600 font-semibold hover:text-purple-700 transition">
@@ -446,7 +452,7 @@ hover:bg-yellow-400 hover:text-black transition z-20">
 
           <h3 class="text-xl font-bold text-gray-900 mb-2">Apply Online</h3>
 
-          <p class="text-gray-600 text-center">
+          <p class="text-gray-600 text-center text-justify">
             Fill out a simple application form with your basic details.
           </p>
 
@@ -462,7 +468,7 @@ hover:bg-yellow-400 hover:text-black transition z-20">
 
           <h3 class="text-xl font-bold text-gray-900 mb-2">Document Verification</h3>
 
-          <p class="text-gray-600 text-center">
+          <p class="text-gray-600 text-center text-justify">
             Submit your documents and we verify them quickly and securely.
           </p>
 
@@ -478,7 +484,7 @@ hover:bg-yellow-400 hover:text-black transition z-20">
 
           <h3 class="text-xl font-bold text-gray-900 mb-2">Approval</h3>
 
-          <p class="text-gray-600 text-center">
+          <p class="text-gray-600 text-center text-justify">
             Get instant approval based on your eligibility and submitted documents.
           </p>
 
@@ -494,7 +500,7 @@ hover:bg-yellow-400 hover:text-black transition z-20">
 
           <h3 class="text-xl font-bold text-gray-900 mb-2">Receive Funds</h3>
 
-          <p class="text-gray-600 text-center">
+          <p class="text-gray-600 text-center text-justify">
             Funds are transferred directly to your account quickly and safely.
           </p>
 
@@ -556,7 +562,7 @@ hover:bg-yellow-400 hover:text-black transition z-20">
                 <!-- <img src="https://i.pravatar.cc/100?img=5" alt="Client"
                   class="w-12 h-12 rounded-full mr-4"> -->
                 <div class="text-left">
-                  <p class="text-sm text-gray-500">Dinesh Dubey</p>
+                  <p class="font-semibold">Dinesh Dubey</p>
                 </div>
               </div>
             </div>

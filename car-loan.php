@@ -56,12 +56,12 @@ Apply For Car Loan
 What is a Car Loan?
 </h2>
 
-<p class="text-gray-600 leading-relaxed">
+<p class="text-gray-600 leading-relaxed text-justify">
 A car loan helps you purchase a new or used vehicle without paying the full
 amount upfront. You repay the amount through affordable monthly EMI payments.
 </p>
 
-<p class="mt-4 text-gray-600">
+<p class="mt-4 text-gray-600 text-justify">
 With flexible tenure options and competitive interest rates,
 car loans make owning your dream vehicle easy.
 </p>

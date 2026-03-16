@@ -57,13 +57,13 @@ Apply Now
 What is a Personal Loan?
 </h2>
 
-<p class="text-gray-600 leading-relaxed">
+<p class="text-gray-600 leading-relaxed text-justify">
 A personal loan is an unsecured loan designed to meet your immediate financial needs. 
 Whether it's for medical emergencies, travel, home renovation, or weddings, personal 
 loans provide quick access to funds without requiring collateral.
 </p>
 
-<p class="mt-4 text-gray-600">
+<p class="mt-4 text-gray-600 text-justify">
 With flexible repayment options and competitive interest rates, personal loans are 
 one of the easiest ways to manage unexpected expenses.
 </p>

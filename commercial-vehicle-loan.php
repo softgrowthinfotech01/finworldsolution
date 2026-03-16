@@ -31,7 +31,7 @@ class="w-full h-72 md:h-[480px] object-cover">
 Commercial Vehicle Loans
 </h1>
 
-<p class="max-w-xl mx-auto text-lg text-blue-100">
+<p class="max-w-xl mx-auto text-lg text-blue-100 ">
 Finance trucks, buses, and transport vehicles with flexible repayment options and quick approvals.
 </p>
 
@@ -56,13 +56,13 @@ Apply Now
 What is a Commercial Vehicle Loan?
 </h2>
 
-<p class="text-gray-600 leading-relaxed">
+<p class="text-gray-600 leading-relaxed text-justify">
 Commercial vehicle loans help businesses and transport operators
 purchase trucks, buses, delivery vans, and other commercial vehicles
 without paying the full amount upfront.
 </p>
 
-<p class="mt-4 text-gray-600">
+<p class="mt-4 text-gray-600 text-justify">
 With affordable EMI plans and flexible financing options, you can
 expand your transport business and increase operational efficiency.
 </p>

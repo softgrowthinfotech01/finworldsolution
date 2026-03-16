@@ -88,10 +88,7 @@
                 © 2026 Finworld Solution. All Rights Reserved.
             </p>
 
-            <div class="flex gap-6 mt-4 md:mt-0">
-                <a href="#" class="text-sm hover:text-blue-400">Privacy Policy</a>
-                <a href="#" class="text-sm hover:text-blue-400">Terms & Conditions</a>
-            </div>
+          
 
         </div>
 

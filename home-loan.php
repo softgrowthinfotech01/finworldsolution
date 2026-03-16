@@ -56,12 +56,12 @@ Apply For Home Loan
 What is a Home Loan?
 </h2>
 
-<p class="text-gray-600 leading-relaxed">
+<p class="text-gray-600 leading-relaxed text-justify">
 A home loan helps individuals purchase, build, or renovate a house without
 paying the full amount upfront.
 </p>
 
-<p class="mt-4 text-gray-600">
+<p class="mt-4 text-gray-600 text-justify">
 With long repayment tenures and competitive interest rates,
 home loans make property ownership more accessible.
 </p>
