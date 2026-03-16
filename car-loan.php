@@ -35,7 +35,7 @@ Drive Your Dream Car Today
 Get quick car loan approvals with flexible EMI plans and low interest rates.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply For Car Loan
 </a>
@@ -219,7 +219,7 @@ Get Your Car Loan Approved Today
 Apply now and drive home your dream car with easy EMI plans.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply Now
 </a>

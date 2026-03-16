@@ -38,7 +38,7 @@ General insurance protects your valuable assets like vehicles,
 property, travel, and more against unexpected risks.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply For Insurance
 </a>
@@ -241,7 +241,7 @@ Get Comprehensive Insurance Coverage
 Protect your assets and stay secure with the right insurance plan.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply Now
 </a>

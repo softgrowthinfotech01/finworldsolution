@@ -37,7 +37,7 @@ Secure Your Family's Future
 Life insurance ensures financial protection and peace of mind for your loved ones.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Get Life Insurance
 </a>
@@ -227,7 +227,7 @@ Protect What Matters Most
 Secure your family's future with the right life insurance plan.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply Now
 </a>

@@ -33,7 +33,7 @@ Empower your business with flexible funding solutions to manage cash flow,
 expand operations, and invest in growth opportunities.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply Now
 </a>
@@ -178,7 +178,7 @@ Fuel Your Business Growth
 Access funding that helps your business reach the next level.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply Now
 </a>

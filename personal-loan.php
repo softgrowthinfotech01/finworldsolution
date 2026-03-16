@@ -36,7 +36,7 @@ Personal Loan Made Simple
 Get instant financial support for medical needs, travel, education, or personal expenses with quick approval.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply Now
 </a>
@@ -195,7 +195,7 @@ Need Instant Financial Support?
 Apply for a personal loan today and get quick approval.
 </p>
 
-<a href="enquiry.php"
+<a href="enquiry"
 class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply Now
 </a>
