@@ -13,7 +13,7 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <!-- Custom CSS -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
   <style>
 
 

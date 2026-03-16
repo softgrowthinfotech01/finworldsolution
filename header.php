@@ -221,7 +221,7 @@ shadow lg:shadow-none">
 
                 </div>
 
-                <a href="gallery" class="block space-grotesk hover:text-blue-700">GALLERY</a>
+                <a href="gallery" class="block space-grotesk hover:text-blue-700">Gallery</a>
 
 
 
