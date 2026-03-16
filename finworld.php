@@ -153,11 +153,17 @@ hover:bg-yellow-400 hover:text-black transition z-20">
 </section>
 
   <section class="relative py-24 bg-white overflow-hidden">
+  
 
+   <div class="absolute inset-0">
+    <img src="images/bglines.avif" 
+         class="w-full h-full object-cover opacity-50">
+  </div>
     <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
 
       <!-- Image -->
-      <div class="relative" data-aos="fade-right" data-aos-duration="1200">
+      <div class="relative" data-aos="fade-right" data-aos-duration="1200" >
+        
         <img
           src="images/about_us_img.cms"
           alt="Financial Guidance"

@@ -68,7 +68,7 @@ header.shrink {
 
       <!-- Support (Hidden on Mobile) -->
       <div class="hidden md:flex items-center space-x-4">
-        <a href="#" class="hover:text-gray-300">Support</a>
+        <a href="contact.php" class="hover:text-gray-300">Support</a>
       </div>
 
     </div>
