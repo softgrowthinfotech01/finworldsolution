@@ -65,7 +65,7 @@ header.shrink {
             <div class="flex justify-between items-center">
 
                 <!-- Logo + Name -->
-                <a href="finworld.php">
+                <a href="finworld">
                     <div class="flex items-center mb-1 gap-2">
                         <img src="images/finworld_logo.png"
                             alt="Finworld Logo"

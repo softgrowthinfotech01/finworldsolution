@@ -35,9 +35,10 @@ Commercial Vehicle Loans
 Finance trucks, buses, and transport vehicles with flexible repayment options and quick approvals.
 </p>
 
-<button class="mt-6 bg-orange-500 px-6 py-3 rounded-lg font-semibold hover:bg-orange-600 transition">
+<a href="enquiry.php"
+class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply Now
-</button>
+</a>
 
 </div>
 
@@ -207,9 +208,10 @@ Get Your Commercial Vehicle Today
 Finance your trucks, buses, and delivery vehicles with easy loan options.
 </p>
 
-<button class="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-Apply for Loan
-</button>
+<a href="enquiry.php"
+class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
+Apply Now
+</a>
 
 </section>
 

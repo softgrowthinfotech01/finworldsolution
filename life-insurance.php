@@ -37,9 +37,10 @@ Secure Your Family's Future
 Life insurance ensures financial protection and peace of mind for your loved ones.
 </p>
 
-<button class="mt-6 bg-emerald-500 px-6 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition">
+<a href="enquiry.php"
+class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Get Life Insurance
-</button>
+</a>
 
 </div>
 
@@ -226,9 +227,10 @@ Protect What Matters Most
 Secure your family's future with the right life insurance plan.
 </p>
 
-<button class="bg-white text-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+<a href="enquiry.php"
+class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply Now
-</button>
+</a>
 
 </section>
 

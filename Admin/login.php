@@ -26,59 +26,144 @@ if(isset($_POST['submit']))
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Finworld Solutions - Login</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
-<body class="min-h-screen bg-cover bg-center flex items-center justify-center"
-      style="background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470');">
 
-  <!-- Dark Overlay -->
-  <div class="absolute inset-0 bg-black/60"></div>
+<body class="min-h-screen flex items-center justify-center
+bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-500 p-4">
 
-  <!-- Login Card -->
-  <div class="relative bg-white/20 backdrop-blur-xl 
-              shadow-2xl rounded-2xl p-8 w-full max-w-md text-white">
+<div class="w-full max-w-5xl
+rounded-3xl overflow-hidden
+shadow-2xl
+grid grid-cols-1 md:grid-cols-2">
 
-    <h2 class="text-3xl font-bold text-center mb-6">
-      Welcome Back
-    </h2>
 
-    <form class="space-y-5" method="post" action="">
+<!-- LEFT IMAGE -->
+<div class="hidden md:block">
 
-      <div>
-        <input type="text" name="admin_login" 
-               placeholder="Username."
-               class="w-full px-4 py-3 rounded-lg 
-                      bg-white/30 placeholder-white
-                      focus:outline-none focus:ring-2 
-                      focus:ring-white">
-      </div>
+<img
+src="Images/login.jpg"
+class="w-full h-full object-cover">
 
-      <div>
-        <input type="password" name="admin_password"
-               placeholder="Password"
-               class="w-full px-4 py-3 rounded-lg 
-                      bg-white/30 placeholder-white
-                      focus:outline-none focus:ring-2 
-                      focus:ring-white">
-      </div>
+</div>
 
-      <button class="w-full bg-white text-black 
-                     font-semibold py-3 rounded-lg 
-                     hover:bg-gray-200 transition duration-300" type="submit" name="submit">
-        Login
-      </button>
 
-    </form>
+<!-- RIGHT LOGIN -->
+<div class="p-10
+bg-black/30 backdrop-blur-xl
+border border-white/20
+shadow-2xl
 
-    <p class="text-center mt-4 text-sm text-gray-200">
-      Forgot Password?
-    </p>
+text-white flex flex-col justify-center">
 
-  </div>
+
+<!-- Logo -->
+<div class="text-center mb-8">
+
+<h1 class="text-3xl font-extrabold
+bg-gradient-to-r from-yellow-300 via-white to-blue-300
+bg-clip-text text-transparent">
+
+Finworld Solutions
+
+</h1>
+
+<p class="text-sm text-white/80 mt-1">
+Admin Dashboard Login
+</p>
+
+</div>
+
+
+<form method="post" class="space-y-5">
+
+<input
+type="text"
+name="admin_login"
+placeholder="Username"
+required
+class="w-full px-4 py-3 rounded-xl
+bg-white/20 border border-white/30
+placeholder-white
+focus:outline-none focus:ring-2 focus:ring-white">
+
+
+<div class="relative">
+
+<input
+type="password"
+id="password"
+name="admin_password"
+placeholder="Password"
+required
+class="w-full px-4 py-3 rounded-xl
+bg-white/20 border border-white/30
+placeholder-white
+focus:outline-none focus:ring-2 focus:ring-white pr-12">
+
+<button
+type="button"
+onclick="togglePassword()"
+class="absolute right-4 top-1/2 -translate-y-1/2">
+
+👁
+
+</button>
+
+</div>
+
+
+<button
+type="submit"
+name="submit"
+class="w-full py-3 rounded-xl
+bg-white text-indigo-700 font-semibold
+hover:bg-gray-200 transition">
+
+Login
+
+</button>
+
+</form>
+
+
+<!-- Footer Credit -->
+<p class="text-center text-xs text-white/80 mt-8">
+
+Developed by
+<a href="https://softgrowthinfotech.com"
+class="font-semibold hover:underline">
+SoftGrowth Infotech
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+
+<script>
+
+function togglePassword(){
+
+let password = document.getElementById("password");
+
+password.type =
+password.type === "password" ? "text" : "password";
+
+}
+
+</script>
+
 
 </body>
 </html>

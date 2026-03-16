@@ -1,125 +1,77 @@
-<link rel="stylesheet" href="../style.css">
-
 <!-- Sidebar -->
 <aside id="sidebar"
-class="w-64 md:w-64 min-h-screen bg-gray-400 border-r border-gray-200
-flex flex-col transition-all duration-300 ease-in-out
-fixed md:relative transform md:translate-x-0 -translate-x-full z-40 overflow-hidden">
-    <!-- Menu -->
-    <nav class="flex-1">
-        <ul class="text-sm text-gray-700">
+class="bg-white text-gray-700 border-r w-60 transition-all duration-300 shadow-sm
+fixed md:relative z-40 md:min-h-screen
+-translate-x-full md:translate-x-0">
+<!-- Logo -->
+<!-- Logo -->
+<div class="p-5 border-b flex items-center gap-3 sidebar-logo">
 
-            <!-- Active Item -->
-            <li class="bg-gray-300">
-                <a href="home"
-                    class="flex items-center justify-between px-4 py-4">
-                    <span class="flex items-center gap-3 text-base font-semibold text-base font-semibold">
-                        <i class="fas fa-tachometer-alt"></i>
-                        Dashboard
-                    </span>
-                </a>
-            </li>
+<div class="logo-icon flex-shrink-0 bg-gradient-to-r from-purple-600 to-blue-500 w-9 h-9 rounded-lg flex items-center justify-center text-white font-bold shadow">
+F
+</div>
 
-            <li class="border-t">
-                <a href="javascript:void(0)"
-                    onclick="toggleMenu('categoryMenu', this)"
-                    class="flex items-center justify-between px-4 py-4 hover:bg-gray-300">
-                    <span class="flex items-center gap-3 text-base font-semibold">
-                        <i class="fa-solid fa-users"></i>
-                    Add Case
-                    </span>
-                    <i class="fas fa-angle-right transition-transform"></i>
-                </a>
+<span class="sidebar-text text-xl font-extrabold tracking-wide
+bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600
+bg-clip-text text-transparent">
 
-                <ul id="categoryMenu" class="hidden bg-gray-100">
-                    <li class="border-t">
-                        <a href="add_case"
-                            class="block px-10 py-3 bg-gray-500 text-white text-sm font-semibold">
-                            <i class="fas fa-angle-right transition-transform mx-2"></i>
-                            Add Case
-                        </a>
-                    </li>
-                    <li class="border-t">
-                        <a href="view_case"
-                            class="block px-10 py-3 bg-gray-500 text-white text-sm font-semibold">
-                            <i class="fas fa-angle-right transition-transform mx-2"></i>
-                            View Case
-                        </a>
-                    </li>
-                </ul>
-            </li>
+Finworld
 
-       
+</span>
 
-       
+</div>
 
-      
-            <li class="border-t">
-                <a href="javascript:void(0)"
-                    onclick="toggleMenu('commissionReport', this)"
-                    class="flex items-center justify-between px-4 py-4 hover:bg-gray-300">
-                    <span class="flex items-center gap-3 text-base font-semibold">
-                        <i class="fas fa-receipt"></i>
-                      Records
-                    </span>
-                    <i class="fas fa-angle-right transition-transform"></i>
-                </a>
 
-                <ul id="commissionReport" class="hidden bg-gray-100">
-                    <li class="border-t">
-                        <a href="add_leader"
-                            class="block px-10 py-3 bg-gray-500 text-white">
+<!-- Navigation -->
+<nav class="mt-6 space-y-2">
 
-                        </a>
-                    </li>
-                    <li class="border-t">
-                        <a href="view_leader"
-                            class="block px-10 py-3 bg-gray-500 text-white">
+<a href="home"
+class="menu-item relative flex items-center gap-3 px-6 border-b border-l-4 border-purple-500 border-gray-200 py-3 text-gray-600 hover:text-purple-600 hover:bg-gray-100 transition rounded-lg mx-2">
 
-                        </a>
-                    </li>
+<span class="text-lg">🏠</span>
 
-                </ul>
-            </li>
+<span class="sidebar-text font-medium">Dashboard</span>
 
-         
+<span class="tooltip">Dashboard</span>
 
-      
-        </ul>
-    </nav>
+</a>
+
+
+<a href="add_case"
+class="menu-item relative flex items-center gap-3 px-6 py-3 border-b border-l-4 border-purple-500 border-gray-200 text-gray-600 hover:text-purple-600 hover:bg-gray-100 transition rounded-lg mx-2">
+
+<span class="text-lg">➕</span>
+
+<span class="sidebar-text font-medium">Add Case</span>
+
+<span class="tooltip">Add Case</span>
+
+</a>
+
+
+<a href="view_case"
+class="menu-item relative flex items-center gap-3 px-6 py-3 border-b border-l-4 border-purple-500 border-gray-200 text-gray-600 hover:text-purple-600 hover:bg-gray-100 transition rounded-lg mx-2">
+
+<span class="text-lg">📂</span>
+
+<span class="sidebar-text font-medium">View Case</span>
+
+<span class="tooltip">View Case</span>
+
+</a>
+
+
+<a href=""
+class="menu-item relative flex items-center gap-3 px-6 py-3 border-b border-l-4 border-purple-500 border-gray-200 text-gray-600 hover:text-purple-600 hover:bg-gray-100 transition rounded-lg mx-2">
+
+<span class="text-lg">📊</span>
+
+<span class="sidebar-text font-medium">Records</span>
+
+<span class="tooltip">Records</span>
+
+</a>
+
+</nav>
+
 </aside>
-
-<script>
-    function profileToggle() {
-        const profileDropdown = document.getElementById('ProfileDropDown');
-        profileDropdown.classList.toggle('hidden');
-    }
-
-    function toggleMenu(menuId, el) {
-        const menu = document.getElementById(menuId);
-        const arrow = el.querySelector('.fa-angle-right');
-
-        if (!menu) {
-            console.error('Menu not found:', menuId);
-            return;
-        }
-
-        menu.classList.toggle('hidden');
-        arrow.classList.toggle('rotate-45');
-    }
-
-    function sidebarToggle() {
-
-    const sidebar = document.getElementById("sidebar");
-
-    if (window.innerWidth >= 768) {
-        // desktop
-        sidebar.classList.toggle("md:w-64");
-        sidebar.classList.toggle("md:w-0");
-    } else {
-        // mobile
-        sidebar.classList.toggle("-translate-x-full");
-    }
-
-}
-</script>

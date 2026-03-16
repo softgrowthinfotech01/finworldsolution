@@ -30,88 +30,119 @@ extract($row_closed);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="tailwind,tailwindcss,tailwind css,css,starter template,free template,admin templates, admin template, admin dashboard, free tailwind templates, tailwind example">
     <!-- Css -->
-    <link rel="stylesheet" href="../style.css">
-    <title>Dashboard</title>
+    
+    <title>Admin - Finworld Solution</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 
-
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
-
+   
+<style>
+   
+</style>
 </head>
+<body class="bg-gray-200">
 
-<body>
-    <!--Container -->
-    <div class="mx-auto">
-        <!--Screen-->
-        <div class="flex flex-col">
-            <!--Header Section Starts Here-->
-            <?php include "header.php"; ?>
-            <!--/Header-->
+<div class="min-h-screen flex flex-col">
 
-            <div class="flex">
-                <!--Sidebar-->
-                <?php include 'sidebar.php'; ?>
-                <!--/Sidebar-->
+<!-- Header -->
+<?php include "header.php"; ?>
 
-                <!--Main-->
-                <div class="flex-1">
-                    <div class="w-full md:w-[90%] lg:w-[80%] mx-auto my-6 px-3 md:px-0">
 
-                        <!-- GRID WRAPPER -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+<div class="flex flex-1">
 
-                            <a href="#" class="rounded-lg bg-red-500 hover:bg-red-400
-                            p-6 border border-default rounded-base shadow-xs h-full flex flex-col">
+<!-- Sidebar -->
+<?php include 'sidebar.php'; ?>
 
-                            <h5 class="mb-3 text-xl md:text-2xl font-semibold tracking-tight text-heading leading-8">
-                            Total Cases
-                            </h5>
 
-                            <p class="text-body mt-auto text-lg font-semibold">
-                            <?php echo $total_cases; ?>
-                            </p>
+<!-- Main Content -->
+<div class="flex-1 p-4 md:p-6 mt-4 ">
 
-                            </a>
+<div class="max-w-7xl mx-auto">
 
-                            <a href="#" class="rounded-lg bg-green-500 hover:bg-green-400
-                            p-6 border border-default rounded-base shadow-xs h-full flex flex-col">
+<!-- Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                            <h5 class="mb-3 text-xl md:text-2xl font-semibold tracking-tight text-heading leading-8">
-                            Open Cases
-                            </h5>
 
-                            <p class="text-body mt-auto text-lg font-semibold">
-                            <?php echo $open_cases; ?>
-                            </p>
+<!-- CARD 1 -->
+<div class="relative overflow-hidden p-6 rounded-xl text-white shadow
+bg-gradient-to-r from-orange-400 to-pink-500">
 
-                            </a>
+<div class="absolute -top-16 -right-16 w-40 h-40 bg-white opacity-20 rounded-full"></div>
+<div class="absolute -top-10 -right-10 w-24 h-24 bg-white opacity-20 rounded-full"></div>
+<div class="flex items-center justify-between pl-4">
 
-                            <a href="#" class="rounded-lg bg-blue-500 hover:bg-blue-400
-                            p-6 border border-default rounded-base shadow-xs h-full flex flex-col">
+<div>
+<p class="text-sm font-semibold uppercase tracking-wider opacity-90">
+Total Cases
+</p>
 
-                            <h5 class="mb-3 text-xl md:text-2xl font-semibold tracking-tight text-heading leading-8">
-                            Closed Cases
-                            </h5>
+<h2 class="text-3xl md:text-4xl font-extrabold mt-2">
+<?php echo $total_cases; ?>
+</h2>
+</div>
 
-                            <p class="text-body mt-auto text-lg font-semibold">
-                            <?php echo $closed_cases; ?>
-                            </p>
+</div>
+</div>
 
-                            </a>
 
-                        </div>
-                    </div>
-                    <!--/Main-->
-                </div>
-            </div>
-            <!--Footer-->
-            <?php include 'footer.php'; ?>
-            <!--/footer-->
 
-        </div>
+<!-- CARD 2 -->
+<div class="relative overflow-hidden p-6 rounded-xl text-white shadow
+bg-gradient-to-r from-blue-400 to-blue-600">
 
-    </div>
+<div class="absolute -top-16 -right-16 w-40 h-40 bg-white opacity-20 rounded-full"></div>
+<div class="absolute -top-10 -right-10 w-24 h-24 bg-white opacity-20 rounded-full"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+<div class="flex items-center justify-between pl-4">
+
+<div>
+<p class="text-sm font-semibold uppercase tracking-wider opacity-90">
+Open Cases
+</p>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mt-2">
+<?php echo $open_cases; ?>
+</h2>
+
+</div>
+</div>
+</div>
+
+
+
+<!-- CARD 3 -->
+<div class="relative overflow-hidden p-6 rounded-xl text-white shadow
+bg-gradient-to-r from-green-400 to-teal-500">
+
+<div class="absolute -top-16 -right-16 w-40 h-40 bg-white opacity-20 rounded-full"></div>
+<div class="absolute -top-10 -right-10 w-24 h-24 bg-white opacity-20 rounded-full"></div>
+
+<div class="flex items-center justify-between pl-4">
+
+<div>
+<p class="text-sm font-semibold uppercase tracking-wider opacity-90">
+Closed Cases
+</p>
+
+<h2 class="text-3xl md:text-4xl font-extrabold mt-2">
+<?php echo $closed_cases; ?>
+</h2>
+
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</div>
+
+<?php include 'footer.php'; ?>
+
+</div>
 
 </body>
 

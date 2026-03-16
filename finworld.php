@@ -232,7 +232,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
           <p class="text-gray-600 mb-6">
             A personal loan is an unsecured loan that provides quick
             funds for personal expenses with flexible repayment options.
-            <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
+            <a href="personal-loan.php" class="text-purple-600 font-semibold hover:text-purple-700  transition">
               Learn More →
             </a>
         </div>
@@ -252,7 +252,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
             A business loan provides financial support to help businesses
             manage operations, expand, or invest in growth opportunities.
           </p>
-          <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
+          <a href="business-loan.php" class="text-purple-600 font-semibold hover:text-purple-700 transition">
             Learn More →
           </a>
         </div>
@@ -272,7 +272,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
             Unlock the value of your property to get high-value
             loans at competitive interest rates.
           </p>
-          <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
+          <a href="loan-against-property.php" class="text-purple-600 font-semibold hover:text-purple-700 transition">
             Learn More →
           </a>
         </div>
@@ -292,7 +292,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
             A home loan helps individuals finance the purchase, construction, or
             renovation of a house with flexible repayment options.
           </p>
-          <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
+          <a href="home-loan.php" class="text-purple-600 font-semibold hover:text-purple-700 transition">
             Learn More →
           </a>
         </div>
@@ -312,7 +312,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
             A car loan helps individuals purchase a new or used
             vehicle by paying in easy monthly installments (EMIs).
           </p>
-          <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
+          <a href="car-loan.php" class="text-purple-600 font-semibold hover:text-purple-700 transition">
             Learn More →
           </a>
         </div>
@@ -331,7 +331,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
           <p class="text-gray-600 mb-6">
             Finance commercial vehicles easily to expand and grow your business operations.
           </p>
-          <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
+          <a href="commercial-vehicle-loan.php" class="text-purple-600 font-semibold hover:text-purple-700 transition">
             Learn More →
           </a>
         </div>
@@ -369,7 +369,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
           <p class="text-gray-600 mb-6">
             Protect yourself and your family from medical expenses with comprehensive health coverage.
           </p>
-          <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
+          <a href="health-insurance.php" class="text-purple-600 font-semibold hover:text-purple-700 transition">
             Learn More →
           </a>
         </div>
@@ -387,7 +387,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
           <p class="text-gray-600 mb-6">
             Secure your family's financial future with reliable life insurance protection.
           </p>
-          <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
+          <a href="life-insurance.php" class="text-purple-600 font-semibold hover:text-purple-700 transition">
             Learn More →
           </a>
         </div>
@@ -405,7 +405,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
           <p class="text-gray-600 mb-6">
             Comprehensive insurance solutions to protect your assets, travel, and valuables.
           </p>
-          <a href="#" class="text-purple-600 font-semibold hover:text-purple-700 transition">
+          <a href="general-insurance.php" class="text-purple-600 font-semibold hover:text-purple-700 transition">
             Learn More →
           </a>
         </div>

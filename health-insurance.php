@@ -35,9 +35,12 @@ Secure Your Health & Future
 Protect yourself and your family from unexpected medical expenses with reliable health insurance coverage.
 </p>
 
-<button class="mt-6 bg-white text-teal-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-Get Insurance Quote
-</button>
+
+<a href="enquiry.php"
+class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
+Get Insurance
+</a>
+
 
 </div>
 
@@ -218,9 +221,10 @@ Protect Your Family Today
 Choose a health insurance plan that keeps your loved ones safe.
 </p>
 
-<button class="bg-white text-teal-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+<a href="enquiry.php"
+class="inline-block mt-6 bg-white text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Buy Health Insurance
-</button>
+</a>
 
 </section>
 

@@ -47,93 +47,106 @@ if(isset($_POST['update']))
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Update Case</title>
-
-<link rel="stylesheet" href="../style.css">
-<link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet">
+     <title>Admin - Finworld Solution</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 
 </head>
 
-<body>
+<body class="bg-gray-100">
 
-<div class="mx-auto">
-
-<div class="flex flex-col">
+<div class="min-h-screen flex flex-col">
 
 <?php include "header.php"; ?>
 
-<div class="flex">
+<div class="flex flex-1">
 
 <?php include 'sidebar.php'; ?>
 
-<div id="mainContent"
-class="w-full md:w-[80%] lg:w-[60%] mx-3 md:mx-auto my-4
-transition-all duration-300
-rounded-lg bg-gray-200 p-6 border shadow-xl">
+<!-- Main Content -->
+<div class="flex-1 p-4 md:p-6">
 
-<form class="w-full px-4" method="post">
+<div id="mainContent" class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-6">
+
+<form method="post" class="space-y-4">
 
 <input type="hidden" name="case_id" value="<?php echo $case_id; ?>">
 
-<div class="personal-details">
+<!-- Heading -->
+<div class="border-b pb-3 mb-4">
+<h2 class="text-2xl font-bold text-gray-700">Update Case Details</h2>
+</div>
 
-<h5 class="text-xl font-bold text-heading p-1">Update Case Details</h5>
 
-<div class="grid grid-cols-1 md:grid-cols-2">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-<div class="mb-5 px-1">
-<label class="block mb-2.5 text-sm font-medium text-heading">Full Name</label>
+<!-- Full Name -->
+<div>
+<label class="block text-sm font-medium text-gray-600 mb-1">
+Full Name
+</label>
 
 <input name="full_name"
 type="text"
 value="<?php echo $full_name; ?>"
-class="rounded-lg bg-neutral-secondary-medium border border-default-medium text-heading text-sm block w-full px-3 py-2.5 shadow-xs"
+class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none"
 required>
-
 </div>
 
-<div class="mb-5 px-1">
 
-<label class="block mb-2.5 text-sm font-medium text-heading">Phone Number</label>
+<!-- Phone -->
+<div>
+<label class="block text-sm font-medium text-gray-600 mb-1">
+Phone Number
+</label>
 
 <input name="phone_number"
 type="text"
 maxlength="10"
 value="<?php echo $phone_number; ?>"
-class="rounded-lg bg-neutral-secondary-medium border border-default-medium text-heading text-sm block w-full px-3 py-2.5 shadow-xs"
+class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none"
 required>
-
 </div>
 
-<div class="mb-5 px-1">
 
-<label class="block mb-2.5 text-sm font-medium text-heading">Address</label>
+<!-- Address -->
+<div class="md:col-span-2">
+<label class="block text-sm font-medium text-gray-600 mb-1">
+Address
+</label>
 
 <input name="address"
 type="text"
 value="<?php echo $address; ?>"
-class="rounded-lg bg-white border border-default-medium text-heading text-sm block w-full px-3 py-2.5 shadow-xs"
+class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none"
 required>
-
 </div>
 
-<div class="mb-5 px-1">
 
-<label class="block mb-2.5 text-sm font-medium text-heading">Date</label>
+<!-- Date -->
+<div>
+<label class="block text-sm font-medium text-gray-600 mb-1">
+Date
+</label>
 
-<input name="calling_date" type="date" id="calling_date"
+<input name="calling_date"
+type="date"
+id="calling_date"
 value="<?php echo $calling_date; ?>"
-class="rounded-lg bg-white border border-default-medium text-heading text-sm block w-full px-3 py-2.5 shadow-xs"
+class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none"
 required>
-
 </div>
 
-<div class="mb-5 px-1">
 
-<label class="block mb-2.5 text-sm font-medium text-heading">Status</label>
+<!-- Status -->
+<div>
+<label class="block text-sm font-medium text-gray-600 mb-1">
+Status
+</label>
 
 <select name="status"
-class="rounded-lg bg-white border border-default-medium text-heading text-sm block w-full px-3 py-2.5 shadow-xs">
+class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-400 outline-none">
 
 <option value="open" <?php if($status=='open') echo "selected"; ?>>Open</option>
 <option value="closed" <?php if($status=='closed') echo "selected"; ?>>Closed</option>
@@ -144,26 +157,20 @@ class="rounded-lg bg-white border border-default-medium text-heading text-sm blo
 
 </div>
 
-</div>
 
-<hr class="border-white-300 mb-3">
-
-<div class="flex justify-center gap-3">
+<!-- Buttons -->
+<div class="flex flex-col md:flex-row justify-center gap-3 pt-4">
 
 <button type="submit"
 name="update"
-class="w-full md:w-[20%] text-white bg-blue-600 hover:bg-blue-500 rounded-lg text-sm px-4 py-2.5">
-
+class="bg-gradient-to-r from-purple-600 to-blue-500 text-white rounded-lg px-6 py-2 font-medium">
 Update
-
 </button>
 
 <button type="button"
 onclick="window.location.href='view_case'"
-class="w-full md:w-[20%] text-gray-700 bg-white hover:bg-gray-200 rounded-lg text-sm px-4 py-2.5">
-
+class="bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-lg px-6 py-2 font-medium">
 Back
-
 </button>
 
 </div>
@@ -174,13 +181,11 @@ Back
 
 </div>
 
+</div>
+
 <?php include 'footer.php'; ?>
 
 </div>
-
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 <script id="8n9q2s">
 document.addEventListener("DOMContentLoaded", function(){
 

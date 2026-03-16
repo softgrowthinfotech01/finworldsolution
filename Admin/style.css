@@ -1,0 +1,40 @@
+ /* collapsed sidebar */
+
+.sidebar-collapsed {
+width:70px !important;
+}
+
+.sidebar-collapsed .sidebar-text{
+display:none;
+}
+
+/* tooltip */
+
+.tooltip{
+position:absolute;
+left:70px;
+top:50%;
+transform:translateY(-50%);
+background:#111;
+color:#fff;
+padding:4px 10px;
+font-size:12px;
+border-radius:6px;
+white-space:nowrap;
+opacity:0;
+pointer-events:none;
+transition:0.2s;
+}
+
+.sidebar-collapsed .menu-item:hover .tooltip{
+opacity:1;
+}
+
+
+.sidebar-collapsed .menu-item{
+justify-content:center;
+}
+
+.sidebar-collapsed .sidebar-logo{
+justify-content:center;
+}

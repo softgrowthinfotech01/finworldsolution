@@ -17,7 +17,7 @@
                     </h1>
                 </div>
                 <p class="text-gray-400 leading-relaxed">
-                    Trusted financial solutions for loans, investments, and wealth
+                    Trusted finworld solutions for loans, investments, and wealth
                     management. Helping individuals and businesses achieve financial growth.
                 </p>
 
