@@ -157,7 +157,7 @@ hover:bg-yellow-400 hover:text-black transition z-20">
 
    <div class="absolute inset-0">
     <img src="images/bglines.avif" 
-         class="w-full h-full object-cover opacity-50">
+         class="w-full h-full object-cover opacity-5">
   </div>
     <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
 
