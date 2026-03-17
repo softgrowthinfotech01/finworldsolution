@@ -7,35 +7,92 @@ if(isset($_POST['submit']))
     $email = trim($_POST['email']);
     $phone = trim($_POST['phone']);
 
+    // ✅ NAME VALIDATION
+    if(!preg_match("/^[a-zA-Z ]+$/", $name)){
+        echo "<script>alert('Name should contain only letters');</script>";
+        exit;
+    }
+
+    // ✅ EMAIL VALIDATION
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        echo "<script>alert('Invalid email format');</script>";
+        exit;
+    }
+
+    // ✅ PHONE VALIDATION (10 DIGITS ONLY)
+    if(!preg_match("/^[0-9]{10}$/", $phone)){
+        echo "<script>alert('Phone number must be 10 digits');</script>";
+        exit;
+    }
+
     // FILE UPLOAD
     $resumeName = $_FILES['resume']['name'];
     $resumeTmp  = $_FILES['resume']['tmp_name'];
+    $resumeSize = $_FILES['resume']['size'];
+    $resumeError = $_FILES['resume']['error'];
+
+    // ✅ FILE TYPE VALIDATION (NO IMAGES)
+    $allowedExt = ['pdf','doc','docx'];
+    $fileExt = strtolower(pathinfo($resumeName, PATHINFO_EXTENSION));
+
+    if(!in_array($fileExt, $allowedExt)){
+        echo "<script>alert('Only PDF, DOC, DOCX files allowed!');</script>";
+        exit;
+    }
+
+    // ✅ MIME TYPE CHECK (STRONG SECURITY)
+    $finfo = finfo_open(FILEINFO_MIME_TYPE);
+    $mime = finfo_file($finfo, $resumeTmp);
+
+    $allowedMime = [
+        'application/pdf',
+        'application/msword',
+        'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+    ];
+
+    if(!in_array($mime, $allowedMime)){
+        echo "<script>alert('Invalid file type!');</script>";
+        exit;
+    }
+
+    // ✅ FILE SIZE LIMIT (2MB)
+    if($resumeSize > 2*1024*1024){
+        echo "<script>alert('File size must be less than 2MB');</script>";
+        exit;
+    }
+
+    // ✅ CHECK UPLOAD ERROR
+    if($resumeError !== 0){
+        echo "<script>alert('File upload error');</script>";
+        exit;
+    }
 
     $folder = "uploads/";
 
-    // create folder if not exists
     if(!is_dir($folder)){
         mkdir($folder, 0777, true);
     }
 
-    // unique file name
     $newFileName = time() . "_" . $resumeName;
     $filePath = $folder . $newFileName;
 
-    // move file
-    move_uploaded_file($resumeTmp, $filePath);
+    if(move_uploaded_file($resumeTmp, $filePath))
+    {
+        $stmt = $conn->prepare("INSERT INTO applications (name,email,phone,resume,created_at) VALUES (:name,:email,:phone,:resume,NOW())");
 
-    // INSERT INTO DATABASE
-    $stmt = $conn->prepare("INSERT INTO applications (name,email,phone,resume,created_at) VALUES (:name,:email,:phone,:resume,NOW())");
+        $stmt->execute([
+            ':name'   => $name,
+            ':email'  => $email,
+            ':phone'  => $phone,
+            ':resume' => $filePath
+        ]);
 
-    $stmt->execute([
-        ':name'   => $name,
-        ':email'  => $email,
-        ':phone'  => $phone,
-        ':resume' => $filePath
-    ]);
-
-    echo "<script>alert('Application Submitted Successfully');window.location.href='career-form.php';</script>";
+        echo "<script>alert('Application Submitted Successfully');window.location.href='career-form.php';</script>";
+    }
+    else
+    {
+        echo "<script>alert('Failed to upload file');</script>";
+    }
 }
 ?>
 <!DOCTYPE html>
