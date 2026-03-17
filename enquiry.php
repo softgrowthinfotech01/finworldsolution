@@ -1,4 +1,47 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
+require "admin/conn.php"; // file where $conn PDO connection exists
+
+if(isset($_POST['submit']))
+{
+
+$name = trim($_POST['name']);
+$email = trim($_POST['email']);
+$phone = trim($_POST['phone']);
+$service = trim($_POST['service']);
+$message = trim($_POST['message']);
+
+$sql = "INSERT INTO enquiries 
+(name,email,phone,service,message,created_date)
+VALUES
+(:name,:email,:phone,:service,:message,:created_date)";
+
+$stmt = $conn->prepare($sql);
+
+$data = [
+
+':name' => $name,
+':email' => $email,
+':phone' => $phone,
+':service' => $service,
+':message' => $message,
+':created_date' => date("Y-m-d H:i:s")
+
+];
+
+if($stmt->execute($data))
+{
+    echo '<script>alert("Enquiry Request sent.");window.location.href = "finworld";</script>';
+}
+else
+{
+    echo "Error Saving Data";
+}
+
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,7 +87,7 @@ Our team is ready to assist you.
 Send Us a Message
 </h3>
 
-<form action="enquiry.php" method="POST" class="space-y-5">
+<form action="" method="POST" class="space-y-5">
 
 <input type="text" name="name" placeholder="Full Name" required
 class="w-full border border-gray-300 p-3 rounded-lg">
@@ -74,7 +117,7 @@ class="w-full border border-gray-300 p-3 rounded-lg">
 <textarea name="message" rows="4" placeholder="Your Message"
 class="w-full border border-gray-300 p-3 rounded-lg"></textarea>
 
-<button type="submit"
+<button type="submit" name="submit"
 class="w-full bg-blue-900 text-white py-3 rounded-lg font-semibold">
 
 Send Message
