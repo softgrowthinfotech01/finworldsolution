@@ -60,12 +60,12 @@ Apply For Loan
 What is Loan Against Property?
 </h2>
 
-<p class="text-gray-600 leading-relaxed">
+<p class="text-gray-600 leading-relaxed text-justify">
 Loan Against Property (LAP) allows individuals or businesses to borrow funds
 by pledging residential, commercial, or industrial property as collateral.
 </p>
 
-<p class="mt-4 text-gray-600">
+<p class="mt-4 text-gray-600 text-justify">
 It provides access to large loan amounts with lower interest rates
 compared to unsecured loans.
 </p>

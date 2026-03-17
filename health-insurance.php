@@ -58,12 +58,12 @@ Get Insurance
 What is Health Insurance?
 </h2>
 
-<p class="text-gray-600 leading-relaxed">
+<p class="text-gray-600 leading-relaxed text-justify">
 Health insurance protects you from high medical costs by covering
 hospitalization, treatment, and healthcare expenses.
 </p>
 
-<p class="mt-4 text-gray-600">
+<p class="mt-4 text-gray-600 text-justify">
 With the right health insurance plan, you can receive quality medical
 care without worrying about financial stress during emergencies.
 </p>

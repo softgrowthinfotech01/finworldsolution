@@ -26,133 +26,144 @@
 
   <?php include_once "header.php"; ?>
 
-  <section class="relative overflow-visible text-white">
+  <section class="relative overflow-hidden text-white">
+
+<!-- Background -->
+<div class="absolute inset-0">
+  <img src="images/bg_slider_img.jpg"
+  class="w-full h-full object-cover">
+
+  <div class="absolute inset-0 bg-[linear-gradient(93.64deg,#f26f21_4.44%,#5c217a_93.74%)] opacity-90"></div>
+</div>
+
+<div class="relative max-w-7xl mx-auto px-5 sm:px-6 py-14 sm:py-20">
+
+<div class="relative rounded-3xl overflow-hidden">
+
+<!-- SLIDER -->
+<div id="slider" class="flex transition-transform duration-700 ease-in-out">
+
+<!-- SLIDE 1 -->
+<div class="min-w-full grid md:grid-cols-2 items-center gap-8 md:gap-10">
+
+<div class="text-center md:text-left">
+<h1 class="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4 sm:mb-6">
+Instant Personal Loans <br>
+<span class="text-yellow-400">Up To ₹25 Lakhs</span>
+</h1>
+
+<p class="text-gray-200 text-sm sm:text-base md:text-lg mb-6">
+Get quick approval with minimal documents and flexible EMI options designed for your financial needs.
+</p>
+</div>
+
+<div class="relative flex justify-center">
+<div class="glass p-3 sm:p-4 rounded-3xl backdrop-blur-lg shadow-2xl overflow-hidden max-w-[320px] sm:max-w-md">
+<img src="images/slider_img.png"
+class="rounded-2xl w-full object-cover">
+</div>
+</div>
+
+</div>
 
 
-    <!-- Background Image -->
-    <div class="absolute inset-0">
-      <img src="images/bg_slider_img.jpg"
-        class="w-full h-full object-cover opacity-100">
+<!-- SLIDE 2 -->
+<div class="min-w-full grid md:grid-cols-2 items-center gap-8 md:gap-10">
 
-      <div class="absolute inset-0 bg-[linear-gradient(93.64deg,#f26f21_4.44%,#5c217a_93.74%)]"></div>
-    </div>
-    <div class="relative max-w-7xl mx-auto px-6 py-24">
-      <div class="relative rounded-3xl overflow-hidden">
+<div class="text-center md:text-left">
+<h1 class="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4 sm:mb-6">
+Affordable Home Loans <br>
+<span class="text-yellow-400">Lowest Interest Rates</span>
+</h1>
 
-        <!-- SLIDER -->
-        <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+<p class="text-gray-200 text-sm sm:text-base md:text-lg mb-6">
+Turn your dream home into reality with easy EMI options and fast loan approvals.
+</p>
+</div>
 
-          <!-- SLIDE 1 -->
-          <div class="min-w-full grid md:grid-cols-2 items-center gap-10">
-            <div>
-              <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-                Instant Personal Loans <br>
-                <span class="text-yellow-400">Up To ₹25 Lakhs</span>
-              </h1>
-              <p class="text-gray-200 mb-8 text-lg">
-                Get quick approval with minimal documents and flexible EMI options designed for your financial needs.
-              </p>
-              <!-- <div class="flex gap-4">
-              <a href="#" class="px-7 py-3 bg-yellow-400 text-black rounded-lg font-semibold hover:scale-105 transition">Apply Now</a>
-              <a href="#" class="px-7 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">Check Eligibility</a>
-            </div> -->
-            </div>
-            <div class="relative">
-              <div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl overflow-hidden">
-                <img src="images/slider_img.png" class="rounded-2xl w-full  object-cover animate-zoomIn">
-              </div>
-            </div>
-          </div>
+<div class="relative flex justify-center">
+<div class="glass p-3 sm:p-4 rounded-3xl backdrop-blur-lg shadow-2xl overflow-hidden max-w-[320px] sm:max-w-md">
+<img src="images/slider_img2.png"
+class="rounded-2xl w-full object-cover">
+</div>
+</div>
 
-          <div class="min-w-full grid md:grid-cols-2 items-center gap-10">
-            <div>
-              <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-                Affordable Home Loans <br>
-                <span class="text-yellow-400">Lowest Interest Rates</span>
-              </h1>
-              <p class="text-gray-200 mb-8 text-lg">
-                Turn your dream home into reality with easy EMI options and fast loan approvals.
-              </p>
-              <!-- <div class="flex gap-4">
-              <a href="#" class="px-7 py-3 bg-yellow-400 text-black rounded-lg font-semibold hover:scale-105 transition">Apply Now</a>
-              <a href="#" class="px-7 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">View Plans</a>
-            </div> -->
-            </div>
-            <div class="relative">
-              <div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl overflow-hidden">
-                <img src="images/slider_img2.png" class="rounded-2xl w-full  object-cover animate-zoomIn">
-              </div>
-            </div>
-          </div>
-
-          <!-- SLIDE 3 -->
-          <div class="min-w-full grid md:grid-cols-2 items-center gap-10">
-            <div>
-              <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-                Business Expansion Loans <br>
-                <span class="text-yellow-400">Fast Funding</span>
-              </h1>
-              <p class="text-gray-200 mb-8 text-lg">
-                Fuel your business growth with instant capital and flexible repayment solutions.
-              </p>
-              <!-- <div class="flex gap-4">
-              <a href="#" class="px-7 py-3 bg-yellow-400 text-black rounded-lg font-semibold hover:scale-105 transition">Apply Today</a>
-              <a href="#" class="px-7 py-3 border border-white rounded-lg hover:bg-white hover:text-black transition">Learn More</a>
-            </div> -->
-            </div>
-            <div class="relative">
-              <div class="glass p-4 rounded-3xl backdrop-blur-lg shadow-2xl overflow-hidden">
-                <img src="images/slider_img3.png" class="rounded-2xl w-full  object-cover animate-zoomIn">
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- ARROWS -->
+</div>
 
 
-      </div>
-      <!-- Slider Arrows - Premium Design -->
-      <button id="prev"
-        class="absolute left-2 md:left-[-75px] top-1/2 -translate-y-1/2 
-flex items-center justify-center w-14 h-14
+<!-- SLIDE 3 -->
+<div class="min-w-full grid md:grid-cols-2 items-center gap-8 md:gap-10">
+
+<div class="text-center md:text-left">
+<h1 class="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4 sm:mb-6">
+Business Expansion Loans <br>
+<span class="text-yellow-400">Fast Funding</span>
+</h1>
+
+<p class="text-gray-200 text-sm sm:text-base md:text-lg mb-6">
+Fuel your business growth with instant capital and flexible repayment solutions.
+</p>
+</div>
+
+<div class="relative flex justify-center">
+<div class="glass p-3 sm:p-4 rounded-3xl backdrop-blur-lg shadow-2xl overflow-hidden max-w-[320px] sm:max-w-md">
+<img src="images/slider_img3.png"
+class="rounded-2xl w-full object-cover">
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- ARROWS -->
+<button id="prev"
+class="absolute left-2 sm:left-4 md:left-[-75px] top-1/2 -translate-y-1/2
+flex items-center justify-center
+w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
 bg-white/10 backdrop-blur-xl border border-white/20
-rounded-full shadow-2xl text-white font-bold text-3xl 
-hover:bg-gradient-to-r hover:from-yellow-400 hover:to-yellow-300 
-hover:text-black hover:scale-110 transition-all duration-300 z-20">
-        ❮
-      </button>
+rounded-full shadow-xl text-white text-xl sm:text-2xl
+hover:bg-yellow-400 hover:text-black transition z-20">
+❮
+</button>
 
-      <button id="next"
-        class="absolute right-2 md:right-[-75px] top-1/2 -translate-y-1/2
-flex items-center justify-center w-14 h-14
+<button id="next"
+class="absolute right-2 sm:right-4 md:right-[-75px] top-1/2 -translate-y-1/2
+flex items-center justify-center
+w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14
 bg-white/10 backdrop-blur-xl border border-white/20
-rounded-full shadow-2xl text-white font-bold text-3xl
-hover:bg-gradient-to-l hover:from-yellow-400 hover:to-yellow-300 
-hover:text-black hover:scale-110 transition-all duration-300 z-20">
-        ❯
-      </button>
+rounded-full shadow-xl text-white text-xl sm:text-2xl
+hover:bg-yellow-400 hover:text-black transition z-20">
+❯
+</button>
 
-    </div>
+</div>
 
-    <!-- Floating Icons -->
-    <div class="absolute inset-0 pointer-events-none">
-      <div class="absolute top-20 left-10 animate-float opacity-40">💰</div>
-      <div class="absolute top-40 right-20 animate-float opacity-40 text-2xl">🏦</div>
-      <div class="absolute bottom-32 left-1/4 animate-float opacity-40 text-2xl">📈</div>
-      <div class="absolute bottom-20 right-1/3 animate-float opacity-40 text-2xl">💳</div>
-    </div>
 
-  </section>
+<!-- Floating Icons -->
+<div class="absolute inset-0 pointer-events-none hidden md:block">
+<div class="absolute top-20 left-10 animate-float opacity-40">💰</div>
+<div class="absolute top-40 right-20 animate-float opacity-40 text-2xl">🏦</div>
+<div class="absolute bottom-32 left-1/4 animate-float opacity-40 text-2xl">📈</div>
+<div class="absolute bottom-20 right-1/3 animate-float opacity-40 text-2xl">💳</div>
+</div>
 
+</section>
 
   <section class="relative py-24 bg-white overflow-hidden">
+  
 
+   <div class="absolute inset-0">
+    <img src="images/bglines.avif" 
+         class="w-full h-full object-cover opacity-5">
+  </div>
     <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
 
       <!-- Image -->
-      <div class="relative" data-aos="fade-right" data-aos-duration="1200">
+      <div class="relative" data-aos="fade-right" data-aos-duration="1200" >
+        
         <img
           src="images/about_us_img.cms"
           alt="Financial Guidance"
@@ -169,12 +180,18 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
           <span class="color-text"> Your Future </span>
         </h2>
 
-        <p class="text-gray-700 mb-5 leading-relaxed text-lg">
-          Finworld Solution provides a wide range of financial solutions including personal loans, business loans, home loans, insurance, and investment advisory services. Our goal is to help individuals and businesses achieve their financial objectives through expert guidance and reliable financial products.
+        <p class="text-gray-700 mb-5 leading-relaxed text-lg text-justify">
+          Finworld Solution provides a wide range of financial solutions
+           including personal loans, business loans, home loans, insurance,
+            and investment advisory services. Our goal is to help individuals
+             and businesses achieve their financial objectives through expert
+              guidance and reliable financial products.
         </p>
 
-        <p class="text-gray-700 mb-8 leading-relaxed text-lg">
-          We carefully understand each client’s financial needs, risk profile, and long-term goals to provide customized financial solutions that ensure stability, growth, and financial confidence.
+        <p class="text-gray-700 mb-8 leading-relaxed text-lg text-justify">
+          We carefully understand each client’s financial needs, risk profile,
+           and long-term goals to provide customized financial solutions that
+            ensure stability, growth, and financial confidence.
         </p>
 
         <div class="flex gap-5 flex-wrap">
@@ -217,7 +234,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold text-center mb-4">Personal Loan</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             A personal loan is an unsecured loan that provides quick
             funds for personal expenses with flexible repayment options.
             <a href="personal-loan.php" class="text-purple-600 font-semibold hover:text-purple-700  transition">
@@ -236,7 +253,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">Business Loan</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             A business loan provides financial support to help businesses
             manage operations, expand, or invest in growth opportunities.
           </p>
@@ -256,7 +273,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">Loan against Property</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             Unlock the value of your property to get high-value
             loans at competitive interest rates.
           </p>
@@ -276,7 +293,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">Home Loan</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             A home loan helps individuals finance the purchase, construction, or
             renovation of a house with flexible repayment options.
           </p>
@@ -296,7 +313,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">Car Loan</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             A car loan helps individuals purchase a new or used
             vehicle by paying in easy monthly installments (EMIs).
           </p>
@@ -316,7 +333,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">Commercial Vehical Loan</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             Finance commercial vehicles easily to expand and grow your business operations.
           </p>
           <a href="commercial-vehicle-loan.php" class="text-purple-600 font-semibold hover:text-purple-700 transition">
@@ -354,7 +371,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">Health Insurance</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             Protect yourself and your family from medical expenses with comprehensive health coverage.
           </p>
           <a href="health-insurance.php" class="text-purple-600 font-semibold hover:text-purple-700 transition">
@@ -372,7 +389,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">Life Insurance</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             Secure your family's financial future with reliable life insurance protection.
           </p>
           <a href="life-insurance.php" class="text-purple-600 font-semibold hover:text-purple-700 transition">
@@ -390,7 +407,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
             </svg>
           </div>
           <h3 class="text-2xl font-bold mb-4 text-center">General Insurance</h3>
-          <p class="text-gray-600 mb-6">
+          <p class="text-gray-600 mb-6 text-justify">
             Comprehensive insurance solutions to protect your assets, travel, and valuables.
           </p>
           <a href="general-insurance.php" class="text-purple-600 font-semibold hover:text-purple-700 transition">
@@ -435,7 +452,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
 
           <h3 class="text-xl font-bold text-gray-900 mb-2">Apply Online</h3>
 
-          <p class="text-gray-600 text-center">
+          <p class="text-gray-600 text-center text-justify">
             Fill out a simple application form with your basic details.
           </p>
 
@@ -451,7 +468,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
 
           <h3 class="text-xl font-bold text-gray-900 mb-2">Document Verification</h3>
 
-          <p class="text-gray-600 text-center">
+          <p class="text-gray-600 text-center text-justify">
             Submit your documents and we verify them quickly and securely.
           </p>
 
@@ -467,7 +484,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
 
           <h3 class="text-xl font-bold text-gray-900 mb-2">Approval</h3>
 
-          <p class="text-gray-600 text-center">
+          <p class="text-gray-600 text-center text-justify">
             Get instant approval based on your eligibility and submitted documents.
           </p>
 
@@ -483,7 +500,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
 
           <h3 class="text-xl font-bold text-gray-900 mb-2">Receive Funds</h3>
 
-          <p class="text-gray-600 text-center">
+          <p class="text-gray-600 text-center text-justify">
             Funds are transferred directly to your account quickly and safely.
           </p>
 
@@ -545,7 +562,7 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
                 <!-- <img src="https://i.pravatar.cc/100?img=5" alt="Client"
                   class="w-12 h-12 rounded-full mr-4"> -->
                 <div class="text-left">
-                  <p class="text-sm text-gray-500">Dinesh Dubey</p>
+                  <p class="font-semibold">Dinesh Dubey</p>
                 </div>
               </div>
             </div>
@@ -713,40 +730,38 @@ hover:text-black hover:scale-110 transition-all duration-300 z-20">
   <!-- Sticky CTA -->
   <!-- Sticky CTA -->
   <div class="fixed bottom-[50px] right-5 sm:right-[100px] z-50">
+  <div class="flex flex-col gap-3 items-end">
 
-    <div class="flex flex-col gap-3 items-end">
+    <!-- Call Button -->
+    <button onclick="playSound(); window.location.href='tel:+917588086103';"
+      class="flex items-center justify-center gap-2
+      w-12 h-12 sm:w-auto sm:h-auto
+      sm:px-5 sm:py-3
+      rounded-full
+      bg-main text-white font-semibold shadow-xl
+      hover:scale-105 transition-all duration-300">
 
-      <!-- Call Button -->
-      <button onclick="playSound()"
-        class="flex  items-center justify-center gap-2
-    w-12 h-12 sm:w-auto sm:h-auto
-    sm:px-5 sm:py-3
-    rounded-full
-    bg-main text-white font-semibold shadow-xl
-    hover:scale-105 transition-all duration-300">
+      <span class="text-xl">📞</span>
+      <span class="hidden sm:inline">Call</span>
 
-        <span class="text-xl ">📞</span>
-        <span class="hidden sm:inline">Call</span>
+    </button>
 
-      </button>
+    <!-- WhatsApp Button -->
+    <button onclick="playSound(); window.open('https://wa.me/917588086103','_blank');"
+      class="flex items-center justify-center gap-2
+      w-12 h-12 sm:w-auto sm:h-auto
+      sm:px-5 sm:py-3
+      rounded-full
+      bg-main text-white font-semibold shadow-xl
+      hover:scale-105 transition-all duration-300 animate-pulse">
 
-      <!-- WhatsApp Button -->
-      <button onclick="playSound()"
-        class="flex items-center justify-center gap-2
-    w-12 h-12 sm:w-auto sm:h-auto
-    sm:px-5 sm:py-3
-    rounded-full
-    bg-main text-white font-semibold shadow-xl
-    hover:scale-105 transition-all duration-300 animate-pulse">
+      <span class="text-xl">💬</span>
+      <span class="hidden sm:inline">WhatsApp</span>
 
-        <span class=" text-xl">💬</span>
-        <span class="hidden sm:inline">WhatsApp</span>
-
-      </button>
-
-    </div>
+    </button>
 
   </div>
+</div>
   <!-- Sound -->
   <audio id="clickSound" preload="auto">
     <source src="images/mixkit-select-click-1109.wav" type="audio/mpeg">

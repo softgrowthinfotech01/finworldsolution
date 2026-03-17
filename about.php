@@ -61,21 +61,21 @@ data-aos="fade-right">
 
 <h2 class="text-3xl font-bold mb-4">Who We Are</h2>
 
-<p class="text-gray-600 mb-4">
+<p class="text-gray-600 mb-4 text-justify">
 Finworld Solution offers a wide range of financial solutions
 supported by professional expertise and a strong commitment to client success.
 Our team focuses on delivering well-researched and client-centric financial
 guidance that helps individuals and businesses achieve their financial goals.
 </p>
 
-<p class="text-gray-600 mb-4">
+<p class="text-gray-600 mb-4 text-justify">
 Our organization was built with the aim of providing
 clear, unbiased, and practical financial advice to our clients. We carefully
 analyze each client's financial profile including risk appetite, current
 liabilities, and future financial requirements before suggesting solutions.
 </p>
 
-<p class="text-gray-600">
+<p class="text-gray-600 text-justify">
 We proudly serve clients across India as well as NRI clients,
 providing a one-stop destination for loans, insurance, and financial services.
 </p>

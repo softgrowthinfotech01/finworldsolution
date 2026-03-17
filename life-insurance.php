@@ -59,12 +59,12 @@ Get Life Insurance
 What is Life Insurance?
 </h2>
 
-<p class="text-gray-600 leading-relaxed">
+<p class="text-gray-600 leading-relaxed text-justify">
 Life insurance is a financial safety net that provides financial support to
 your family in case of unexpected events.
 </p>
 
-<p class="mt-4 text-gray-600">
+<p class="mt-4 text-gray-600 text-justify">
 It ensures that your loved ones can maintain their lifestyle and meet
 important financial needs even in your absence.
 </p>
