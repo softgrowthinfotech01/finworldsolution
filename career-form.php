@@ -1,4 +1,46 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
+require "admin/conn.php"; // file where $conn PDO connection exists
+
+if(isset($_POST['submit']))
+{
+
+$name = trim($_POST['name']);
+$email = trim($_POST['email']);
+$phone = trim($_POST['phone']);
+$resume = trim($_POST['resume']);
+
+$sql = "INSERT INTO applications 
+(name,email,phone,resume,created_date)
+VALUES
+(:name,:email,:phone,:resume,:created_date)";
+
+$stmt = $conn->prepare($sql);
+
+$data = [
+
+':name' => $name,
+':email' => $email,
+':phone' => $phone,
+':resume' => $resume,
+
+':created_date' => date("Y-m-d H:i:s")
+
+];
+
+if($stmt->execute($data))
+{
+    echo '<script>alert("Application Request sent.");window.location.href = "finworld";</script>';
+}
+else
+{
+    echo "Error Saving Data";
+}
+
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,8 +87,8 @@ class="w-full border border-gray-300 p-3 rounded-lg">
 class="w-full border border-gray-300 p-3 rounded-lg">
 
 
-<label class="block mb-2.5 text-sm font-medium text-heading" for="file_input">Upload Resume</label>
-<input class="cursor-pointer bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full shadow-xs placeholder:text-body" id="file_input" type="file">
+<label  class="block mb-2.5 text-sm font-medium text-heading" for="file_input">Upload Resume</label>
+<input  name="resume" class="cursor-pointer bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full shadow-xs placeholder:text-body" id="file_input" type="file">
 
 
 
