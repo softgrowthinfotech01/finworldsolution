@@ -44,8 +44,10 @@ class="w-full border border-gray-300 p-3 rounded-lg">
 <input type="tel" name="phone" placeholder="Phone Number" required
 class="w-full border border-gray-300 p-3 rounded-lg">
 
-<input id="file-upload" type="file"  placeholder="Resume" required
-class="w-full border border-gray-300 p-3 rounded-lg">
+
+<label class="block mb-2.5 text-sm font-medium text-heading" for="file_input">Upload Resume</label>
+<input class="cursor-pointer bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full shadow-xs placeholder:text-body" id="file_input" type="file">
+
 
 
 <button type="submit"
