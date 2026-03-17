@@ -84,7 +84,7 @@ Attractive incentives and recognition for outstanding performance.
 <div class="m-10 text-center">
    
   <a href="career-form"
-class="inline-block mt-6 bg-gray text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
+class="inline-block mt-6 bg-dark text-blue-900 px-6 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
 Apply Now
 </a>
 </div>
