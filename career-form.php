@@ -1,81 +1,69 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-require "admin/conn.php"; // file where $conn PDO connection exists
+require "admin/conn.php";
 
 if(isset($_POST['submit']))
 {
+    $name  = trim($_POST['name']);
+    $email = trim($_POST['email']);
+    $phone = trim($_POST['phone']);
 
-$name = trim($_POST['name']);
-$email = trim($_POST['email']);
-$phone = trim($_POST['phone']);
-$resume = trim($_POST['resume']);
+    // FILE UPLOAD
+    $resumeName = $_FILES['resume']['name'];
+    $resumeTmp  = $_FILES['resume']['tmp_name'];
 
-$sql = "INSERT INTO applications 
-(name,email,phone,resume,created_date)
-VALUES
-(:name,:email,:phone,:resume,:created_date)";
+    $folder = "uploads/";
 
-$stmt = $conn->prepare($sql);
+    // create folder if not exists
+    if(!is_dir($folder)){
+        mkdir($folder, 0777, true);
+    }
 
-$data = [
+    // unique file name
+    $newFileName = time() . "_" . $resumeName;
+    $filePath = $folder . $newFileName;
 
-':name' => $name,
-':email' => $email,
-':phone' => $phone,
-':resume' => $resume,
+    // move file
+    move_uploaded_file($resumeTmp, $filePath);
 
-':created_date' => date("Y-m-d H:i:s")
+    // INSERT INTO DATABASE
+    $stmt = $conn->prepare("INSERT INTO applications (name,email,phone,resume,created_at) VALUES (:name,:email,:phone,:resume,NOW())");
 
-];
+    $stmt->execute([
+        ':name'   => $name,
+        ':email'  => $email,
+        ':phone'  => $phone,
+        ':resume' => $filePath
+    ]);
 
-if($stmt->execute($data))
-{
-    echo '<script>alert("Application Request sent.");window.location.href = "finworld";</script>';
-}
-else
-{
-    echo "Error Saving Data";
-}
-
+    echo "<script>alert('Application Submitted Successfully');window.location.href='career-form.php';</script>";
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Career-form</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-
 </head>
 
 <body class="bg-gradient-to-br from-blue-100 via-white to-blue-200 min-h-screen">
 
 <?php include_once "header.php"; ?>
 
-
-
 <section class="pb-20 m-10">
-
 <div class="max-w-7xl mx-auto px-4 lg:px-8 flex justify-center">
 
 <div class="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-xl" data-aos="zoom-in">
 
-<h3 class="text-2xl font-bold mb-6 text-center">
-Apply Now
-</h3>
+<h3 class="text-2xl font-bold mb-6 text-center">Apply Now</h3>
 
-<form action="career-form.php" method="POST" class="space-y-5">
+<form action="" method="POST" enctype="multipart/form-data" class="space-y-5">
 
 <input type="text" name="name" placeholder="Full Name" required
 class="w-full border border-gray-300 p-3 rounded-lg">
@@ -86,25 +74,18 @@ class="w-full border border-gray-300 p-3 rounded-lg">
 <input type="tel" name="phone" placeholder="Phone Number" required
 class="w-full border border-gray-300 p-3 rounded-lg">
 
+<label class="block mb-2 text-sm">Upload Resume</label>
+<input type="file" name="resume" required class="w-full border p-2 rounded">
 
-<label  class="block mb-2.5 text-sm font-medium text-heading" for="file_input">Upload Resume</label>
-<input  name="resume" class="cursor-pointer bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full shadow-xs placeholder:text-body" id="file_input" type="file">
-
-
-
-<button type="submit"
+<button type="submit" name="submit"
 class="w-full bg-blue-900 text-white py-3 rounded-lg font-semibold">
-
 Apply Now
-
 </button>
 
 </form>
 
 </div>
-
 </div>
-
 </section>
 
 <?php include_once "footer.php"; ?>
