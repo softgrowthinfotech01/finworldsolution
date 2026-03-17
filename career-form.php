@@ -44,7 +44,7 @@ class="w-full border border-gray-300 p-3 rounded-lg">
 <input type="tel" name="phone" placeholder="Phone Number" required
 class="w-full border border-gray-300 p-3 rounded-lg">
 
-<input id="file-upload" type="file" class="hidden" placeholder="Resume" required
+<input id="file-upload" type="file"  placeholder="Resume" required
 class="w-full border border-gray-300 p-3 rounded-lg">
 
 
