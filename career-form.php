@@ -23,7 +23,7 @@
 
 
 
-<section class="pb-20">
+<section class="pb-20 m-10">
 
 <div class="max-w-7xl mx-auto px-4 lg:px-8 flex justify-center">
 
