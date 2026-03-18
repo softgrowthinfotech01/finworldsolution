@@ -29,6 +29,9 @@ if(isset($_POST['submit']))
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Admin - Finworld Solution</title>
+  <?php include_once "meta.php"; ?>
+
+
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>

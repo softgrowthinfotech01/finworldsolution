@@ -30,6 +30,8 @@ extract($row_closed);
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="tailwind,tailwindcss,tailwind css,css,starter template,free template,admin templates, admin template, admin dashboard, free tailwind templates, tailwind example">
     <!-- Css -->
+       <?php include_once "meta.php"; ?>
+
     
     <title>Admin - Finworld Solution</title>
 <script src="https://cdn.tailwindcss.com"></script>
