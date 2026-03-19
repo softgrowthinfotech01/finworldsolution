@@ -24,7 +24,7 @@ if(isset($_POST['submit']))
         echo "<script>alert('Phone number must be 10 digits');</script>";
         exit;
     }
-
+ 
     // FILE UPLOAD
     $resumeName = $_FILES['resume']['name'];
     $resumeTmp  = $_FILES['resume']['tmp_name'];

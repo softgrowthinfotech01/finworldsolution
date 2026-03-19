@@ -20,7 +20,7 @@
 
 <?php include_once "header.php"; ?>
 
-<!-- HERO SECTION -->
+<!-- HERO SECTION -->    
 
 <section class="bg-blue-900  text-white py-20">
 
