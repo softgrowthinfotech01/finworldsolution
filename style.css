@@ -122,19 +122,29 @@
 }
 
 
-.client-slider-track {
-  animation: clientSlide 3s linear infinite;
-}
-
-@keyframes clientSlide {
-  0% {
-    transform: translateX(0);
+.client-slider-wrapper {
+    overflow: hidden;
+    width: 100%;
   }
 
-  100% {
-    transform: translateX(-50%);
+  .client-slider-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 25s linear infinite;
   }
-}
+
+  .client-slider-wrapper:hover .client-slider-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 
 
 /* Card Hover */
