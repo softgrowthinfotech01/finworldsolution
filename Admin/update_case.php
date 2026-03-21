@@ -50,6 +50,7 @@ if(isset($_POST['update']))
   <?php include_once "meta.php"; ?>
 
      <title>Admin - Finworld Solution</title>
+     
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>

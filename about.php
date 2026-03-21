@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>About Us - Finworld Solution</title>
-
+<link rel="icon" href="images/finworld_logo.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="images/finworld_logo.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="images/finworld_logo.ico">
 <script src="https://cdn.tailwindcss.com"></script>
 
 <!-- AOS Animation -->
@@ -18,7 +20,7 @@
 
 <?php include_once "header.php"; ?>
 
-<!-- HERO SECTION -->
+<!-- HERO SECTION -->    
 
 <section class="bg-blue-900  text-white py-20">
 

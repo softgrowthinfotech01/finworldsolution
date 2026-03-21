@@ -584,53 +584,183 @@ hover:bg-yellow-400 hover:text-black transition z-20">
       Our Banking Partners
     </h3>
 
-    <div class="overflow-hidden relative w-full max-w-4xl mx-auto">
+<div class="overflow-hidden relative w-full max-w-6xl mx-auto">
 
-      <div class="client-slider-wrapper">
+  <div class="client-slider-wrapper">
 
-        <div class="client-slider-track flex items-center gap-[80px]">
+    <div class="client-slider-track flex items-center gap-[40px]">
 
-          <!-- Slide 1 -->
-          <div class="flex-shrink-0 w-40">
-            <img src="images/axis_logo.jpg"
-              class="w-[280px] h-[70px] rounded-lg">
-          </div>
+      <!-- ORIGINAL IMAGES -->
 
-          <!-- Slide 2 -->
-          <div class="flex-shrink-0 w-40">
-            <img src="images/hdfc_logo.png"
-              class="w-[280px] h-[70px] rounded-lg">
-          </div>
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center  rounded-xl" style="background-color: #EF6E22;">
+    <img src="images/icic_logo.png" class="max-h-[80px] max-w-[190px] object-contain">
+  </div>
 
-          <!-- Slide 3 -->
-          <div class="flex-shrink-0 w-40">
-            <img src="images/icic_logo.png"
-              class="w-[280px] h-[70px] rounded-lg">
-          </div>
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/kotak-bank-logo.png" class="max-h-[60px] max-w-[210px] object-contain">
+  </div>
 
-          <!-- Slide 4 -->
-          <div class="flex-shrink-0 w-40">
-            <img src="images/kotak_logo.jpg"
-              class="w-[280px] h-[70px] rounded-lg">
-          </div>
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center  rounded-xl" style="background-color: #025A98;">
+    <img src="images/yes-bank-logo.jpeg" class="max-h-[80px] max-w-[190px] object-contain">
+  </div>
 
-          <div class="flex-shrink-0 w-40">
-            <img src="images/panjab_logo.jpg"
-              class="w-[280px] h-[70px] rounded-lg">
-          </div>
+   <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white  rounded-xl">
+    <img src="images/SMFG-logo.png" class="max-h-[70px] max-w-[200px] object-contain">
+  </div>
 
-          <div class="flex-shrink-0 w-40">
-            <img src="images/sbi_logo.jpg"
-              class="w-[280px] h-[70px] rounded-lg ">
-          </div>
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center  rounded-xl" style="background-color: #16559A;">
+    <img src="images/tata-capital-bank-logo.jpeg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/Piramal_Finance_logo.svg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+    <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center  rounded-xl" style="background-color:#94144C;">
+    <img src="images/axis_logo.jpg" class="max-h-[80px] max-w-[190px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/chola-bank.png" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center  rounded-xl " style="background-color:#014FA4 ;">
+    <img src="images/hdf_bank-logo.jpg" class="max-h-[80px] max-w-[220px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/IIFL-bank.jpg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center  rounded-xl" style="background-color: #0071BB;">
+    <img src="images/bajaj-finserv-logo.png" class="max-h-[90px] max-w-[180px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/neogrowth-bank.jpeg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+   <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center rounded-xl" style="background-color: #F9C203;">
+    <img src="images/LT-Finance-Ltd.jpg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/lendingkart-bank-logo.jpg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/credit-saison-india.png" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+   <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center   rounded-xl" style="background-color: #9C1D26;">
+    <img src="images/IDFC_First_Bank_logo.jpg" class="max-h-[60px] max-w-[190px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/sriram-bank-logo.jpg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/adity-birla-group.jpeg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/poonawalla-fincorp.jpg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
 
 
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/mahindra-finance.jpg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
 
-        </div>
+      <!-- DUPLICATE SAME IMAGES (IMPORTANT FOR LOOP) -->
 
-      </div>
+   
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center  rounded-xl" style="background-color: #EF6E22;">
+    <img src="images/icic_logo.png" class="max-h-[80px] max-w-[190px] object-contain">
+  </div>
 
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/kotak-bank-logo.png" class="max-h-[60px] max-w-[210px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center  rounded-xl" style="background-color: #025A98;">
+    <img src="images/yes-bank-logo.jpeg" class="max-h-[80px] max-w-[190px] object-contain">
+  </div>
+
+   <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white  rounded-xl">
+    <img src="images/SMFG-logo.png" class="max-h-[70px] max-w-[200px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center  rounded-xl" style="background-color: #16559A;">
+    <img src="images/tata-capital-bank-logo.jpeg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/Piramal_Finance_logo.svg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+    <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center  rounded-xl" style="background-color:#94144C;">
+    <img src="images/axis_logo.jpg" class="max-h-[80px] max-w-[190px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/chola-bank.png" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center  rounded-xl " style="background-color:#014FA4 ;">
+    <img src="images/hdf_bank-logo.jpg" class="max-h-[80px] max-w-[220px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/IIFL-bank.jpg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center  rounded-xl" style="background-color: #0071BB;">
+    <img src="images/bajaj-finserv-logo.png" class="max-h-[90px] max-w-[180px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/neogrowth-bank.jpeg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+   <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center rounded-xl" style="background-color: #F9C203;">
+    <img src="images/LT-Finance-Ltd.jpg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/lendingkart-bank-logo.jpg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/credit-saison-india.png" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+   <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center   rounded-xl" style="background-color: #9C1D26;">
+    <img src="images/IDFC_First_Bank_logo.jpg" class="max-h-[60px] max-w-[190px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/sriram-bank-logo.jpg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/adity-birla-group.jpeg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/poonawalla-fincorp.jpg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
+
+
+  <div class="flex-shrink-0 w-[220px] h-[80px] flex items-center justify-center bg-white rounded-xl">
+    <img src="images/mahindra-finance.jpg" class="max-h-[60px] max-w-[180px] object-contain">
+  </div>
     </div>
+
+  </div>
+
+</div>
 
   </section>
 
