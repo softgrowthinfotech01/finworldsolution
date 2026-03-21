@@ -31,7 +31,9 @@ if(isset($_POST['submit']))
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Finworld Solutions - Login</title>
-
+<link rel="icon" href="images/finworld_logo.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="images/finworld_logo.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="images/finworld_logo.ico">
 <script src="https://cdn.tailwindcss.com"></script>
 
 </head>

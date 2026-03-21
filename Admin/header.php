@@ -1,3 +1,4 @@
+
 <header class="bg-white/90 backdrop-blur border-b shadow-sm  z-50" >
 <div class="flex items-center justify-between px-6 h-20 relative">
 
@@ -73,7 +74,7 @@ class="w-9 h-9 rounded-full">
 </div>
 
 <!-- logout -->
-<a href="logout.php"
+<a  href="logout"
 class="flex items-center gap-2 px-4 py-3 text-red-500 hover:bg-red-50 cursor-pointer">
 
 <span class="text-lg">⎋</span>

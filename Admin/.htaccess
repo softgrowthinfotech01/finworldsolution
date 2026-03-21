@@ -1,5 +1,5 @@
 #Alternate default index page
-DirectoryIndex home.php
+DirectoryIndex login.php
 
 ErrorDocument 404 /404.php
 

@@ -60,18 +60,37 @@ class="menu-item relative flex items-center gap-3 px-6 py-3 border-b border-l-4 
 
 </a>
 
-
-<a href=""
+<a href="view_enquiries"
 class="menu-item relative flex items-center gap-3 px-6 py-3 border-b border-l-4 border-purple-500 border-gray-200 text-gray-600 hover:text-purple-600 hover:bg-gray-100 transition rounded-lg mx-2">
 
 <span class="text-lg">📊</span>
 
-<span class="sidebar-text font-medium">Records</span>
+<span class="sidebar-text font-medium">View Inquiries</span>
 
-<span class="tooltip">Records</span>
+
 
 </a>
 
+<a href="today_cases"
+class="menu-item relative flex items-center gap-3 px-6 py-3 border-b border-l-4 border-purple-500 border-gray-200 text-gray-600 hover:text-purple-600 hover:bg-gray-100 transition rounded-lg mx-2">
+
+<span class="text-lg">📊</span>
+
+<span class="sidebar-text font-medium">Today's Cases</span>
+
+<span class="tooltip">Today's Cases</span>
+
+</a>
+<a href="career_enquiries"
+class="menu-item relative flex items-center gap-3 px-6 py-3 border-b border-l-4 border-purple-500 border-gray-200 text-gray-600 hover:text-purple-600 hover:bg-gray-100 transition rounded-lg mx-2">
+
+<span class="text-lg">📊</span>
+
+<span class="sidebar-text font-medium">Career</span>
+
+<span class="tooltip">career</span>
+
+</a>
 </nav>
 
 </aside>

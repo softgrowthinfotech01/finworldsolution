@@ -22,12 +22,15 @@ if(isset($_POST['submit']))
     echo "<script>alert('Case added successfully');window.location.href = 'view_case';</script>";
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0
+      <?php include_once "meta.php"; ?>
+
      <title>Admin - Finworld Solution</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="style.css">
@@ -145,4 +148,24 @@ Reset
 <?php include 'footer.php'; ?>
 
 </div>
+
+
+
+
+ <script id="2d4f4t">
+document.addEventListener("DOMContentLoaded", function(){
+
+    let today = new Date();
+    today.setDate(today.getDate() + 1); // tomorrow
+
+    let yyyy = today.getFullYear();
+    let mm = String(today.getMonth() + 1).padStart(2,'0');
+    let dd = String(today.getDate()).padStart(2,'0');
+
+    let minDate = yyyy + "-" + mm + "-" + dd;
+
+    document.getElementById("calling_date").setAttribute("min", minDate);
+
+});
+</script>  
 </html>

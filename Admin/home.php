@@ -29,9 +29,11 @@ extract($row_closed);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="keywords" content="tailwind,tailwindcss,tailwind css,css,starter template,free template,admin templates, admin template, admin dashboard, free tailwind templates, tailwind example">
-    <!-- Css -->
-    
+    <!-- Css -->  
+          <?php include_once "meta.php"; ?>
+
     <title>Admin - Finworld Solution</title>
+ 
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
